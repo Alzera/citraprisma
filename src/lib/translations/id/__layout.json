@@ -1,0 +1,17 @@
+{
+  "menus": {
+    "menu": "Menu",
+    "home": "Beranda",
+    "about_us": "Tentang Kami",
+    "services": "Layanan",
+    "projects": "Proyek",
+    "brands": "Merek",
+    "contact_us": "Kontak Kami"
+  },
+  "section_header": {
+    "our_brands": {
+      "format": "<span class='text-primary'>{{placeholder}}</span> Kami",
+      "brands": "Merek"
+    }
+  }
+}

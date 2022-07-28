@@ -1,0 +1,136 @@
+{
+  "page": {
+    "title": "Bostik"
+  },
+  "subtitle": "Smart adhesive for construction",
+  "content": "Bostik Doing More Than Sticking Things Together. Our adhesive products have been used in construction projects around the world, as well as various repair projects such as flooring, waterproofing, sealing, insulation, assembly, and decoration.",
+  "application_title": "Tile application on substrate:",
+  "section1": {
+    "title": "A. Bostik Boscoseal Pu - X System",
+    "subsection1": {
+      "title": "Boscoprime 1",
+      "subtitle": "Polyurethane primer for porous substrates",
+      "content": "A one-component, polyurethane-based primer that is ready to use, is transparent, dries quickly, and absorbs easily. Used as a primer before applying other polyurethane based materials on porous and absorbent substrates."
+    },
+    "subsection2": {
+      "title": "Boscoseal PU-X",
+      "subtitle": "Waterproofing made of polyurethane",
+      "content": "A one-component liquid waterproofing made from polyurethane that is ready to use, elastic and cold-applied. Resistant to abrasion, mechanical materials, chemicals and UV."
+    },
+    "subsection3": {
+      "title": "Boscoseal TOP-HT",
+      "subtitle": "Top-coating liquid waterproofing made of polyurethane",
+      "content": "A one-component polyurethane based waterproofing top-coating that is ready to use, elastic, aliphatic, semi-rigid and cold-applied. Resistant to heat, mechanical materials, chemicals and UV."
+    }
+  },
+  "section2": {
+    "title": "B. Bostik Waterproofing",
+    "subsection1": {
+      "title": "Boscoseal AC",
+      "subtitle": "Flexible waterproofing membrane made of acrylic (exposed)",
+      "content": "A leak-proof coating product made from styrene acrylic which after drying will form an elastic membrane. Very good for use in areas such as building walls, roofs, gutters, not concrete / screed, etc.",
+      "application": "Concrete, rendering / screed, gypsum, plasterboard, building walls, gutters from metal / PVC."
+    },
+    "subsection2": {
+      "title": "Boscolastic",
+      "subtitle": "Cement-based flexible waterproofing membrane (non-exposed)",
+      "content": "A two-component leak-proof coating product made from cement and acrylic latex which after drying is elastic and weather-resistant, very good for use in areas such as bathrooms, laundry rooms, swimming pools, water tanks, concrete / screeds, roofs, etc.",
+      "application": "Concrete, rendering / screed, carpus, building walls, wood signage trim."
+    },
+    "subsection3": {
+      "title": "Boscoseal Slurry",
+      "subtitle": "Two-component cement waterproofing membrane (non-exposed)",
+      "content": "Leak-proof coating products based on cement and acrylic latex which after drying will form a waterproofing membrane; excellent for use in areas such as bathrooms and laundry rooms.",
+      "application": "Concrete, plaster, floor."
+    },
+    "subsection4": {
+      "title": "Boscoseal TOM",
+      "subtitle": "Bitumen waterproofing sheet",
+      "content": "APP bitumen based fire membrane waterproofing reinforced with non-woven polyester with a thickness of 3 mm; weather-resistant and not easy to tear. Very well used for roof areas, such as: concrete ducts / screeds, balconies, tunnels, etc.",
+      "application": "Concrete, rendering/screed, car box."
+    },
+    "subsection5": {
+      "title": "Flashband",
+      "subtitle": "Roof patching and gutters",
+      "content": "The coating product is a membrane with bituminous adhesive that has a strong adhesion to the substrate for both patching and preventing leakage. Easy to use, by removing the bitumen protective plastic and gluing it directly on the area to be patched.",
+      "application": "Concrete, cement, gutters, asbestos, metal, car boxes."
+    }
+  },
+  "section3": {
+    "title": "C. Sealants",
+    "subsection1": {
+      "title": "Seal N Flex 1",
+      "subtitle": "Polyurethane sealants for architecture",
+      "content": "One component polyurethane based sealant. Used in areas that require a high movement sealant as well as areas that are intended to be sound suppressed. Highly elastic and resistant to normal weather conditions such as sunlight, rain, UV rays, ozone, etc.",
+      "application": "Precast, GRC, concrete, aluminum composite panel, concrete panel, fiberglass."
+    },
+    "subsection2": {
+      "title": "Seal N Flex Premium P795",
+      "subtitle": "Flexible and durable construction and building sealant",
+      "content": "A new generation of easy-to-use one-component polyurethane based sealants. Contains less MDI, dries faster, has high performance and lasts longer. In the drying process, it will not cause air bubbles. Can be used on wide joints, is permanently elastic, does not shrink, is resistant to weather and UV rays, and adheres perfectly to most surfaces without primer, even on damp surfaces.",
+      "application": [
+        "Construction joints and expansion joints",
+        "The connection on the pedestrian walkway",
+        "Skirting and cornice adhesive"
+      ]
+    },
+    "subsection3": {
+      "title": "Smartflex PU",
+      "subtitle": "Polyurethane sealant for joints",
+      "content": "Multifunctional one-component polyurethane-based construction adhesive. When used, it forms a flexible seal capable of producing a cyclic expansion and compression movement equal to the initial joint width.",
+      "application": "In-situ concrete, precast, brickwork and blockwork."
+    },
+    "subsection4": {
+      "title": "Fireban One",
+      "subtitle": "Polyurethane sealant fire-rated up to 4 hours, with strong adhesive polyurethane technology",
+      "content": "A one-component, fire-rated and low modulus polyurethane based sealant that works by utilizing the humidity of the air to form a watertight and weather-resistant seal.",
+      "application": "In-situ concrete, precast, brickwork and blockwork, fire collars, and acoustic joints."
+    },
+    "subsection5": {
+      "title": "Boscosil 616",
+      "subtitle": "Construction sealant with neutral, high-performance silicone technology",
+      "content": "Practical to use without mixing process, odorless, 25% joint movement, elastic and strong, strong adhesion, does not shrink and does not sag.",
+      "application": "Sealing between glass and aluminum, wood sealing parimeter (surrounding) between aluminum and brick frames"
+    },
+    "subsection6": {
+      "title": "Boscosil 313",
+      "subtitle": "Premium, one-component, acid-based silicone sealant (acetoxy).",
+      "content": "Versatile silicone sealant, especially for application to non-porous surfaces. Adhere very well to the surface of glass and coated aluminum (anodized). Maintains elasticity in extreme environments. Will not sag in construction confluence applications (interior gaps).",
+      "application": "Glass to glass, floor tiles, gaps on the perimeter of the room"
+    },
+    "subsection7": {
+      "title": "Fill A Gap Flex A 330",
+      "subtitle": "Acrylic sealant for sealing and filling gaps",
+      "content": "Bostik Fill A Gap Flex A330 is an economical and versatile yet high quality acrylic based sealant. Can be painted with water-based and synthetic paints. Has perfect adhesion without using a primer on most surfaces. Almost odorless. Easy to apply and clean. Not corrosive to metal.",
+      "application": [
+        "Gulfs between stairs, walls, ceilings, skirting, window sills, wood and metal window sills, concrete and brick.",
+        "Interior use."
+      ]
+    }
+  },
+  "section4": {
+    "title": "D. Speciality Building Solution",
+    "subsection1": {
+      "title": "No More Nails Classic N310",
+      "subtitle": "Versatile construction adhesive",
+      "content": "Bostik No More Nails Classic N310 is a versatile construction adhesive suitable for bonding a wide variety of building materials for both external and internal applications. Safe from polystyrene, high modulus, easy to apply on the interior and exterior and dry quickly, sticks to the surface immediately after application.",
+      "application": [
+        "Glue to construction work.",
+        "Contact adhesive for mounting wall and floor panels.",
+        "A gluing application that requires a high-strength, gap-filling one-component adhesive.",
+        "Glues sheets of wood, metal, cement board, and plaster to wooden or metal posts.",
+        "Installation of battens or other bonding material on brick, masonry or concrete walls."
+      ]
+    },
+    "subsection2": {
+      "title": "Expanda Foam Classic P310",
+      "subtitle": "Polyurethane Foam B3",
+      "content": "Bostik Expanda Foam Classic P310 is a one-component Polyurethane B3 foam for insulation and construction. EC1 Plus and A+ certified. Bostik Expanda Foam Classic P310 was developed specifically for filling joints around windows and doors and in construction, partition walls, ceiling and floor joints, surface penetration of pipes and tubes through walls and floors. Excellent adhesion to concrete, stone, plaster, wood, metal and plastics such as EPS and XPS, rigid PU foam and uPVC."
+    },
+    "subsection3": {
+      "title": "Quelyd SE",
+      "subtitle": "Express adhesive for wallpaper",
+      "content": "Adhesive that works for light to heavy type vinyl wallpaper installation. The use is mixed with water and stirred for about 2-5 minutes until it forms a paste. The remaining mortar on the surface of the wallpaper can be cleaned without damaging the motif. For installation, it is recommended that the substrate is clean of paint."
+    }
+  }
+}

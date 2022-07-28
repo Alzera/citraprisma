@@ -1,0 +1,25 @@
+{
+  "page": {
+    "title": "Decorative & Marine Paints"
+  },
+  "section1": {
+    "title": "Decorative Paints",
+    "table1": {
+      "title": "A. Interior",
+      "content": [
+        "Economical latex emulsion paint",
+        "A quality pearl like satin interior finish, acrylic emulsion paint designed",
+        "A quality interior modified acrylic emulsion paint"
+      ]
+    },
+    "table2": {
+      "title": "B. Exterior",
+      "content": [
+        "100% Pure acrylic exterior finish"
+      ]
+    }
+  },
+  "section2": {
+    "title": "Marine Paints"
+  }
+}

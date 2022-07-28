@@ -1,0 +1,17 @@
+{
+  "menus": {
+    "menu": "Menu",
+    "home": "Home",
+    "about_us": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "brands": "Brands",
+    "contact_us": "Contact Us"
+  },
+  "section_header": {
+    "our_brands": {
+      "format": "Our <span class='text-primary'>{{placeholder}}</span>",
+      "brands": "Brands"
+    }
+  }
+}

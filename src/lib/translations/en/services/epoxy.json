@@ -1,0 +1,41 @@
+{
+  "page": {
+    "title": "Epoxy & PU Flooring"
+  },
+  "subtitle": "Used to beautify floors for factory, kitchen and public areas. Also available in Food Grades speciality",
+  "section1": {
+    "title": "Floor Coating",
+    "content": "The clean environment comes from the clean floor. Create pure and pleasant atmosphere with the clean floor.",
+    "table1": {
+      "title": "A. Epoxy coating & Lining",
+      "content": [
+        "Epoxy anti dust floor coating",
+        "High intensity epoxy resin mortar",
+        "Epoxy Embo coat",
+        "Waterbourne epoxy floor coating",
+        "Chemical resistance epoxy floor coating"
+      ]
+    },
+    "table2": {
+      "title": "B. Urethane Coating",
+      "content": [
+        "Urethane anti dust floor coating"
+      ]
+    },
+    "table3": {
+      "title": "C. Polyurea Floor Coating",
+      "content": [
+        "Polyurea waterproofing & floor coating"
+      ]
+    }
+  },
+  "section2": {
+    "title": "PU Flooring",
+    "content": "Tested and certified by TUV SUB PSB Singapore :JIS Z 2801:2000 Anti Microbial and SIRIM QAS:BS 6920:Port 1:2000 (Suitability of Non metallic Product for use in Contact with Water Intended for Human Cunsumption)",
+    "table4": {
+      "content": [
+        "A highly durable polyurethane resin flooring coating"
+      ]
+    }
+  }
+}

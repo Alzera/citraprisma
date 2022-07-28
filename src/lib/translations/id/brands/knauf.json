@@ -1,0 +1,90 @@
+{
+  "page": {
+    "title": "Knauf"
+  },
+  "subtitle": "Papan Gypsum, Aksesoris Drywall, Bingkai",
+  "content": "Knauf didirikan pada tahun 1932 oleh saudara Karl dan Dr. Alfons N. Knauf. Hari ini putra mereka, mitra pengelola Nikolaus dan Baldwin Knauf, mengarahkan keberhasilan berbagai perusahaan dalam koordinasi erat dengan anggota keluarga lainnya. Knauf memiliki 23.000 tenaga kerja di 40 negara, mengoperasikan lebih dari 150 lokasi produksi di seluruh dunia, semuanya memberikan kontribusi bagi kesuksesan grup dan, dengan itu, keamanan ekonomi dan pengembangan pribadi mereka sendiri. Saat ini Knauf adalah salah satu produsen bahan bangunan terkemuka di dunia.",
+  "specification": "Spesifikasi",
+  "appearance": "Tampilan",
+  "thickness": "Tebal",
+  "weight": "Berat",
+  "width": "Lebar",
+  "length": "Panjang",
+  "edge": "Tepi sisi",
+  "standards": "Standards",
+  "board_density": "Board density",
+  "dimension_metric": "Dimensi metric",
+  "dry_time": "Waktu kering",
+  "compressive_durability": "Kuat tekan",
+  "ratio_water_plaster": "Perbandingan air : plaster",
+  "lifetime": "Masa pakai",
+  "wet_density": "Density basah",
+  "dry_density": "Density kering",
+  "and": "dan",
+  "feature": "Fitur",
+  "minutes": "menit",
+  "months": "bulan",
+  "usage": "Penggunaan",
+  "section1": {
+    "title": "A. Gypsum Plasterboard",
+    "subsection1": {
+      "title": "Standard Board",
+      "subtitle": "Permukaan dinding dan plafond",
+      "appearance": "Kertas muka berwarna gading",
+      "edge": "Sisi lurus (SE) dan sisi miring (TE)"
+    },
+    "subsection2": {
+      "title": "Moistureshield",
+      "subtitle": "Papan gypsum untuk area kelembaban tinggi",
+      "appearance": "Green liner paper",
+      "feature": [
+        "Menggunakan kertas khusus yang mampu mencegah pertumbuhan jamur",
+        "Formula spesial dengan tingkat penyerapan lembab yang rendah"
+      ]
+    },
+    "subsection3": {
+      "title": "Denseshield",
+      "subtitle": "Performa ideal untuk ketahanan benturan",
+      "appearance": "Kertas muka berwarna batu pasir",
+      "feature": [
+        "Mempunyai kerapatan yang tinggi dan reinforced core yang menjamin papan gypsum dapat mengatasi benturan tanpa terdeformasi atau rusak",
+        "Kedua kertas pelapis yang tahan gores dan backpaper didesign untuk menambah kekuatan dan daya tahan papan gypsum secara keseluruhan.",
+        "Ketahanan terhadap api yang lebih bagus dibanding papan gypsum standar."
+      ]
+    },
+    "subsection4": {
+      "title": "Fireshield",
+      "subtitle": "Papan gypsum dengan performa ketahanan api tinggi",
+      "appearance": "Pink face and grey back paper",
+      "feature": [
+        "Kemampuan yang lebih tinggi dalam menahan api dibanding dengan papan gypsum standar",
+        "Bahan tambahan berupa ber glass akan mempertahankan kekuatannya ketika terjadi kebakaran."
+      ]
+    }
+  },
+  "section2": {
+    "title": "B. Aksesoris Drywall",
+    "subsection1": {
+      "title": "2 in 1 Cornice Compound",
+      "subtitle": "2 in 1 Super Cornice Compound adalah produk berbahan dasar Gypsum, dengan 2 fungsi dalam satu formulasi sebagai aplikasi Cornice Adhesive {{ $t('and') }} juga dapat digunakan sebagai Jointing Compound. 2 in 1 Cornice merupakan formula yang tepat untuk aplikasi jointing Compound {{ $t('and') }} memiliki daya rekat yang baik sebagai adhesive atau perekat cornice.",
+      "feature": [
+        "Formulanya tidak retak saat diaplikasikan dengan knauf Joint Tape",
+        "Memiliki partikel daya rekat yang baik {{ $t('and') }} halus",
+        "Satu produk untuk dua aplikasi cornice adhesive, juga Jointing Compound",
+        "Setting waktu memungkinkan untuk pengerjaan lebih rapi",
+        "{{ $t('usage') }}nya sangat mudah sebagai penyambung elemen dekorasi {{ $t('and') }} plafond",
+        "Knauf 2 in 1 Cornice Compound diproduksi sesuai standar ASTM C475"
+      ]
+    },
+    "subsection2": {
+      "title": "Casting plaster",
+      "subtitle": "Knauf Casting Plaster adalah produk plaster dengan kualitas tinggi yang dipakai untuk berbagai macam aplikasi seperti membuat gypsum cetakan {{ $t('and') }} dekorasi plafond (cornice)",
+      "usage": "Mencetak list profil gypsum {{ $t('and') }} produk cetakan lainnya",
+      "feature": [
+        "Merupakan material yang tidak menjalarkan api",
+        "Kompitabel dengan sistem Knauf lainnya",
+        "Knauf Casting Plaster diproduksi sesuai standar ASTM C59"
+      ]
+    }
+  }
+}

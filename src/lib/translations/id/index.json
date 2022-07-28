@@ -1,0 +1,100 @@
+{
+  "page": {
+    "title": "Beranda"
+  },
+  "read_more": "Baca Selanjutnya",
+  "see_more": "Lihat Selanjutnya",
+  "section": {
+    "distributor": {
+      "header": "Distributor Bahan - Bahan Bangunan dan Pekerjaan Sipil",
+      "content": "Perusahaan distributor bahan bangunan yang berlokasi di Surabaya, Indonesia"
+    },
+    "about_us": {
+      "header": {
+        "format": "Tentang <span class='text-primary'>{{placeholder}}</span>",
+        "span": "Kami"
+      },
+      "content": "PT. Citra Prisma Mandiri didirikan untuk memenuhi kebutuhan spesifik pada bidang perbaikan Beton, Waterproofing, Gypsum dan Sealant. Dengan dukungan dan alih tehnologi dari perusahaan - perusahaan Internasional yang memproduksi produk - produk unggulan seperti Bostik, Knauf, Boral, Fibrin, Gripset, ShinEtsu & Star Series."
+    },
+    "our_services": {
+      "header": {
+        "format": "<span class='text-primary'>{{placeholder}}</span> Kami",
+        "span": "Layanan"
+      },
+      "content": [
+        {
+          "header1": "Waterproofing",
+          "content1": "Digunakan untuk melindungi struktur beton agar tidak tertembus oleh air sehingga menyebabkan kerusakan dan kebocoran beton lebih lanjut.",
+          "list1": [
+            "Waterproofing by Crustallisation for Concrete",
+            "Waterproofing Cement-Based by Coating",
+            "Adhesive Waterproofing Membrane",
+            "Waterproofing Membrane by Coating",
+            "Planter System / Green Roof"
+          ],
+          "header2": "High Pressure Grouting",
+          "content2": "Digunakan untuk memperbaiki kebocoran air aktif pada beton (terowongan, dek atap basement, kamar mandi x dek kolam renang)",
+          "list2": [
+            "Leakages on : Basement, Bathroom, Balcony, Roof Deck, Pool",
+            "Soil Injection and Geogrouting",
+            "Failed Expansion Joints/movement Joints"
+          ],
+          "header3": "Epoxy Grouting",
+          "content3": "Digunakan untuk mengembalikan ketidaktepatan struktur beton yang retak dan disisir madu",
+          "list3": [
+            "DRY : Roof deck / Retaining wall / Basement Floor",
+            "DRY & WET : Roof deck / Retaining wall / Basement Floor"
+          ]
+        },
+        {
+          "header1": "Gypsum Work",
+          "list1": [
+            "Wall Banding",
+            "Casting"
+          ],
+          "header2": "Ceiling Work",
+          "header3": "Partition",
+          "header4": "Light Steel Frames"
+        },
+        {
+          "header1": "Metal Ceiling Works",
+          "content1": "Digunakan untuk mempercantik langit-langit di luar ruangan/area publik seperti lounge bandara, stasiun bus dan kereta api dan area khusus seperti dapur dan dek kolam renang, juga tersedia untuk fasad bangunan komersial dan jembatan dll."
+        },
+        {
+          "header1": "Sealant Works",
+          "content1": "Digunakan untuk mengikat dua struktur besar dan mencegah kebocoran melalui sambungan",
+          "list1": [
+            "Precast Concrete Joints",
+            "Aluminium to Aluminium / Aluminium to glass joints / ACP Joints",
+            "Automotive"
+          ]
+        },
+        {
+          "header1": "Floor Coating",
+          "content1": "Lingkungan yang bersih berasal dari lantai yang bersih. Ciptakan suasana murni dan menyenangkan dengan lantai yang bersih",
+          "list1": [
+            "Epoxy coating & Lining",
+            "Urethane Coating",
+            "Polyurea Floor Coating"
+          ],
+          "header2": "PU Coating"
+        },
+        {
+          "header1": "Decorative",
+          "content1": "Lingkungan yang bersih berasal dari lantai yang bersih. Ciptakan suasana murni dan menyenangkan dengan lantai yang bersih",
+          "list1": [
+            "INTERIOR",
+            "EXTERIOR"
+          ],
+          "header2": "Marine Paints"
+        }
+      ]
+    },
+    "our_projects": {
+      "header": {
+        "format": "<span class='text-primary'>{{placeholder}}</span> Kami",
+        "span": "Proyek"
+      }
+    }
+  }
+}

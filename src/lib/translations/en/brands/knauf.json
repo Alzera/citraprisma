@@ -1,0 +1,90 @@
+{
+  "page": {
+    "title": "Knauf"
+  },
+  "subtitle": "Gypsum Board, Drywall Accessories, Frame",
+  "content": "Knauf was founded in 1932 by the brothers Karl and Dr. Alfons N. Knauf. Today their sons, managing partners Nikolaus and Baldwin Knauf, steer the success of the corporations numerous enterprises in close coordination with the other family members. Knauf has a workforce of 23,000 in 40 countries, operating more than 150 production sites worldwide, all making a contribution to the group's success and, with it, their own economic security and personal development. Today Knauf is one of the world's leading manufacturers of building materials.",
+  "specification": "Specification",
+  "appearance": "Appearance",
+  "thickness": "Thickness",
+  "weight": "Weight",
+  "width": "Width",
+  "length": "Length",
+  "edge": "Edge",
+  "standards": "Standards",
+  "board_density": "Board density",
+  "dimension_metric": "Dimension metric",
+  "dry_time": "Dry Time",
+  "compressive_durability": "Compressive durability",
+  "ratio_water_plaster": "Ratio water : plaster",
+  "lifetime": "Lifetime",
+  "wet_density": "Wet Density",
+  "dry_density": "Dry Density",
+  "and": "and",
+  "feature": "Feature",
+  "minutes": "minutes",
+  "months": "months",
+  "usage": "Usage",
+  "section1": {
+    "title": "A. Gypsum Plasterboard",
+    "subsection1": {
+      "title": "Standard Board",
+      "subtitle": "Wall and ceiling surfaces",
+      "appearance": "Ivory face paper",
+      "edge": "Straight side (SE) and hypotenuse (TE)"
+    },
+    "subsection2": {
+      "title": "Moistureshield",
+      "subtitle": "Gypsum board for high humidity areas",
+      "appearance": "Green liner paper",
+      "feature": [
+        "Using special paper that can prevent mold growth",
+        "Special formula with low moisture absorption rate"
+      ]
+    },
+    "subsection3": {
+      "title": "Denseshield",
+      "subtitle": "Ideal performance for impact resistance",
+      "appearance": "Sandstone colored face paper",
+      "feature": [
+        "It has a high density and reinforced core which ensures the gypsum board can withstand impacts without being deformed or damaged",
+        "Both scratch-resistant coating paper and backpaper are designed to increase the overall strength and durability of the gypsum board.",
+        "Better fire resistance than standard gypsum board."
+      ]
+    },
+    "subsection4": {
+      "title": "Fireshield",
+      "subtitle": "Gypsum board with high fire resistance performance",
+      "appearance": "Pink face and grey back paper",
+      "feature": [
+        "Higher fire resistance compared to standard gypsum board",
+        "Additional materials in the form of glass will maintain its strength in the event of a fire."
+      ]
+    }
+  },
+  "section2": {
+    "title": "B. Drywall Accessories",
+    "subsection1": {
+      "title": "2 in 1 Cornice Compound",
+      "subtitle": "2 in 1 Super Cornice Compound is a product made from Gypsum, with 2 functions in one formulation as a Cornice Adhesive application and can also be used as a Jointing Compound. 2 in 1 Cornice is the right formula for compounding jointing applications and has good adhesion as an adhesive or cornice adhesive.",
+      "feature": [
+        "The formula does not crack when applied with Knauf Joint Tape",
+        "Has good and fine particle adhesion",
+        "One product for two applications of cornice adhesive, also Jointing Compound",
+        "Setting the time allows for neater workmanship",
+        "It's very easy to use as a connector for decorative elements and ceilings",
+        "Knauf 2 in 1 Cornice Compound manufactured to ASTM C475 standard"
+      ]
+    },
+    "subsection2": {
+      "title": "Casting plaster",
+      "subtitle": "Knauf Casting Plaster is a high quality plaster product that is used for various applications such as making gypsum molds and decorating ceilings (cornices).",
+      "usage": "Print a list of gypsum profiles and other printed products",
+      "feature": [
+        "It is a material that does not spread fire",
+        "Compatible with other Knauf systems",
+        "Knauf Casting Plaster is manufactured according to ASTM C59 standard"
+      ]
+    }
+  }
+}

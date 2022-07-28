@@ -1,0 +1,100 @@
+{
+  "page": {
+    "title": "Home"
+  },
+  "read_more": "Read More",
+  "see_more": "See More",
+  "section": {
+    "distributor": {
+      "header": "Distributor of Building Materials and Civil Works",
+      "content": "Building material distributor company located in Surabaya, Indonesia"
+    },
+    "about_us": {
+      "header": {
+        "format": "About <span class='text-primary'>{{placeholder}}</span>",
+        "span": "Us"
+      },
+      "content": "PT. Citra Prisma Mandiri is formed to service specific requirements of all buildings, especially on concrete technologies, sealants, waterproofing, gypsum, GRC panels and stone wool insulation. With support and transfer technology from reputable international companies like Wacker, Bostik, Grace (GCP), Conwood, Knauf, Boral, Yoshino, Hunter Douglas, etc."
+    },
+    "our_services": {
+      "header": {
+        "format": "Our <span class='text-primary'>{{placeholder}}</span>",
+        "span": "Services"
+      },
+      "content": [
+        {
+          "header1": "Waterproofing",
+          "content1": "Used to protect concrete structures from being penetrated by water causing further concrete deterioration and leakages.",
+          "list1": [
+            "Waterproofing by Crustallisation for Concrete",
+            "Waterproofing Cement-Based by Coating",
+            "Adhesive Waterproofing Membrane",
+            "Waterproofing Membrane by Coating",
+            "Planter System / Green Roof"
+          ],
+          "header2": "High Pressure Grouting",
+          "content2": "Used to repair active water leakages in concretes (tunnels, basements roof decks, bathroom x pool decks)",
+          "list2": [
+            "Leakages on : Basement, Bathroom, Balcony, Roof Deck, Pool",
+            "Soil Injection and Geogrouting",
+            "Failed Expansion Joints/movement Joints"
+          ],
+          "header3": "Epoxy Grouting",
+          "content3": "Used to restore the integrity of cracked and honeycombed concrete structures",
+          "list3": [
+            "DRY : Roof deck / Retaining wall / Basement Floor",
+            "DRY & WET : Roof deck / Retaining wall / Basement Floor"
+          ]
+        },
+        {
+          "header1": "Gypsum Work",
+          "list1": [
+            "Wall Bonding",
+            "Casting"
+          ],
+          "header2": "Ceiling Work",
+          "header3": "Partition",
+          "header4": "Light Steel Frames"
+        },
+        {
+          "header1": "Metal Ceiling Works",
+          "content1": "Used to beautify ceiling in outdoor/public areas such as airport lounges, bus and train station and special areas like kitchens and pool decks, also available for facades of commercial buildings and bridges etc."
+        },
+        {
+          "header1": "Sealant Works",
+          "content1": "Used to band two massive structures and prevents leakage through the joins",
+          "list1": [
+            "Precast Concrete Joints",
+            "Aluminium to Aluminium / Aluminium to glass joints / ACP Joints",
+            "Automotive"
+          ]
+        },
+        {
+          "header1": "Floor Coating",
+          "content1": "The clean environment comes from the clean floor. Create pure and pleasant atmosphere with the clean floor",
+          "list1": [
+            "Epoxy coating & Lining",
+            "Urethane Coating",
+            "Polyurea Floor Coating"
+          ],
+          "header2": "PU Coating"
+        },
+        {
+          "header1": "Decorative",
+          "content1": "The clean environment comes from the clean floor. Create pure and pleasant atmosphere with the clean floor",
+          "list1": [
+            "INTERIOR",
+            "EXTERIOR"
+          ],
+          "header2": "Marine Paints"
+        }
+      ]
+    },
+    "our_projects": {
+      "header": {
+        "format": "Our <span class='text-primary'>{{placeholder}}</span>",
+        "span": "Projects"
+      }
+    }
+  }
+}

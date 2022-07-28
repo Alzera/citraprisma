@@ -1,0 +1,96 @@
+{
+  "page": {
+    "title": "Waterproofing, High Pressure Grouting, Epoxy Grouting"
+  },
+  "section1": {
+    "title": "Waterproofing",
+    "content": "Used to protect concrete structures from being penetrated by water causing further concrete deterioration and leakages.",
+    "table1": {
+      "title": "A. Waterproofing by Crystallisation for Concrete",
+      "content": [
+        "Waterproofing Crystallisation by intergral",
+        "Waterproofing Crystallisation by coating",
+        "Pre-Applied Waterproof Membrane"
+      ]
+    },
+    "table2": {
+      "title": "B. Waterproofing Cement-Based by Coating",
+      "content": [
+        "Flexible Cementitious Waterproofing",
+        "Rigid cement-based two-component alkali reactive polymer modified waterproofing",
+        "2-Component flexible cementitious waterproofing"
+      ]
+    },
+    "table3": {
+      "title": "C. Adhesive Waterproofing Membrane",
+      "content": [
+        "Attactic polypropylene modified bituminous membrane",
+        "Bitumen membrane with adhesives in rolled form",
+        "Cold applied membrane produced from rubber bitumen and cross laminated high density polyethylene",
+        "Cold applied and self adhesive membrane with 100 micron cross laminated HDPE film and rubber bitumen compound",
+        "Heavy duty waterproofing membrane incorporating high strength, heat resistant mesh embedded in a layer of self adhesive rubber bitumen"
+      ]
+    },
+    "table4": {
+      "title": "D. Waterproofing Membrane by Coating",
+      "content": [
+        "Liquid Waterproof Membrane, Top Coat, Primers, PU Based and Detailing Products",
+        "Polyurethane-based liquid applied waterproofing membrane",
+        "Flexible acrylic waterproofing membrane"
+      ]
+    },
+    "table5": {
+      "title": "E. Planter System / Green Roof",
+      "content": [
+        "Waterproofing membranes on green roof applications"
+      ]
+    }
+  },
+  "section2": {
+    "title": "High Pressure Grouting",
+    "content": "Used to repair active water leakages in concretes (tunnels, basements roof decks, bathroom x pool decks)",
+    "table6": {
+      "title": "A. Leakages on : Basement / GWT / STP, Bathroom, Balcony, Roof Deck, Pool",
+      "content": [
+        "One component rigid closed cell polyurethane injection resin",
+        "One component semi flexible closed cell polyurethane injection resin",
+        "Red non-flammable, phthalate free liquid to be used with HA CUT PUs",
+        "Super eXtrafast Catalyst to be used with HA CUT PUs"
+      ]
+    },
+    "table7": {
+      "title": "B. Soil Injection and Geogrouting",
+      "content": [
+        "One component polyurethane injection resin for binding loose soil",
+        "High strength, rigid, fast curing polyurethane resins",
+        "Non foaming organo-mineral injection resin",
+        "High expansion organo-mineral injection resin"
+      ]
+    },
+    "table8": {
+      "title": "C. Failed Expansion Joints/Movement Joints",
+      "content": [
+        "Hydrophilic MDI based polyurethane injection resin",
+        "One component hydrophobic flexible closed cell polyurethane injection resins",
+        "Two component, low viscosity, hydrophobic, flexible, non foaming polyurethane injection resin"
+      ]
+    },
+    "table9": {
+      "title": "High Pressure Injection Accessories",
+      "content": [
+        "Diaphragm pump for injecting PU/Epoxy Material into Concrete (Up to 200 bar / 2900 Psi)",
+        "Manual pump for injection PU/Epoxy Material into Concrete (Up to 100 bar / 1450 Psi)"
+      ]
+    }
+  },
+  "section3": {
+    "title": "Epoxy Grouting",
+    "content": "Used to restore the integrity of cracked and honeycombed concrete structures",
+    "table10": {
+      "title": "DRY : Roof deck / Retaining Wall / Basement Floor"
+    },
+    "table11": {
+      "title": "DRY & WET : Roof deck / Retaining Wall / Basement Floor"
+    }
+  }
+}
