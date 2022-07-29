@@ -7,7 +7,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title="Water Place, Surabaya" subtitle={ $t('projects.waterplace.subtitle') }>
+<Article title={ $t('projects.waterplace.page.title') } desc={ $t('projects.waterplace.page.description') } subtitle={ $t('projects.waterplace.subtitle') }>
   <div class="flex justify-center items-center">
     <CloudinaryImage src="projects/waterplace/preview.png" alt={ `Water Place project preview` } widths="90vw md:430px" />
   </div>

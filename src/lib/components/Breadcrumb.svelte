@@ -22,7 +22,7 @@
       {#if i == crumbs.length - 1}
         <span property="name">{ crumb.title }</span>
       {:else}
-        <a sveltekit:prefetch href={ crumb.path } property="item" typeof="WebPage">
+        <a href={ crumb.path } property="item" typeof="WebPage">
           <span property="name">{ crumb.title }</span>
         </a>
       {/if}

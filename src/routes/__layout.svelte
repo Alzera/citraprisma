@@ -1,4 +1,5 @@
 <script context="module">
+  import { v } from '$lib/variables';
   import { t, locale, loadTranslations } from '$lib/translations';
 
   /** @type {import('@sveltejs/kit').Load} */
@@ -10,12 +11,16 @@
   }
 </script>
 
-<script>
+<script lang="ts">
   import { initToast } from '$lib/toast'
   import { onMount } from 'svelte';
 
   onMount(() => {
     initToast();
+    (window as any).minimalAnalytics = {
+      trackingId: v.gaKey,
+      autoTrack: true,
+    }
   })
 
   import '@unocss/reset/tailwind.css'
@@ -71,12 +76,12 @@
             </div>
           </Column>
           <Column cols={ 4 }>
-            <a sveltekit:prefetch href="/" class={ menuStyle }>
+            <a href="/" class={ menuStyle }>
               <span class="text-white">{ $t('__layout.menus.home') }</span>
             </a>
           </Column>
           <Column cols={ 4 }>
-            <a sveltekit:prefetch href="/contact-us" class={ menuStyle }>
+            <a href="/contact-us" class={ menuStyle }>
               <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
             </a>
           </Column>
@@ -84,7 +89,7 @@
         <Row class="!hidden !md:flex main-menu">
           {#each menus as i}
             <Column class="flex justify-center">
-              <a sveltekit:prefetch href={ i.link } class="menu text-lg">
+              <a href={ i.link } class="menu text-lg">
                 <span class="text-white">{ i.title }</span>
               </a>
             </Column>
@@ -100,13 +105,13 @@
       </div>
       </Column>
       <Column cols={ 4 }>
-        <a sveltekit:prefetch href="/" class={ menuStyle }>
+        <a href="/" class={ menuStyle }>
           <CloudinaryImage lazy={ false } widths="40px" src="home.png" alt="home" class="object-contain" style="height:26px" />
           <span class="text-white">{ $t('__layout.menus.home') }</span>
         </a>
       </Column>
       <Column cols={ 4 }>
-        <a sveltekit:prefetch href="/contact-us" class={ menuStyle }>
+        <a href="/contact-us" class={ menuStyle }>
           <CloudinaryImage lazy={ false } widths="40px" src="customer_services.png" alt="customer_services" class="object-contain" style="height:35px;margin:-6px;" />
           <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
         </a>

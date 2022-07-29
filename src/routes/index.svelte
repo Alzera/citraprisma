@@ -2,6 +2,10 @@
   import { t } from '$lib/translations';
   import { mq } from '$lib/mediaquery';
 
+  import { v } from '$lib/variables';
+  import { page } from '$app/stores';
+  import { MetaTags } from 'svelte-meta-tags';
+
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
   import Container from "$lib/components/Container.svelte";
@@ -23,6 +27,13 @@
   ]
   let serviceTab = 0
 </script>
+
+<MetaTags
+  title={ $t('index.page.title') }
+  titleTemplate={ "%s | " + v.webName }
+  description={ $t('index.page.description') }
+  canonical={ v.webLink + $page.url.pathname }
+/>
 
 <Container fluid class="!p-0">
   <CloudinaryImage src="banner.jpg" alt="Banner" 
@@ -47,7 +58,7 @@
       })}
     </h1>
     <p class="text-xl mb-6">{ $t('index.section.about_us.content') }</p>
-    <a sveltekit:prefetch class="button-1" href='/about-us'>{ $t('index.read_more') } &rarr;</a>
+    <a class="button-1" href='/about-us'>{ $t('index.read_more') } &rarr;</a>
   </Container>
 </Container>
 
@@ -83,7 +94,7 @@
                 {/each}
               </ol>
             {/each}
-            <a sveltekit:prefetch class="button-1" href='/services/waterproofing'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/waterproofing'>{ $t('index.read_more') } &rarr;</a>
           {:else if serviceTab == 1}
             {#each Array(4) as _, i}
               {@const n = i + 1}
@@ -96,11 +107,11 @@
                 </ol>
               {/if}
             {/each}
-            <a sveltekit:prefetch class="button-1" href='/services/gypsum'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/gypsum'>{ $t('index.read_more') } &rarr;</a>
           {:else if serviceTab == 2}
             <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.2.header1`) }</h3>
             <p class="text-base mb-6">{ $t(`index.section.our_services.content.2.content1`) }</p>
-            <a sveltekit:prefetch class="button-1" href='/services/metal'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/metal'>{ $t('index.read_more') } &rarr;</a>
           {:else if serviceTab == 3}
             <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.3.header1`) }</h3>
             <p class="text-base">{ $t(`index.section.our_services.content.3.content1`) }</p>
@@ -109,7 +120,7 @@
                 <li>{ $t(`index.section.our_services.content.3.list1.${li}`) }</li>
               {/each}
             </ol>
-            <a sveltekit:prefetch class="button-1" href='/services/sealants'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/sealants'>{ $t('index.read_more') } &rarr;</a>
           {:else if serviceTab == 4}
             <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.4.header1`) }</h3>
             <p class="text-base">{ $t(`index.section.our_services.content.4.content1`) }</p>
@@ -119,7 +130,7 @@
               {/each}
             </ol>
             <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.4.header2`) }</h3>
-            <a sveltekit:prefetch class="button-1" href='/services/epoxy'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/epoxy'>{ $t('index.read_more') } &rarr;</a>
           {:else if serviceTab == 5}
             <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.5.header1`) }</h3>
             <p class="text-base">{ $t(`index.section.our_services.content.5.content1`) }</p>
@@ -129,7 +140,7 @@
               {/each}
             </ol>
             <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.5.header2`) }</h3>
-            <a sveltekit:prefetch class="button-1" href='/services/decorative'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/decorative'>{ $t('index.read_more') } &rarr;</a>
           {/if}
         </div>
       </Column>
@@ -148,14 +159,14 @@
       <Row class="projects">
         {#each projects as item}
           <Column cols={ 12 } md={ 3 }>
-            <a sveltekit:prefetch href={item.link == '#' ? '#' : item.link}>
+            <a href={item.link == '#' ? '#' : item.link}>
               <CloudinaryImage src={ item.image } alt={ item.alt } widths="90vw md:200px" />
               <span>{ item.text }</span>
             </a>
           </Column>
         {/each}
       </Row>
-      <a sveltekit:prefetch class="button-1 mt-3" href='/projects'>{ $t('index.see_more') } &rarr;</a>
+      <a class="button-1 mt-3" href='/projects'>{ $t('index.see_more') } &rarr;</a>
     </Container>
   </Container>
 </Lazy>

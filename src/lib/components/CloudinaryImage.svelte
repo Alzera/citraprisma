@@ -23,7 +23,8 @@
     return base + url.join(',') + (src.startsWith('/') ? src : '/' + src)
   }
 
-  let url: string, sizes: Nullable<string>, srcset: Nullable<string>, mdUrl: string, preloadHref: string = ''
+  let url: string, sizes: Nullable<string>, srcset: Nullable<string>, mdUrl: string
+  // let preloadHref: string = ''
   $: {
     const extracted = (widths && widths.match(widthsValidation)) || []
     let normalizeWidth = extracted[1] && extracted[1].endsWith('vw') ? 

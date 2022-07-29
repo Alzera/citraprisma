@@ -9,7 +9,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') }>
+<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
   <h3 class="text-xl text-orange underline mb-2">{ $t(tPrefix + 'section1.title') }</h3>
   <Images src="services/gypsum/gypsum" />
   <h4 class="t-head">{ $t(tPrefix + 'section1.wall') } (Knauf / USG Boral / Yoshino)</h4>
@@ -37,11 +37,13 @@
   </ul>
 
   <h3 class="text-xl text-orange underline mb-2">{ $t(tPrefix + 'section3.title') }</h3>
-  <row>
-    <column v-for="i in 3" :key="i" cols="12" md="4">
-      <nuxt-img class="service-img" :alt="'ngurah_' + i" :src="`services/gypsum/ngurah.jpg`" loading="lazy" sizes="sm:90vw md:430px" />
-    </column>
-  </row>
+  <Row>
+    {#each Array(3) as _, i}
+      <Column cols={ 12 } md={ 4 }>
+        <CloudinaryImage class="bounded" src={ `services/gypsum/ngurah.jpg` } alt={ `ngurah_ ${i}` } widths="90vw md:430px" />
+      </Column>
+    {/each}
+  </Row>
 
   <h4 class="t-head">Knauf / USG Boral / Yoshino / KCC</h4>
   <ul class="mb-3">

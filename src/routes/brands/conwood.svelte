@@ -8,7 +8,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') }>
+<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
   <p class="text-base mb-3">{ $t(tPrefix + 'content') }</p>
   <br/>
   {#each [3, 7, 3, 3] as sectionCount, index}

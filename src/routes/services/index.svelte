@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { v } from '$lib/variables';
+  import { page } from '$app/stores';
+  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
 
   import Container from "$lib/components/Container.svelte";
@@ -13,10 +16,17 @@
   ]
 </script>
 
+<MetaTags
+  title={ $t('services.index.page.title') }
+  titleTemplate={ "%s | " + v.webName }
+  description={ $t('services.index.page.description') }
+  canonical={ v.webLink + $page.url.pathname }
+/>
+
 <Container class="my-2">
   <h1 class="text-3xl mb-6 text-primary">{ $t('services.index.page.title') }</h1>
   {#each links as item, i}
-    <a sveltekit:prefetch href={ item.href }>
+    <a href={ item.href }>
       <h2 class="text-xl my-4">{ item.text }</h2>
       {#if i != links.length-1}
         <hr />

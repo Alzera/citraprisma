@@ -1,0 +1,78 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^citraprisma.com [NC]
+RewriteRule ^(.*)$ https://www.citraprisma.com/$1 [L,R=301,NC] 
+
+# //Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Enable authorization
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+
+<IfModule mod_mime.c>
+    AddType application/manifest+json webmanifest
+</IfModule>
+
+# BEGIN Expire headers  
+<IfModule mod_expires.c>  
+  # Turn on the module.
+  ExpiresActive on
+  # Set the default expiry times.
+  ExpiresDefault "access plus 2 days"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/ico "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/html "access plus 600 seconds"
+</IfModule>  
+# END Expire headers  
+
+# Rules to correctly serve gzip compressed CSS and JS files.
+# Requires both mod_rewrite and mod_headers to be enabled.
+<IfModule mod_headers.c>
+    # https://leonardovinsen.medium.com/nuxtjs-static-assets-compression-with-nuxt-compress-c929f9d62135
+    RewriteEngine on
+    # Brotli
+    RewriteCond %{HTTP:Accept-encoding} br
+    RewriteCond %{REQUEST_URI} .*\.(css|html|js)
+    RewriteCond %{REQUEST_FILENAME}.br -s
+    RewriteRule ^(.+) $1.br
+    
+    RewriteRule "\.css\.br$" "-" [T=text/css,E=no-brotli,E=no-gzip]
+    RewriteRule "\.html\.br$" "-" [T=text/html,E=no-brotli,E=no-gzip]
+    RewriteRule "\.js\.br$" "-" [T=application/javascript,E=no-brotli,E=no-gzip]
+    
+    RewriteCond %{HTTP:Accept-Encoding} gzip
+    RewriteCond %{REQUEST_URI} .*\.(css|html|js)
+    RewriteCond %{REQUEST_FILENAME}.gz -s
+    RewriteRule ^(.+) $1.gz
+    
+    RewriteRule "\.css\.gz$" "-" [T=text/css,E=no-brotli,E=no-gzip]
+    RewriteRule "\.html\.gz$" "-" [T=text/html,E=no-brotli,E=no-gzip]
+    RewriteRule "\.js\.gz$" "-" [T=application/javascript,E=no-brotli,E=no-gzip]
+    <FilesMatch "\.(css|html|js)\.br$">
+         RemoveLanguage .br
+         Header set Content-Encoding br
+         Header append Vary Accept-Encoding
+    </FilesMatch>
+    <FilesMatch "\.(css|html|js)\.gz$">
+         Header set Content-Encoding gzip
+         Header append Vary Accept-Encoding
+    </FilesMatch>
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+<IfModule fcgid_module>
+    <IfModule mime_module>
+        AddHandler fcgid-script .php .php7 .phtml
+        FcgidWrapper /usr/local/cpanel/cgi-sys/ea-php73 .php
+        FcgidWrapper /usr/local/cpanel/cgi-sys/ea-php73 .php7
+        FcgidWrapper /usr/local/cpanel/cgi-sys/ea-php73 .phtml
+    </IfModule>
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

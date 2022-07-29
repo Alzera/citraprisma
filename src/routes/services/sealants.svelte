@@ -5,7 +5,7 @@
   import Article from '$lib/components/Article.svelte';
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') }>
+<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
   <h3 class="text-xl text-orange underline">{ $t(tPrefix + 'section1.title') }</h3>
   <p class="mb-3">{ $t(tPrefix + 'section1.subtitle') }</p>
   

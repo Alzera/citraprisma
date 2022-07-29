@@ -18,7 +18,7 @@
       height={150}
       style="margin: 1rem auto;height: 100px;" />
     {#each menus as i}
-      <a href={ i.link } class="w-full py-3 px-6 block cursor-pointer">
+      <a href={ i.link } on:click={ () => show = false } class="w-full py-3 px-6 block cursor-pointer">
         { i.title }
       </a>
     {/each}

@@ -29,7 +29,7 @@
         {#if !$mq.mobile}
           <div class="flex flex-col">
             {#each menus as item}
-              <a sveltekit:prefetch href={ item.link }>{ item.title }</a>
+              <a href={ item.link }>{ item.title }</a>
             {/each}
             <a href="/sitemap.xml">Sitemap</a>
           </div>
@@ -57,14 +57,14 @@
         </p>
       </Column>
       <Column cols={ 12 } md={ 4 } class="footer-col">
-        <div v-if="!$breakpoints.mobile">
+        {#if !$mq.mobile}
           <h3 class="text-primary">&nbsp;</h3>
           <div class="flex flex-col">
             <a href="tel:+62315040788">Phone : (031) 5040788</a>
             <a href="tel:+62315043488">Fax   : (031) 5043488</a>
             <a href="https://wa.me/6281334153798">Whatsapp   : 0813 3415 3798</a>
           </div>
-        </div>
+        {/if}
         <div class="flex flex-col">
           <h3 class="text-primary mt-2">Follow Us :</h3>
           {#each socials as item}
@@ -121,8 +121,8 @@
   }
   @media (min-width: 1024px){
     .footer-col {
-      width:20%;
-      max-width:20%;
+      width:20% !important;
+      max-width:20% !important;
     }
   }
 </style>

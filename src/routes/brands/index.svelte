@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { v } from '$lib/variables';
+  import { page } from '$app/stores';
+  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
 
   import Row from "$lib/components/Row.svelte";
@@ -20,13 +23,20 @@
   ]
 </script>
 
+<MetaTags
+  title={ $t('brands.index.page.title') }
+  titleTemplate={ "%s | " + v.webName }
+  description={ $t('brands.index.page.description') }
+  canonical={ v.webLink + $page.url.pathname }
+/>
+
 <Container class="my-2">
   <h1 class="text-3xl mb-6 text-primary">{ $t('brands.index.title') }</h1>
   <Row class="brands-row">
     {#each links as item}
     <Column cols={ 12 } md={ 6 }>
-      <a sveltekit:prefetch href={ item.href } class="flex items-center h-full">
-        <CloudinaryImage src={ `brands/${item.image}` } alt={ item.image } widths="30vw md:100px" class="object-contain mr-3 px-2 py-1 border border-slate-100 h-12" />
+      <a href={ item.href } class="flex items-center h-full">
+        <CloudinaryImage src={ `brands/${item.image}` } alt={ item.image } widths="30vw md:100px" class="object-contain mr-3 px-2 py-1 border border-slate-100 h-12 w-24" />
         <h2 class="text-xl flex-auto my-1">{ item.text }</h2>
       </a>
     </Column>
@@ -55,6 +65,12 @@
     &:nth-child(odd){
       padding-right: 2rem;
       border-right: 1px solid #f2f2f2;
+    }
+  }
+  @media (max-width: 768px){
+    :global(.brands-row > div) {
+      padding: .75rem 0 !important;
+      border-right: none !important;
     }
   }
 </style>

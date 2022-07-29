@@ -30,7 +30,7 @@
     {#each Array(2) as _}
       <div class="element">
         {#each brands as i}
-          <a sveltekit:prefetch href={ i.link }>
+          <a href={ i.link }>
             <CloudinaryImage widths="50vw md:150px" alt={ i.alt } src={ i.image } />
           </a>
         {/each}
