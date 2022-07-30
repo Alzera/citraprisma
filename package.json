@@ -12,7 +12,8 @@
 		"prepare": "svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"sync-cloudinary": "node scripts/sync-cloudinary.mjs"
+		"sync-cloudinary": "node scripts/sync-cloudinary.mjs",
+		"build-translation": "node scripts/build-translation-loaders.mjs"
 	},
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.29",
