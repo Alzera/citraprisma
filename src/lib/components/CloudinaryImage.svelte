@@ -16,7 +16,12 @@
     widthsValidation = /^([0-9]+(?:vw|px))(?: md:([0-9]+(?:vw|px)))*$/
 
   function generateUrl(src: string, width: Nullable<number>, height: Nullable<number>, crop: string){
-    let url: string[] = ['f_auto','q_auto'];
+    let url: string[] = [
+      'f_auto',
+      // 'q_auto',
+      'q_auto:low',
+      'e_blur:5'
+    ];
     if(width) url.push('w_' + width)
     if(height) url.push('h_' + height)
     if(crop) url.push('c_' + crop)
