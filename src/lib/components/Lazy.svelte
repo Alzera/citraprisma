@@ -28,5 +28,5 @@
 {#if draw}
   <slot />
 {:else}
-  <div class="lazy-component h-24" bind:this={ lazyElement }></div>
+  <div class="h-24" bind:this={ lazyElement }></div>
 {/if}

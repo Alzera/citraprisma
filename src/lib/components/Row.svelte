@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="{ `row flex flex-wrap flex-row overflow-hidden -m-1 ${ $$props.class || '' }` }" style={ $$props.style } id={ $$props.id }>
+<div class="{ `row ${ $$props.class || '' }` }" style={ $$props.style } id={ $$props.id }>
   <slot />
 </div>
 

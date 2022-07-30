@@ -44,8 +44,8 @@ export const config = {
     { locale: 'en', key: 'contact-us', routes: ['/contact-us'], loader: async () => (await import('./en/contact-us.json')).default, },
 
     /** services */
-    { locale: 'id', key: 'services.index', routes: ['/services/index'], loader: async () => (await import('./id/services/index.json')).default, },
-    { locale: 'en', key: 'services.index', routes: ['/services/index'], loader: async () => (await import('./en/services/index.json')).default, },
+    { locale: 'id', key: 'services.index', routes: ['/services'], loader: async () => (await import('./id/services/index.json')).default, },
+    { locale: 'en', key: 'services.index', routes: ['/services'], loader: async () => (await import('./en/services/index.json')).default, },
     { locale: 'id', key: 'services.decorative', routes: ['/services/decorative'], loader: async () => (await import('./id/services/decorative.json')).default, },
     { locale: 'en', key: 'services.decorative', routes: ['/services/decorative'], loader: async () => (await import('./en/services/decorative.json')).default, },
     { locale: 'id', key: 'services.epoxy', routes: ['/services/epoxy'], loader: async () => (await import('./id/services/epoxy.json')).default, },
@@ -60,8 +60,8 @@ export const config = {
     { locale: 'en', key: 'services.waterproofing', routes: ['/services/waterproofing'], loader: async () => (await import('./en/services/waterproofing.json')).default, },
 
     /** projects */
-    { locale: 'id', key: 'projects.index', routes: ['/projects/index'], loader: async () => (await import('./id/projects/index.json')).default, },
-    { locale: 'en', key: 'projects.index', routes: ['/projects/index'], loader: async () => (await import('./en/projects/index.json')).default, },
+    { locale: 'id', key: 'projects.index', routes: ['/projects'], loader: async () => (await import('./id/projects/index.json')).default, },
+    { locale: 'en', key: 'projects.index', routes: ['/projects'], loader: async () => (await import('./en/projects/index.json')).default, },
     { locale: 'id', key: 'projects.ais', routes: ['/projects/ais'], loader: async () => (await import('./id/projects/ais.json')).default, },
     { locale: 'en', key: 'projects.ais', routes: ['/projects/ais'], loader: async () => (await import('./en/projects/ais.json')).default, },
     { locale: 'id', key: 'projects.aston', routes: ['/projects/aston'], loader: async () => (await import('./id/projects/aston.json')).default, },
@@ -80,20 +80,20 @@ export const config = {
     { locale: 'en', key: 'projects.waterplace', routes: ['/projects/waterplace'], loader: async () => (await import('./en/projects/waterplace.json')).default, },
 
     /** brands */
-    { locale: 'id', key: 'brands.index', routes: ['/brands.index'], loader: async () => (await import('./id/brands/index.json')).default, },
-    { locale: 'en', key: 'brands.index', routes: ['/brands.index'], loader: async () => (await import('./en/brands/index.json')).default, },
-    { locale: 'id', key: 'brands.bostik', routes: ['/brands.bostik'], loader: async () => (await import('./id/brands/bostik.json')).default, },
-    { locale: 'en', key: 'brands.bostik', routes: ['/brands.bostik'], loader: async () => (await import('./en/brands/bostik.json')).default, },
-    { locale: 'id', key: 'brands.conwood', routes: ['/brands.conwood'], loader: async () => (await import('./id/brands/conwood.json')).default, },
-    { locale: 'en', key: 'brands.conwood', routes: ['/brands.conwood'], loader: async () => (await import('./en/brands/conwood.json')).default, },
-    { locale: 'id', key: 'brands.knauf', routes: ['/brands.knauf'], loader: async () => (await import('./id/brands/knauf.json')).default, },
-    { locale: 'en', key: 'brands.knauf', routes: ['/brands.knauf'], loader: async () => (await import('./en/brands/knauf.json')).default, },
-    { locale: 'id', key: 'brands.rockwool', routes: ['/brands.rockwool'], loader: async () => (await import('./id/brands/rockwool.json')).default, },
-    { locale: 'en', key: 'brands.rockwool', routes: ['/brands.rockwool'], loader: async () => (await import('./en/brands/rockwool.json')).default, },
-    { locale: 'id', key: 'brands.wacker', routes: ['/brands.wacker'], loader: async () => (await import('./id/brands/wacker.json')).default, },
-    { locale: 'en', key: 'brands.wacker', routes: ['/brands.wacker'], loader: async () => (await import('./en/brands/wacker.json')).default, },
-    { locale: 'id', key: 'brands.yoshino', routes: ['/brands.yoshino'], loader: async () => (await import('./id/brands/yoshino.json')).default, },
-    { locale: 'en', key: 'brands.yoshino', routes: ['/brands.yoshino'], loader: async () => (await import('./en/brands/yoshino.json')).default, },
+    { locale: 'id', key: 'brands.index', routes: ['/brands'], loader: async () => (await import('./id/brands/index.json')).default, },
+    { locale: 'en', key: 'brands.index', routes: ['/brands'], loader: async () => (await import('./en/brands/index.json')).default, },
+    { locale: 'id', key: 'brands.bostik', routes: ['/brands/bostik'], loader: async () => (await import('./id/brands/bostik.json')).default, },
+    { locale: 'en', key: 'brands.bostik', routes: ['/brands/bostik'], loader: async () => (await import('./en/brands/bostik.json')).default, },
+    { locale: 'id', key: 'brands.conwood', routes: ['/brands/conwood'], loader: async () => (await import('./id/brands/conwood.json')).default, },
+    { locale: 'en', key: 'brands.conwood', routes: ['/brands/conwood'], loader: async () => (await import('./en/brands/conwood.json')).default, },
+    { locale: 'id', key: 'brands.knauf', routes: ['/brands/knauf'], loader: async () => (await import('./id/brands/knauf.json')).default, },
+    { locale: 'en', key: 'brands.knauf', routes: ['/brands/knauf'], loader: async () => (await import('./en/brands/knauf.json')).default, },
+    { locale: 'id', key: 'brands.rockwool', routes: ['/brands/rockwool'], loader: async () => (await import('./id/brands/rockwool.json')).default, },
+    { locale: 'en', key: 'brands.rockwool', routes: ['/brands/rockwool'], loader: async () => (await import('./en/brands/rockwool.json')).default, },
+    { locale: 'id', key: 'brands.wacker', routes: ['/brands/wacker'], loader: async () => (await import('./id/brands/wacker.json')).default, },
+    { locale: 'en', key: 'brands.wacker', routes: ['/brands/wacker'], loader: async () => (await import('./en/brands/wacker.json')).default, },
+    { locale: 'id', key: 'brands.yoshino', routes: ['/brands/yoshino'], loader: async () => (await import('./id/brands/yoshino.json')).default, },
+    { locale: 'en', key: 'brands.yoshino', routes: ['/brands/yoshino'], loader: async () => (await import('./en/brands/yoshino.json')).default, },
   ]
 };
 

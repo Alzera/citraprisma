@@ -6,7 +6,7 @@
 		"dev": "vite dev",
 		"help": "vite build --help",
 		"build": "vite build",
-		"postbuild": "node scripts/sitemap.mjs",
+		"postbuild": "node scripts/sitemap.mjs && node scripts/html-single-line.mjs && node scripts/compress.mjs",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync",
@@ -39,6 +39,7 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
 		"unocss": "^0.44.7",
-		"vite": "^3.0.3"
+		"vite": "^3.0.3",
+		"zlib": "^1.0.5"
 	}
 }

@@ -22,6 +22,8 @@ export default {
     'form-select': 'input-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5',
     'toast-container': 'fixed w-full md:w-auto top-0 md:top-auto md:bottom-10 md:left-1/2 md:-translate-x-1/2 z-40',
     'toast': 'bg-gray-800 px-6 py-2 text-white mb-2',
+    'row': 'flex flex-wrap flex-row overflow-hidden -m-1',
+    'col': 'flex-auto overflow-hidden',
   },
   safelist: [
     'toast-container',
