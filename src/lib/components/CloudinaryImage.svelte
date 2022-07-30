@@ -23,18 +23,20 @@
     return base + url.join(',') + (src.startsWith('/') ? src : '/' + src)
   }
 
-  let url: string, sizes: Nullable<string>, srcset: Nullable<string>, mdUrl: string
+  let url: string, sizes: Nullable<string>, srcset: Nullable<string>, mdUrl: string, width: Nullable<number> = null
   // let preloadHref: string = ''
   $: {
     const extracted = (widths && widths.match(widthsValidation)) || []
-    let normalizeWidth = extracted[1] && extracted[1].endsWith('vw') ? 
+    const normalizeWidth = extracted[1] && extracted[1].endsWith('vw') ? 
       Math.round(7.68 * parseInt(extracted[1])) : 
       parseInt(extracted[1])
-      url = generateUrl(src, normalizeWidth, height, crop)
+    width = normalizeWidth
+    url = generateUrl(src, normalizeWidth, height, crop)
     if(extracted[2] !== undefined){
       let normalizeMdWidth = extracted[2] && extracted[2].endsWith('vw') ? 
         Math.round(10.24 * parseInt(extracted[2])) : 
         parseInt(extracted[2])
+      width = normalizeMdWidth
       mdUrl = generateUrl(src, normalizeMdWidth, height, crop)
       sizes = `(max-width: 768px) ${normalizeWidth}px, ${normalizeMdWidth}px`
       srcset = `${url} ${normalizeWidth}w, ${mdUrl} ${normalizeMdWidth}w`
@@ -64,6 +66,8 @@
   src={ url } 
   { sizes } 
   { srcset } 
+  { width }
+  { height }
   loading={ lazy ? 'lazy' : null } 
   alt={ alt } 
   class={ $$props.class } style={ $$props.style } id={ $$props.id }/>
