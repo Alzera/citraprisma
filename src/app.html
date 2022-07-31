@@ -5,13 +5,11 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Alzera Cita">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> 
+		<style>@font-face{font-family:'Dosis';font-weight:500;src:url("/fonts/dosis.woff2") format('woff2')}</style>
 		%sveltekit.head%
 	</head>
 	<body>
 		<div>%sveltekit.body%</div>
-		<script src="https://cdn.jsdelivr.net/npm/@minimal-analytics/ga4/dist/index.js" defer></script>
+		<script src="/scripts/minimal-analytics-ga4.js" defer></script>
 	</body>
 </html>
