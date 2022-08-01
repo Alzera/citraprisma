@@ -1,10 +1,17 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import Unocss from 'unocss/vite'
 import { visualizer } from "rollup-plugin-visualizer";
+import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
 
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [
+    chunkSplitPlugin({
+      customSplitting: {
+        'Row-Column': [/src\/lib\/components\/(?:Row|Column).svelte/],
+        'Article-Breadcrumb': [/src\/lib\/components\/(?:Article|Breadcrumb).svelte/],
+      }
+    }),
 		sveltekit(),
 		Unocss(),
 		visualizer({
