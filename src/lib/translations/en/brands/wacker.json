@@ -8,72 +8,70 @@
   "applications": "Applications",
   "section": [
     {
-      "title": "GENERAL PURPOSE, SANITARY AND NATURAL STONE",
-      "subtitle": "WACKER’s general-purpose silicone sealants are designed for sealing, refurbishment, repairing, bonding and gap filling in a variety of building and industrial applications.",
-      "subsection": [
-        {
-          "title": "WACKER GP - General Purpose",
-          "content": "This is a one-part, acetoxy silicone sealant for many applications. It cures at room temperature in the presence of atmospheric moisture to give a permanently flexible silicone rubber.",
-          "applications": [
-            "Sealant for a variety of Do-It-Yourself applications",
-            "Suitable for many general industrial sealing and bonding uses"
-          ]
-        },
-        {
-          "title": "WACKER SN - Sanitary Neutral",
-          "content": "This is a one-part, neutral silicone sealant with good adhesion. Its mildew and fungus resistance makes it particularly suitable for sanitary applications, where substrates to be sealed cannot tolerate acidic by-products",
-          "applications": [
-            "Joints in sanitary fittings, e.g. between floor or wall and shower or wash basin",
-            "Particularly developed for areas exposed to high humidity"
-          ]
-        },
-        {
-          "title": "WACKER GP-N – General Purpose Neutral (Filled/Unfilled)",
-          "content": "This is a one-part, neutral silicone sealant with outstanding adhesion to most building substrates. It further exhibits good weather resistance",
-          "applications": [
-            "Sealant for internal connection and expansion joints"
-          ]
-        }
+      "title": "WACKER GP - General Purpose",
+      "content": "This is a one-part, acetoxy silicone sealant for many applications. It cures at room temperature in the presence of atmospheric moisture to give a permanently flexible silicone rubber.",
+      "applications": [
+        "Sealant for a variety of Do-It-Yourself applications",
+        "Suitable for many general industrial sealing and bonding uses"
       ]
     },
     {
-      "title": "WEATHERSEAL AND FIRE RETARDANCY",
-      "subtitle": "WACKER’s silicone weatherseal products must withstand weather and atmospheric conditions without degradation, as well as efficacy in sealing out air and water from residential and/or commercial buildings. With the stringent fire retard regulations now prevailing in countries of the Middle East, WACKER has responded with solutions to meet such revised standards. Both concepts ensure long-term sustainability as well as keeping maintenance costs to a minimum.",
-      "subsection": [
-        {
-          "title": "WACKER WS – Weatherseal Superior",
-          "content": "This is a one-part, neutral silicone sealant that will not stain exterior substrates. It exhibits good adhesion without a primer on most building materials and displays outstanding weather resistance and durability.",
-          "applications": [
-            "Sealing of external and internal connection and expansion joints where a non-staining material is a must",
-            "Suitable for stone and ceramic joints, as well as aluminum curtain-wall and panel joints"
-          ]
-        },
-        {
-          "title": "WACKER WN – Weatherseal Neutral (Filled/Unfilled)",
-          "content": "This is a one-part, neutral silicone sealant that exhibits good adhesion to exterior joints and displays outstanding weather resistance and durability, available either in a transparent version (unfilled) or in many typically required colored versions (filled).",
-          "applications": [
-            "Sealing of external and internal connection and expansion joints",
-            "Suitable for cleanroom or curtain-wall joints, especially where alkaline substrates are found (e.g. concrete or mortar).",
-            "Non-corrosive to metals",
-            "Can be applied to joints between various substrates, e.g. glass – glass, glass – concrete, or aluminum – concrete, latter only with unfilled WACKER® WN."
-          ]
-        }
+      "title": "WACKER GP-N – General Purpose Neutral (Filled/Unfilled)",
+      "content": "This is a one-part, neutral silicone sealant with outstanding adhesion to most building substrates. It further exhibits good weather resistance",
+      "applications": [
+        "Sealant for internal connection and expansion joints"
       ]
     },
     {
-      "title": "PERIMETER SEALING",
-      "subtitle": "Today’s high-rise construction often involves internal and external joints that require sealing against water and moisture intake. Following window installation, for example, a sealant for the perimeter joints will give the necessary professional finish. The sealant must display movement capability as well as durability.",
-      "subsection": [
-        {
-          "title": "WACKER HS – Hybrid Sealant",
-          "content": "This is a high-modulus sealant suitable for perimeter sealing where paintability is desirable. It will adhere to many typical construction substrates.",
-          "applications": [
-            "Connection joints that are subsequently painted",
-            "Fixation where flexibility of the sealant is still required",
-            "Sealing joints between a wide variety of materials, such as wood, glass, metals, plastics and mineral-based substrates ",
-            "Stress-relieving bonding and fixation"
-          ]
-        }
+      "title": "WACKER SN - Sanitary Neutral",
+      "content": "This is a one-part, neutral silicone sealant with good adhesion. Its mildew and fungus resistance makes it particularly suitable for sanitary applications, where substrates to be sealed cannot tolerate acidic by-products",
+      "applications": [
+        "Joints in sanitary fittings, e.g. between floor or wall and shower or wash basin",
+        "Particularly developed for areas exposed to high humidity"
+      ]
+    },
+    {
+      "title": "WACKER PA - Premium Acetoxy",
+      "content": "",
+      "applications": [
+        "Glass and windows construction",
+        "Seiling of joints between glazing and structure (frame, transoms, mullions)",
+        "100% Silicone (solvent-free)"
+      ]
+    },
+    {
+      "title": "WACKER WN – Weatherseal Neutral (Filled/Unfilled)",
+      "content": "This is a one-part, neutral silicone sealant that exhibits good adhesion to exterior joints and displays outstanding weather resistance and durability, available either in a transparent version (unfilled) or in many typically required colored versions (filled).",
+      "applications": [
+        "Sealing of external and internal connection and expansion joints",
+        "Suitable for cleanroom or curtain-wall joints, especially where alkaline substrates are found (e.g. concrete or mortar).",
+        "Non-corrosive to metals",
+        "Can be applied to joints between various substrates, e.g. glass – glass, glass – concrete, or aluminum – concrete, latter only with unfilled WACKER® WN."
+      ]
+    },
+    {
+      "title": "WACKER WS – Weatherseal Superior",
+      "content": "This is a one-part, neutral silicone sealant that will not stain exterior substrates. It exhibits good adhesion without a primer on most building materials and displays outstanding weather resistance and durability.",
+      "applications": [
+        "Sealing of external and internal connection and expansion joints where a non-staining material is a must",
+        "Suitable for stone and ceramic joints, as well as aluminum curtain-wall and panel joints"
+      ]
+    },
+    {
+      "title": "WACKER HS – Hybrid Sealant",
+      "content": "This is a high-modulus sealant suitable for perimeter sealing where paintability is desirable. It will adhere to many typical construction substrates.",
+      "applications": [
+        "Connection joints that are subsequently painted",
+        "Fixation where flexibility of the sealant is still required",
+        "Sealing joints between a wide variety of materials, such as wood, glass, metals, plastics and mineral-based substrates ",
+        "Stress-relieving bonding and fixation"
+      ]
+    },
+    {
+      "title": "WACKER SN 79 - Structural Glazing",
+      "content": "",
+      "applications": [
+        "Structural Glazing"
       ]
     }
   ]

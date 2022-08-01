@@ -8,72 +8,70 @@
   "applications": "Penerapan",
   "section": [
     {
-      "title": "BATU SANITASI DAN ALAMI",
-      "subtitle": "Sealant silikon serba guna WACKER dirancang untuk menyegel, memperbaiki, memperbaiki, mengikat, dan mengisi celah di berbagai aplikasi bangunan dan industri.",
-      "subsection": [
-        {
-          "title": "WACKER GP",
-          "content": "Ini adalah sealant silikon asetoksi satu bagian untuk banyak aplikasi. Ini menyembuhkan pada suhu kamar dengan adanya kelembaban atmosfer untuk memberikan karet silikon yang fleksibel secara permanen.",
-          "applications": [
-            "Sealant untuk berbagai aplikasi Do-It-Yourself",
-            "Cocok untuk banyak penggunaan penyegelan dan ikatan industri umum"
-          ]
-        },
-        {
-          "title": "WACKER SN - Sanitasi Netral",
-          "content": "Ini adalah sealant silikon netral satu bagian dengan daya rekat yang baik. Ketahanan terhadap jamur dan jamur membuatnya sangat cocok untuk aplikasi sanitasi, di mana substrat yang akan disegel tidak dapat mentolerir produk sampingan yang bersifat asam",
-          "applications": [
-            "Sambungan pada perlengkapan sanitasi, misalnya antara lantai atau dinding dan pancuran atau wastafel",
-            "Khusus dikembangkan untuk area yang terpapar kelembaban tinggi"
-          ]
-        },
-        {
-          "title": "WACKER GP-N – Netral (Terisi/Tidak Terisi)",
-          "content": "Ini adalah sealant silikon netral satu bagian dengan daya rekat luar biasa pada sebagian besar substrat bangunan. Lebih lanjut menunjukkan ketahanan cuaca yang baik",
-          "applications": [
-            "Sealant untuk sambungan internal dan sambungan ekspansi"
-          ]
-        }
+      "title": "WACKER GP",
+      "content": "Ini adalah sealant silikon asetoksi satu bagian untuk banyak aplikasi. Ini menyembuhkan pada suhu kamar dengan adanya kelembaban atmosfer untuk memberikan karet silikon yang fleksibel secara permanen.",
+      "applications": [
+        "Sealant untuk berbagai aplikasi Do-It-Yourself",
+        "Cocok untuk banyak penggunaan penyegelan dan ikatan industri umum"
       ]
     },
     {
-      "title": "WEATHERSEAL DAN FIRE RETARDANCY",
-      "subtitle": "Produk silikon weatherseal WACKER harus tahan terhadap cuaca dan kondisi atmosfer tanpa degradasi, serta kemanjuran dalam menyegel udara dan air dari bangunan perumahan dan/atau komersial. Dengan peraturan penghambat api yang ketat yang sekarang berlaku di negara-negara Timur Tengah, WACKER telah merespons dengan solusi untuk memenuhi standar yang direvisi tersebut. Kedua konsep memastikan keberlanjutan jangka panjang serta menjaga biaya pemeliharaan seminimal mungkin.",
-      "subsection": [
-        {
-          "title": "WACKER WS – Weatherseal Superior",
-          "content": "Ini adalah sealant silikon netral satu bagian yang tidak akan menodai substrat eksterior. Ini menunjukkan daya rekat yang baik tanpa primer pada sebagian besar bahan bangunan dan menampilkan ketahanan dan daya tahan cuaca yang luar biasa.",
-          "applications": [
-            "Penyegelan sambungan eksternal dan internal dan sambungan ekspansi di mana bahan non-pewarna adalah suatu keharusan",
-            "Cocok untuk sambungan batu dan keramik, serta sambungan dinding tirai dan panel aluminium"
-          ]
-        },
-        {
-          "title": "WACKER WN – Weatherseal Netral (Terisi/Tidak Terisi)",
-          "content": "Ini adalah sealant silikon netral satu bagian yang menunjukkan daya rekat yang baik pada sambungan eksterior dan menampilkan ketahanan dan daya tahan cuaca yang luar biasa, tersedia baik dalam versi transparan (tidak terisi) atau dalam banyak versi berwarna yang biasanya diperlukan (diisi).",
-          "applications": [
-            "Penyegelan sambungan eksternal dan internal dan sambungan ekspansi",
-            "Cocok untuk sambungan kamar bersih atau dinding tirai, terutama di mana substrat basa ditemukan (misalnya beton atau mortar).",
-            "Tidak korosif terhadap logam",
-            "Dapat diterapkan pada sambungan antara berbagai substrat, misalnya kaca – kaca, kaca – beton, atau aluminium – beton, yang terakhir hanya dengan WACKER® WN yang tidak terisi."
-          ]
-        }
+      "title": "WACKER GP-N – Netral (Terisi/Tidak Terisi)",
+      "content": "Ini adalah sealant silikon netral satu bagian dengan daya rekat luar biasa pada sebagian besar substrat bangunan. Lebih lanjut menunjukkan ketahanan cuaca yang baik",
+      "applications": [
+        "Sealant untuk sambungan internal dan sambungan ekspansi"
       ]
     },
     {
-      "title": "PERIMETER SEALING",
-      "subtitle": "Konstruksi bertingkat tinggi saat ini sering kali melibatkan sambungan internal dan eksternal yang memerlukan penyegelan terhadap asupan air dan kelembaban. Setelah pemasangan jendela, misalnya, sealant untuk sambungan perimeter akan memberikan hasil akhir profesional yang diperlukan. Sealant harus menampilkan kemampuan gerakan sebagai serta daya tahan.",
-      "subsection": [
-        {
-          "title": "WACKER HS – Sealant Hibrida",
-          "content": "Ini adalah sealant modulus tinggi yang cocok untuk penyegelan perimeter di mana kemampuan pengecatan diinginkan. Ini akan melekat pada banyak substrat konstruksi tipikal.",
-          "applications": [
-            "Sambungan sambungan yang selanjutnya dicat",
-            "Fiksasi di mana fleksibilitas sealant masih diperlukan",
-            "Menyegel sambungan antara berbagai macam bahan, seperti kayu, kaca, logam, plastik, dan substrat berbasis mineral",
-            "Ikatan dan fiksasi penghilang stres"
-          ]
-        }
+      "title": "WACKER PA - Asetoksi Premium",
+      "content": "",
+      "applications": [
+        "Konstruksi kaca dan jendela",
+        "Seiling sambungan antara kaca dan struktur (frame, transom, mullion)",
+        "100% Silikon (bebas pelarut)"
+      ]
+    },
+    {
+      "title": "WACKER SN - Sanitasi Netral",
+      "content": "Ini adalah sealant silikon netral satu bagian dengan daya rekat yang baik. Ketahanan terhadap jamur dan jamur membuatnya sangat cocok untuk aplikasi sanitasi, di mana substrat yang akan disegel tidak dapat mentolerir produk sampingan yang bersifat asam",
+      "applications": [
+        "Sambungan pada perlengkapan sanitasi, misalnya antara lantai atau dinding dan pancuran atau wastafel",
+        "Khusus dikembangkan untuk area yang terpapar kelembaban tinggi"
+      ]
+    },
+    {
+      "title": "WACKER WN – Weatherseal Netral (Terisi/Tidak Terisi)",
+      "content": "Ini adalah sealant silikon netral satu bagian yang menunjukkan daya rekat yang baik pada sambungan eksterior dan menampilkan ketahanan dan daya tahan cuaca yang luar biasa, tersedia baik dalam versi transparan (tidak terisi) atau dalam banyak versi berwarna yang biasanya diperlukan (diisi).",
+      "applications": [
+        "Penyegelan sambungan eksternal dan internal dan sambungan ekspansi",
+        "Cocok untuk sambungan kamar bersih atau dinding tirai, terutama di mana substrat basa ditemukan (misalnya beton atau mortar).",
+        "Tidak korosif terhadap logam",
+        "Dapat diterapkan pada sambungan antara berbagai substrat, misalnya kaca – kaca, kaca – beton, atau aluminium – beton, yang terakhir hanya dengan WACKER® WN yang tidak terisi."
+      ]
+    },
+    {
+      "title": "WACKER WS – Weatherseal Superior",
+      "content": "Ini adalah sealant silikon netral satu bagian yang tidak akan menodai substrat eksterior. Ini menunjukkan daya rekat yang baik tanpa primer pada sebagian besar bahan bangunan dan menampilkan ketahanan dan daya tahan cuaca yang luar biasa.",
+      "applications": [
+        "Penyegelan sambungan eksternal dan internal dan sambungan ekspansi di mana bahan non-pewarna adalah suatu keharusan",
+        "Cocok untuk sambungan batu dan keramik, serta sambungan dinding tirai dan panel aluminium"
+      ]
+    },
+    {
+      "title": "WACKER HS – Sealant Hibrida",
+      "content": "Ini adalah sealant modulus tinggi yang cocok untuk penyegelan perimeter di mana kemampuan pengecatan diinginkan. Ini akan melekat pada banyak substrat konstruksi tipikal.",
+      "applications": [
+        "Sambungan sambungan yang selanjutnya dicat",
+        "Fiksasi di mana fleksibilitas sealant masih diperlukan",
+        "Menyegel sambungan antara berbagai macam bahan, seperti kayu, kaca, logam, plastik, dan substrat berbasis mineral",
+        "Ikatan dan fiksasi penghilang stres"
+      ]
+    },
+    {
+      "title": "WACKER SN 79 - Kaca struktural",
+      "content": "",
+      "applications": [
+        "Kaca struktural"
       ]
     }
   ]
