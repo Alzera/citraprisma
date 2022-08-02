@@ -43,5 +43,9 @@
 		"vite": "^3.0.3",
 		"vite-plugin-chunk-split": "^0.2.5",
 		"zlib": "^1.0.5"
+	},
+	"dependencies": {
+		"graphql": "^16.5.0",
+		"graphql-request": "^4.3.0"
 	}
 }
