@@ -45,7 +45,7 @@
         }
       }
     `
-    request('http://localhost:8000/graphql', query).then((data) => console.log(data))
+    request('https://www.citraprisma.com/api/g', query).then((data) => console.log(data))
   })
 </script>
 
