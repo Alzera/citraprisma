@@ -16,6 +16,7 @@
       alt="Website Logo" 
       widths="60vw md:400px"
       height={150}
+      class="object-contain"
       style="margin: 1rem auto;height: 100px;" />
     {#each menus as i}
       <a href={ i.link } on:click={ () => show = false } class="w-full py-3 px-6 block cursor-pointer">
