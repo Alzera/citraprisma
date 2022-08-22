@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tPrefix = 'brands.wacker.'
+  const tp = 'brands.wacker.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -19,22 +19,22 @@
   ]
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
-  <p class="text-base mb-3">{ $t(tPrefix + 'content') }</p>
+<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+  <p class="text-base mb-3">{ $t(tp + 'content') }</p>
   <br/>
   {#each sections as section, i}
     <Row>
       <Column cols={ 12 } md={ 10 } class="order-2 md:order-1">
-        <h2 class="text-2xl">{ $t(tPrefix + `section.${i}.title`) }</h2>
+        <h2 class="text-2xl">{ $t(tp + `section.${i}.title`) }</h2>
         <p class="text-base">
-          { $t(tPrefix + `section.${i}.content`) }
+          { $t(tp + `section.${i}.content`) }
           <br/>
-          { $t(tPrefix + 'applications') }:
+          { $t(tp + 'applications') }:
           <br/>
         </p>
         <ul>
           {#each Array(section.applications_count) as _, iii}
-            <li>{ $t(tPrefix + `section.${i}.applications.${iii}`) }</li>
+            <li>{ $t(tp + `section.${i}.applications.${iii}`) }</li>
           {/each}
         </ul>
         {#if section.tds}

@@ -20,7 +20,7 @@
     { image: "logo_conwood.jpg", href: "/brands/conwood", text: "CONWOOD\nLisplang dan Dekoratif" },
     { image: "logo_pioneer.jpg", href: "#", text: "PIONEER\nEpoxy dan Adhesive" },
     { image: "logo_wacker.jpg", href: "/brands/wacker", text: "WACKER\nSilicone Sealants" },
-    { image: "logo_onduline.jpg", href: "/brands/onducasa", text: "ONDUCASA\nLightweight roofing system" },
+    { image: "logo_onduline.jpg", href: "/brands/onduline", text: "ONDULINE\nLightweight roofing system" },
   ]
 </script>
 

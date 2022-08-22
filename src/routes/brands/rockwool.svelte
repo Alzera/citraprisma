@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tPrefix = 'brands.rockwool.'
+  const tp = 'brands.rockwool.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -28,16 +28,16 @@
   }
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
-  <p class="text-base mb-3">{ $t(tPrefix + 'content.0') }</p>
-  <p class="text-base mb-3">{ $t(tPrefix + 'content.1') }</p>
-  <p class="text-base mb-3">{ $t(tPrefix + 'content.2') }</p>
+<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+  <p class="text-base mb-3">{ $t(tp + 'content.0') }</p>
+  <p class="text-base mb-3">{ $t(tp + 'content.1') }</p>
+  <p class="text-base mb-3">{ $t(tp + 'content.2') }</p>
   <CloudinaryImage class="mx-auto h-52 object-contain" src="brands/rockwool/rockwool.png" alt="rockwool" widths="300px md:270px" />
-  <p class="text-base mb-3">{ $t(tPrefix + 'content.3') }</p>
-  <p class="text-base">{ $t(tPrefix + 'advantages') }</p>
+  <p class="text-base mb-3">{ $t(tp + 'content.3') }</p>
+  <p class="text-base">{ $t(tp + 'advantages') }</p>
   <ul>
     {#each Array(4) as _, i}
-      <li>{ $t(tPrefix + `advantages_items.${i}`) }</li>
+      <li>{ $t(tp + `advantages_items.${i}`) }</li>
     {/each}
   </ul>
   <br />

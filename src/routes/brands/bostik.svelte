@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tPrefix = 'brands.bostik.'
+  const tp = 'brands.bostik.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -37,34 +37,34 @@
   ]
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
-  <p class="text-base mb-3">{ $t(tPrefix + 'content') }</p>
+<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+  <p class="text-base mb-3">{ $t(tp + 'content') }</p>
   <br/>
   {#each sections as item, i}
     {@const section = i + 1}
-    <h1 class="text-3xl text-primary mb-1">{ $t(tPrefix + `section${section}.title`) }</h1>
+    <h1 class="text-3xl text-primary mb-1">{ $t(tp + `section${section}.title`) }</h1>
     {#each item as sub, subi}
       {@const tMidfix = `section${section}.subsection${subi+1}.` }
       <Row>
         <Column cols={ 12 } class="order-1">
-          <h2 class="text-2xl">{ $t(tPrefix + tMidfix + 'title') }</h2>
-          <h3 class="text-lg">{ $t(tPrefix + tMidfix + 'subtitle') }</h3>
+          <h2 class="text-2xl">{ $t(tp + tMidfix + 'title') }</h2>
+          <h3 class="text-lg">{ $t(tp + tMidfix + 'subtitle') }</h3>
         </Column>
         <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
-          <p class="text-base mb-3">{ $t(tPrefix + tMidfix + 'content') }</p>
+          <p class="text-base mb-3">{ $t(tp + tMidfix + 'content') }</p>
           {#if sub.useApplication}
             <p class="text-base mb-3">
-              <i>{ $t(tPrefix + 'application_title') }</i>
+              <i>{ $t(tp + 'application_title') }</i>
               {#if sub.count}
                 <span>
                   <ul>
                     {#each Array(sub.count) as _, lii}
-                      <li>{ $t(tPrefix + tMidfix + `application.${lii}`) }</li>
+                      <li>{ $t(tp + tMidfix + `application.${lii}`) }</li>
                     {/each}
                   </ul>
                 </span>
               {:else}
-                <span>{ $t(tPrefix + tMidfix + `application`) }</span>
+                <span>{ $t(tp + tMidfix + `application`) }</span>
               {/if}
             </p>
           {/if}

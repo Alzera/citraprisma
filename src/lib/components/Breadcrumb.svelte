@@ -40,7 +40,9 @@
       text-transform: capitalize;
       &:not(:last-child):after {
         content: ">";
-        margin: 0 0.4rem 0 0.2rem;
+        margin: 0 0.3rem 0 0.2rem;
+        font-size: .70rem;
+        vertical-align: top;
       }
     }
   }

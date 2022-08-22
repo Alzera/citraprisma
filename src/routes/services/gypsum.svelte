@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tPrefix = 'services.gypsum.'
+  const tp = 'services.gypsum.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -9,10 +9,10 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
-  <h3 class="text-xl text-orange underline mb-2">{ $t(tPrefix + 'section1.title') }</h3>
+<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+  <h3 class="text-xl text-orange underline mb-2">{ $t(tp + 'section1.title') }</h3>
   <Images src="services/gypsum/gypsum" />
-  <h4 class="t-head">{ $t(tPrefix + 'section1.wall') } (Knauf / USG Boral / Yoshino)</h4>
+  <h4 class="t-head">{ $t(tp + 'section1.wall') } (Knauf / USG Boral / Yoshino)</h4>
   <ul class="mb-3">
     <li>Cornice compound</li>
     <li>Cornice 2 in 1</li>
@@ -20,9 +20,9 @@
     <li>GL Bond</li>
   </ul>
 
-  <h4 class="t-head mb-6">{ $t(tPrefix + 'section1.casting') } (Knauf / USG Boral)</h4>
+  <h4 class="t-head mb-6">{ $t(tp + 'section1.casting') } (Knauf / USG Boral)</h4>
 
-  <h3 class="text-xl text-orange underline mb-2">{ $t(tPrefix + 'section2.title') }</h3>
+  <h3 class="text-xl text-orange underline mb-2">{ $t(tp + 'section2.title') }</h3>
   <Images src="services/gypsum/ceiling" />
 
   <h4 class="t-head">Knauf / USG Boral / Yoshino</h4>
@@ -36,7 +36,7 @@
     <li>Accoustic board (60/60)</li>
   </ul>
 
-  <h3 class="text-xl text-orange underline mb-2">{ $t(tPrefix + 'section3.title') }</h3>
+  <h3 class="text-xl text-orange underline mb-2">{ $t(tp + 'section3.title') }</h3>
   <Row>
     {#each Array(3) as _, i}
       <Column cols={ 12 } md={ 4 }>
@@ -53,7 +53,7 @@
     <li>Dense Board 12,5mm</li>
   </ul>
 
-  <h3 class="text-xl text-orange underline mb-2">{ $t(tPrefix + 'section4.title') }</h3>
+  <h3 class="text-xl text-orange underline mb-2">{ $t(tp + 'section4.title') }</h3>
   <Row>
     {#each Array(3) as _, i}
       <Column cols={ 12 } md={ 4 }>
@@ -62,7 +62,7 @@
     {/each}
   </Row>
 
-  <h4 class="t-head">{ $t(tPrefix + 'section4.content') }</h4>
+  <h4 class="t-head">{ $t(tp + 'section4.content') }</h4>
   <ul class="mb-3">
     <li>Knauf UFC System</li>
     <li>USG Boral BMS System</li>

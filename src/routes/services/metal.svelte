@@ -1,14 +1,14 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tPrefix = 'services.metal.'
+  const tp = 'services.metal.'
 
   import Article from '$lib/components/Article.svelte';
   import Images from '$lib/components/services/Images.svelte';
 </script>
 
-<Article title={ $t(tPrefix + 'page.title') } desc={ $t(tPrefix + 'page.description') }>
-  <h3 class="text-xl text-orange underline">{ $t(tPrefix + 'title') }</h3>
-  <p class="mb-3">{ $t(tPrefix + 'content') }</p>
+<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+  <h3 class="text-xl text-orange underline">{ $t(tp + 'title') }</h3>
+  <p class="mb-3">{ $t(tp + 'content') }</p>
   <Images src="services/metal/metal" />
 
   <h4 class="t-head">Hunter Douglass</h4>
