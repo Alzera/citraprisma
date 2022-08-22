@@ -98,7 +98,7 @@
     </Row>
   </Container>
   <Container fluid class="p-1 text-sm text-center">
-    Copyright &copy; Citra Prisma Mandiri 2022 | Alzera Cita
+    Copyright &copy; Citra Prisma Mandiri 2022
   </Container>
 </footer>
 
