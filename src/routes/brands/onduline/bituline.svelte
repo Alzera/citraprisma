@@ -4,9 +4,26 @@
 
   import { mq } from '$lib/mediaquery';
 
+  import Row from "$lib/components/Row.svelte";
+  import Column from "$lib/components/Column.svelte";
   import Article from '$lib/components/Article.svelte';
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
+  const videos = [
+    { video: "https://drive.google.com/file/d/1wwSwR2jtKcIvnA3hhjejcLQqJdnUig8S/preview", img: "panduan_pemasangan_membrane_bakar_bituline.png", text: "Bituline combustion membrane installation guide" },
+  ]
+  let dialog: HTMLDialogElement, iframe: HTMLIFrameElement
+  function showDialog(item: any){
+    iframe.src = item.video
+    dialog.showModal()
+  }
+  function handleBackdrop(e: any){
+    var rect = dialog.getBoundingClientRect();
+    if (!(rect.top <= e.clientY && e.clientY <= rect.top + rect.height
+      && rect.left <= e.clientX && e.clientX <= rect.left + rect.width)) {
+        dialog.close();
+    }
+  }
 </script>
 
 <CloudinaryImage src="brands/onduline/img635.jpg" alt="Banner" 
@@ -60,12 +77,25 @@
   </table>
   <br />
   <br />
+  <Row>
+    {#each videos as item}
+      <Column cols={ 12 } md={ 4 }>
+        <div on:click={ () => showDialog(item) } class="mb-2 rounded-lg border border-gray-200 shadow-sm h-full bg-slate-50">
+          <CloudinaryImage class="w-full h-52 object-cover aspect-video rounded-t-lg" src={ `brands/onduline/${item.img}` } alt={ item.img } widths="300px md:270px" />
+          <h5 class="p-4 text-lg tracking-tight text-gray-900">{ item.text }</h5>
+        </div>
+      </Column>
+    {/each}
+  </Row>
   <p class="text-base">
     <a href="/pdfs/tds/onduline/TECHNICAL DATA SHEET ONDUCASA.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
     <a href="/pdfs/BROSUR BITULINE.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
     <a href="/pdfs/Panduan Pemasangan Bituline.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
   </p>
 </Article>
+<dialog on:click={handleBackdrop} class="p-0 aspect-video w-240 max-w-full" bind:this={ dialog }>
+  <iframe bind:this={ iframe } title="video" class="border-0 w-full h-full"></iframe>
+</dialog>
 
 <style lang="scss">
   .custom {
