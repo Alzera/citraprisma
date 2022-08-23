@@ -37,11 +37,11 @@
 
 <Container fluid class="!p-0">
   <CloudinaryImage src="banner.jpg" alt="Banner" 
-    widths="600px md:1024px" 
+    widths="500px md:1024px" 
     crop="fill" 
     lazy={ false }
-    height={ 350 }
-    style={ $mq.mobile ? 'height:200px' : 'height:350px' }
+    height={ 200 }
+    style={ $mq.mobile ? 'height:200px' : 'height:300px' }
     class="w-full object-cover h-52 md:h-88" />
 </Container>
 
