@@ -37,6 +37,7 @@
   import Lazy from '$lib/components/Lazy.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import PageTransition from '$lib/components/PageTransition.svelte';
+  import LoadingIndicator from '$lib/components/LoadingIndicator.svelte';
 
   export let url = "";
 
@@ -59,6 +60,7 @@
 <svelte:window bind:scrollY={y} />
 
 <header>
+  <LoadingIndicator />
   <Container>
     <Row>
       <Column cols={ 12 } md={ 3 } class="flex justify-center md:justify-start pb-0">
