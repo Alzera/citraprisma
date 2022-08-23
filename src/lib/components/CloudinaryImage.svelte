@@ -28,7 +28,11 @@
     return base + url.join(',') + (src.startsWith('/') ? src : '/' + src)
   }
 
-  let url: string, sizes: Nullable<string>, srcset: Nullable<string>, mdUrl: string, width: Nullable<number> = null
+  let url: string, 
+      // sizes: Nullable<string>, 
+      // srcset: Nullable<string>, 
+      mdUrl: string, 
+      width: Nullable<number> = null
   // let preloadHref: string = ''
   $: {
     const extracted = (widths && widths.match(widthsValidation)) || []
@@ -43,11 +47,11 @@
         parseInt(extracted[2])
       width = normalizeMdWidth
       mdUrl = generateUrl(src, normalizeMdWidth, height, crop)
-      sizes = `(max-width: 768px) ${normalizeWidth}px, ${normalizeMdWidth}px`
-      srcset = `${url} ${normalizeWidth}w, ${mdUrl} ${normalizeMdWidth}w`
+      // sizes = `(max-width: 768px) ${normalizeWidth}px, ${normalizeMdWidth}px`
+      // srcset = `${url} ${normalizeWidth}w, ${mdUrl} ${normalizeMdWidth}w`
     } else {
-      sizes = null
-      srcset = null
+      // sizes = null
+      // srcset = null
     }
   }
 
@@ -57,17 +61,13 @@
   // })
 </script>
 
-<!-- https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto,w_461,h_150,c_limit/logo.jpg -->
-<!-- https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto,w_461,h_150,c_limit/logo.jpg -->
-<!-- https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto,w_600,h_350,c_fill/banner.jpg -->
-<!-- https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto,w_600,h_350,c_fill/banner.jpg -->
 <!-- <svelte:head> 
   {#if preload}
 	  <link rel="preload" as="image" href={ preloadHref }>
   {/if}
 </svelte:head> --> <!-- preload comes together with the component, the preload and image is loading on the same time, so the preload becomes redundant -->
 
-<img 
+<!-- <img 
   src={ url } 
   { sizes } 
   { srcset } 
@@ -75,4 +75,13 @@
   { height }
   loading={ lazy ? 'lazy' : null } 
   alt={ alt } 
-  class={ $$props.class } style={ $$props.style } id={ $$props.id }/>
+  class={ $$props.class } style={ $$props.style } id={ $$props.id }/> -->
+<picture>
+    <source srcset={ mdUrl } media="(min-width: 769px)">
+    <img src={ url } 
+      { alt } 
+      { width }
+      { height }
+      loading={ lazy ? 'lazy' : null }
+      class={ $$props.class } style={ $$props.style } id={ $$props.id }/>
+</picture>
