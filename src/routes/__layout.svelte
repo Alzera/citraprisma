@@ -38,6 +38,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import PageTransition from '$lib/components/PageTransition.svelte';
   import LoadingIndicator from '$lib/components/LoadingIndicator.svelte';
+import { mq } from '$lib/mediaquery';
 
   export let url = "";
 
@@ -74,55 +75,60 @@
   <nav>
     <div style="background:var(--c-primary)">
       <Container>
-        <Row class="md:hidden main-menu">
-          <Column cols={ 4 }>
-            <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
-              <span class="text-white">{ $t('__layout.menus.menu') }</span>
-            </div>
-          </Column>
-          <Column cols={ 4 }>
-            <a href="/" class={ menuStyle }>
-              <span class="text-white">{ $t('__layout.menus.home') }</span>
-            </a>
-          </Column>
-          <Column cols={ 4 }>
-            <a href="/contact-us" class={ menuStyle }>
-              <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
-            </a>
-          </Column>
-        </Row>
-        <Row class="!hidden !md:flex main-menu">
-          {#each menus as i}
-            <Column class="flex justify-center">
-              <a href={ i.link } class="menu text-lg">
-                <span class="text-white">{ i.title }</span>
+        {#if $mq.mobile}
+          <Row class="main-menu">
+            <Column cols={ 4 }>
+              <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
+                <span class="text-white">{ $t('__layout.menus.menu') }</span>
+              </div>
+            </Column>
+            <Column cols={ 4 }>
+              <a href="/" class={ menuStyle }>
+                <span class="text-white">{ $t('__layout.menus.home') }</span>
               </a>
             </Column>
-          {/each}
-        </Row>
+            <Column cols={ 4 }>
+              <a href="/contact-us" class={ menuStyle }>
+                <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
+              </a>
+            </Column>
+          </Row>
+        {:else}
+          <Row class="md:flex main-menu">
+            {#each menus as i}
+              <Column class="flex justify-center">
+                <a href={ i.link } class="menu text-lg">
+                  <span class="text-white">{ i.title }</span>
+                </a>
+              </Column>
+            {/each}
+          </Row>
+        {/if}
       </Container>
     </div>
-    <Row class="md:hidden mobile-main-menu ease-in-out transition-all duration-300" style={ showBottomNav ? '' : 'transform:translateY(100%)' }>
-      <Column cols={ 4 }>
-        <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
-          <CloudinaryImage lazy={ false } widths="40px" src="hamburger.png" alt="hamburger" class="object-contain" style="height:26px" />
-          <span class="text-white">{ $t('__layout.menus.menu') }</span>
-      </div>
-      </Column>
-      <Column cols={ 4 }>
-        <a href="/" class={ menuStyle }>
-          <CloudinaryImage lazy={ false } widths="40px" src="home.png" alt="home" class="object-contain" style="height:26px" />
-          <span class="text-white">{ $t('__layout.menus.home') }</span>
-        </a>
-      </Column>
-      <Column cols={ 4 }>
-        <a href="/contact-us" class={ menuStyle }>
-          <CloudinaryImage lazy={ false } widths="40px" src="customer_services.png" alt="customer_services" class="object-contain" style="height:35px;margin:-6px;" />
-          <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
-        </a>
-      </Column>
-    </Row>
-    <Drawer bind:show={ drawer } { menus } />
+    {#if $mq.mobile}
+      <Row class="mobile-main-menu ease-in-out transition-all duration-300" style={ showBottomNav ? '' : 'transform:translateY(100%)' }>
+        <Column cols={ 4 }>
+          <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
+            <CloudinaryImage lazy={ false } widths="50px" src="hamburger.png" alt="hamburger" class="object-contain" style="height:26px" />
+            <span class="text-white">{ $t('__layout.menus.menu') }</span>
+        </div>
+        </Column>
+        <Column cols={ 4 }>
+          <a href="/" class={ menuStyle }>
+            <CloudinaryImage lazy={ false } widths="50px" src="home.png" alt="home" class="object-contain" style="height:26px" />
+            <span class="text-white">{ $t('__layout.menus.home') }</span>
+          </a>
+        </Column>
+        <Column cols={ 4 }>
+          <a href="/contact-us" class={ menuStyle }>
+            <CloudinaryImage lazy={ false } widths="50px" src="customer_services.png" alt="customer_services" class="object-contain" style="height:35px;margin:-6px;" />
+            <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
+          </a>
+        </Column>
+      </Row>
+      <Drawer bind:show={ drawer } { menus } />
+    {/if}
   </nav>
 </header>
 <main>
@@ -137,11 +143,15 @@
             default: $t('__layout.section_header.our_brands.brands') 
           })}
         </h1>
-        <BrandsSlider />
+        {#await import("$lib/components/BrandsSlider.svelte") then { default: Comp }}
+          <Comp />
+        {/await}
       </Container>
     </Lazy>
   </article>
 </main>
 <Lazy>
-  <Footer { menus } />
+  {#await import("$lib/components/Footer.svelte") then { default: Comp }}
+    <Comp { menus } />
+  {/await}
 </Lazy>
