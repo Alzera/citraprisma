@@ -6,9 +6,6 @@
   import { page } from '$app/stores';
   import { MetaTags } from 'svelte-meta-tags';
 
-  import { onMount } from 'svelte';
-  import { request, gql } from 'graphql-request'
-
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
   import Container from "$lib/components/Container.svelte";
@@ -29,24 +26,6 @@
     { image: "projects/juanda/preview.jpg", alt: "Project juanda", text: "Bandara Juanda T2 - Surabaya", link: "/projects/juanda" },
   ]
   let serviceTab = 0
-
-  onMount(() => {
-    const query = gql`
-      {
-        users(page: 3){
-          paginatorInfo {
-            total,
-            perPage,
-          }
-          data {
-            name,
-            email,
-          }
-        }
-      }
-    `
-    request('https://www.citraprisma.com/api/g', query).then((data) => console.log(data))
-  })
 </script>
 
 <MetaTags
