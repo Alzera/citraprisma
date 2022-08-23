@@ -1,19 +1,19 @@
-<script context="module">
+<script context="module" lang="ts">
   import { v } from '$lib/variables';
   import { t, locale, loadTranslations } from '$lib/translations';
+  import type { Load } from "@sveltejs/kit"
 
-  /** @type {import('@sveltejs/kit').Load} */
-  export const load = async ({ url }) => {
+  export const load: Load = async ({ url }) => {
     const { pathname } = url
     const initLocale = locale.get() || 'id';
     await loadTranslations(initLocale, pathname)
-    return {};
+    return { props: { url } };
   }
 </script>
 
 <script lang="ts">
   import { initToast } from '$lib/toast'
-  import { onMount } from 'svelte';
+  import { onMount } from 'svelte'
 
   onMount(() => {
     initToast();
@@ -36,6 +36,9 @@
   import BrandsSlider from '$lib/components/BrandsSlider.svelte';
   import Lazy from '$lib/components/Lazy.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import PageTransition from '$lib/components/PageTransition.svelte';
+
+  export let url = "";
 
   const menuStyle = 'flex flex-col justify-center items-center';
 
@@ -122,7 +125,9 @@
 </header>
 <main>
   <article>
-    <slot />
+    <PageTransition {url}>
+      <slot />
+    </PageTransition>
     <Lazy>
       <Container fluid class="text-center px-0 py-6">
         <h1 class="text-3xl mb-3">
