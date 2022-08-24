@@ -88,9 +88,9 @@
     {/each}
   </Row>
   <p class="text-base">
-    <a href="/pdfs/tds/onduline/TECHNICAL DATA SHEET ONDUCASA.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
-    <a href="/pdfs/BROSUR BITULINE.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
-    <a href="/pdfs/Panduan Pemasangan Bituline.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
+    <a href="/pdfs/tds/onduline/TECHNICAL DATA SHEET ONDUCASA.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
+    <a href="/pdfs/BROSUR BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
+    <a href="/pdfs/Panduan Pemasangan Bituline.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
   </p>
 </Article>
 <dialog on:click={handleBackdrop} class="p-0 aspect-video w-240 max-w-full" bind:this={ dialog }>

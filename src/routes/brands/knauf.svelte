@@ -355,7 +355,7 @@
   <br />
   <br />
   <p class="text-base">
-    <a href="/pdfs/Knauf.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
+    <a href="/pdfs/Knauf.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
     <br />
     Reference :
     <br />

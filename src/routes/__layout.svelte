@@ -14,6 +14,7 @@
 <script lang="ts">
   import { initToast } from '$lib/toast'
   import { onMount } from 'svelte'
+  import { mq } from '$lib/mediaquery';
 
   onMount(() => {
     initToast();
@@ -33,12 +34,9 @@
   import LanguageSelector from "$lib/components/LanguageSelector.svelte";
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
   import Drawer from '$lib/components/Drawer.svelte';
-  import BrandsSlider from '$lib/components/BrandsSlider.svelte';
   import Lazy from '$lib/components/Lazy.svelte';
-  import Footer from '$lib/components/Footer.svelte';
   import PageTransition from '$lib/components/PageTransition.svelte';
   import LoadingIndicator from '$lib/components/LoadingIndicator.svelte';
-import { mq } from '$lib/mediaquery';
 
   export let url = "";
 

@@ -38,7 +38,7 @@
           {/each}
         </ul>
         {#if section.tds}
-          <a href={ '/pdfs/tds/wacker/' + section.tds } target="_blank" rel="noopener noreferrer external" class="button mt-1 inline-block">Download TDS</a>
+          <a href={ '/pdfs/tds/wacker/' + section.tds } download target="_blank" rel="noopener noreferrer external" class="button mt-1 inline-block">Download TDS</a>
         {/if}
       </Column>
       <Column cols={ 12 } md={ 2 } class="order-1 md:order-2 flex align-center">
@@ -50,6 +50,6 @@
   <br />
   <br />
   <p class="text-base">
-    <a href="/pdfs/Wacker.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
+    <a href="/pdfs/Wacker.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
   </p>
 </Article>

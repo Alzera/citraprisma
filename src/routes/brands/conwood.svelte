@@ -32,6 +32,6 @@
   <br />
   <br />
   <p class="text-base">
-    <a href="/pdfs/Conwood.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
+    <a href="/pdfs/Conwood.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
   </p>
 </Article>

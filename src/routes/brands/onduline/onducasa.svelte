@@ -105,8 +105,8 @@
   <br />
   <br />
   <p class="text-base">
-    <a href="/pdfs/tds/onduline/TDS BITULINE.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
-    <a href="/pdfs/brosur onducasa - rev.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
-    <a href="/pdfs/Panduan Pemasangan Onducasa.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
+    <a href="/pdfs/tds/onduline/TDS BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
+    <a href="/pdfs/brosur onducasa - rev.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
+    <a href="/pdfs/Panduan Pemasangan Onducasa.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
   </p>
 </Article>

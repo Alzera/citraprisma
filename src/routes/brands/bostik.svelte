@@ -68,7 +68,7 @@
               {/if}
             </p>
           {/if}
-          <a href={ '/pdfs/tds/bostik/' + sub.tds } target="_blank" rel="noopener noreferrer external" class="button">Download TDS</a>
+          <a href={ '/pdfs/tds/bostik/' + sub.tds } download target="_blank" rel="noopener noreferrer external" class="button">Download TDS</a>
         </Column>
         <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
           <CloudinaryImage class="mx-auto h-52 object-contain" src={ `brands/bostik/${sub.img}` } alt={ sub.img } widths="300px md:270px" />
@@ -82,6 +82,6 @@
   <br />
   <br />
   <p class="text-base">
-    <a href="/pdfs/Bostik Catalogue 2021-LR.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
+    <a href="/pdfs/Bostik Catalogue 2021-LR.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
   </p>
 </Article>

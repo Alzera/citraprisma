@@ -53,9 +53,9 @@
   </Row>
   <br />
   <p class="text-base">
-    <a href="/pdfs/Rockwool CNC.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog CNC</a>
+    <a href="/pdfs/Rockwool CNC.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog CNC</a>
     <br/>
-    <a href="/pdfs/Rockwool SNS.pdf" target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog SNS</a>
+    <a href="/pdfs/Rockwool SNS.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog SNS</a>
   </p>
 </Article>
 <dialog on:click={handleBackdrop} class="p-0 aspect-video w-240 max-w-full" bind:this={ dialog }>
