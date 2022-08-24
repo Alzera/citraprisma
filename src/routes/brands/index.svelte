@@ -10,16 +10,17 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
   const links = [
-    { image: "logo_knauf.jpg", href: "/brands/knauf", text: "KNAUF\ngypsumboard, rangka, casting, compound" },
-    { image: "logo_yoshino.jpg", href: "/brands/yoshino", text: "YOSHINO\ngypsumboard, compound" },
-    { image: "logo_jayaboard.jpg", href: "#", text: "JAYABOARD\ngypsumboard, rangka, casting, compound" },
-    { image: "logo_bostik.jpg", href: "/brands/bostik", text: "BOSTIK\nwaterproofing, mortar, sealant" },
-    { image: "logo_grace.jpg", href: "#", text: "GRACE\nwaterproofing dan injeksi" },
-    { image: "logo_kcc.jpg", href: "#", text: "KCC\ncat, floor coating" },
+    { image: "logo_knauf.jpg", href: "/brands/knauf", text: "KNAUF\nGypsumboard, rangka, casting, compound" },
+    { image: "logo_yoshino.jpg", href: "/brands/yoshino", text: "YOSHINO\nGypsumboard, compound" },
+    { image: "logo_jayaboard.jpg", href: "#", text: "JAYABOARD\nGypsumboard, rangka, casting, compound" },
+    { image: "logo_bostik.jpg", href: "/brands/bostik", text: "BOSTIK\nWaterproofing, mortar, sealant" },
+    { image: "logo_grace.jpg", href: "#", text: "GRACE\nWaterproofing dan injeksi" },
+    { image: "logo_kcc.jpg", href: "#", text: "KCC\nCat, floor coating" },
     { image: "logo_rockwool.png", href: "/brands/rockwool", text: "ROCKWOOL\nSave n' Silent&trade; Pro" },
     { image: "logo_conwood.jpg", href: "/brands/conwood", text: "CONWOOD\nLisplang dan Dekoratif" },
     { image: "logo_pioneer.jpg", href: "#", text: "PIONEER\nEpoxy dan Adhesive" },
     { image: "logo_wacker.jpg", href: "/brands/wacker", text: "WACKER\nSilicone Sealants" },
+    { image: "logo_royalboard.jpg", href: "/brands/royalboard", text: "ROYALBOARD\nSilicate board for various applications" },
     { image: "logo_onduline.jpg", href: "/brands/onduline", text: "ONDULINE\nLightweight roofing system" },
   ]
 </script>
