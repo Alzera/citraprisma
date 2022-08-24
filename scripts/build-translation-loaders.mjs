@@ -3,7 +3,7 @@ import glob from "glob";
 
 const langs = ['id','en']
 const folder = './src/routes/'
-const resultFile = './src/lib/translations/loaders.js'
+const resultFile = './src/lib/translations/loaders.ts'
 const underscoreRegex = /(\/?_\S*$)/g
 
 console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using build-translation-loaders")
