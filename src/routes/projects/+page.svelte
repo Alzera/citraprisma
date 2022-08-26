@@ -19,14 +19,14 @@
 </script>
 
 <MetaTags
-  title={ $t('projects.index.page.title') }
+  title={ $t('projects.page.title') }
   titleTemplate={ "%s | " + v.webName }
-  description={ $t('projects.index.page.description') }
+  description={ $t('projects.page.description') }
   canonical={ v.webLink + $page.url.pathname }
 />
 
 <Container class="my-2">
-  <h1 class="text-3xl mb-6 text-primary">{ $t('projects.index.page.title') }</h1>
+  <h1 class="text-3xl mb-6 text-primary">{ $t('projects.page.title') }</h1>
   {#each links as item, i}
     <a href={ item.href }>
       <h2 class="text-xl my-4">{ item.text }</h2>

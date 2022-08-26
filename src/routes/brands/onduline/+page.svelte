@@ -1,9 +1,6 @@
 <script lang="ts">
-  import { v } from '$lib/variables';
-  import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
-  const tp = 'brands.onduline.index.'
+  const tp = 'brands.onduline.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";

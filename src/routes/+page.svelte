@@ -43,9 +43,9 @@
 </script>
 
 <MetaTags
-  title={ $t('index.page.title') }
+  title={ $t('page.title') }
   titleTemplate={ "%s | " + v.webName }
-  description={ $t('index.page.description') }
+  description={ $t('page.description') }
   canonical={ v.webLink + $page.url.pathname }
 />
 
@@ -60,27 +60,27 @@
 </Container>
 
 <div class="text-center m-6">
-  <h1 class="text-3xl text-primary">{ $t('index.section.distributor.header') }</h1>
-  <p class="text-xl">{ $t('index.section.distributor.content') }</p>
+  <h1 class="text-3xl text-primary">{ $t('section.distributor.header') }</h1>
+  <p class="text-xl">{ $t('section.distributor.content') }</p>
 </div>
 
 <Container fluid style="background: #f7f7f7">
   <Container class="text-center p-6">
     <h1 class="text-3xl mb-3">
-      {@html $t('index.section.about_us.header.format', { 
-        default: $t('index.section.about_us.header.span') 
+      {@html $t('section.about_us.header.format', { 
+        default: $t('section.about_us.header.span') 
       })}
     </h1>
-    <p class="text-xl mb-6">{ $t('index.section.about_us.content') }</p>
-    <a class="button-1" href='/about-us'>{ $t('index.read_more') } &rarr;</a>
+    <p class="text-xl mb-6">{ $t('section.about_us.content') }</p>
+    <a class="button-1" href='/about-us'>{ $t('read_more') } &rarr;</a>
   </Container>
 </Container>
 
 <Container fluid>
   <Container class="text-center p-6" style="max-width: 1200px">
     <h1 class="text-3xl mb-3">
-      {@html $t('index.section.our_services.header.format', { 
-        default: $t('index.section.our_services.header.span') 
+      {@html $t('section.our_services.header.format', { 
+        default: $t('section.our_services.header.span') 
       })}
     </h1>
     <Row class="home-service-block">
@@ -100,61 +100,61 @@
           {#if serviceTab == 0}
             {#each [5, 3, 2] as n, ni}
               {@const i = ni + 1}
-              <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.0.header${i}`) }</h3>
-              <p class="text-base">{ $t(`index.section.our_services.content.0.content${i}`) }</p>
+              <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.0.header${i}`) }</h3>
+              <p class="text-base">{ $t(`section.our_services.content.0.content${i}`) }</p>
               <ol type="A" class="text-base mb-6">
                 {#each Array(n) as _, li}
-                  <li>{ $t(`index.section.our_services.content.0.list${i}.${li}`) }</li>
+                  <li>{ $t(`section.our_services.content.0.list${i}.${li}`) }</li>
                 {/each}
               </ol>
             {/each}
-            <a class="button-1" href='/services/waterproofing'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/waterproofing'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 1}
             {#each Array(4) as _, i}
               {@const n = i + 1}
-              <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.1.header${n}`) }</h3>
+              <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.1.header${n}`) }</h3>
               {#if i == 0}
                 <ol type="A" class="text-base mb-6">
                   {#each Array(2) as _, li}
-                    <li>{ $t(`index.section.our_services.content.1.list1.${li}`) }</li>
+                    <li>{ $t(`section.our_services.content.1.list1.${li}`) }</li>
                   {/each}
                 </ol>
               {/if}
             {/each}
-            <a class="button-1" href='/services/gypsum'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/gypsum'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 2}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.2.header1`) }</h3>
-            <p class="text-base mb-6">{ $t(`index.section.our_services.content.2.content1`) }</p>
-            <a class="button-1" href='/services/metal'>{ $t('index.read_more') } &rarr;</a>
+            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.2.header1`) }</h3>
+            <p class="text-base mb-6">{ $t(`section.our_services.content.2.content1`) }</p>
+            <a class="button-1" href='/services/metal'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 3}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.3.header1`) }</h3>
-            <p class="text-base">{ $t(`index.section.our_services.content.3.content1`) }</p>
+            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.3.header1`) }</h3>
+            <p class="text-base">{ $t(`section.our_services.content.3.content1`) }</p>
             <ol type="A" class="text-base mb-6">
               {#each Array(2) as _, li}
-                <li>{ $t(`index.section.our_services.content.3.list1.${li}`) }</li>
+                <li>{ $t(`section.our_services.content.3.list1.${li}`) }</li>
               {/each}
             </ol>
-            <a class="button-1" href='/services/sealants'>{ $t('index.read_more') } &rarr;</a>
+            <a class="button-1" href='/services/sealants'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 4}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.4.header1`) }</h3>
-            <p class="text-base">{ $t(`index.section.our_services.content.4.content1`) }</p>
+            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.4.header1`) }</h3>
+            <p class="text-base">{ $t(`section.our_services.content.4.content1`) }</p>
             <ol type="A" class="text-base mb-6">
               {#each Array(2) as _, li}
-                <li>{ $t(`index.section.our_services.content.4.list1.${li}`) }</li>
+                <li>{ $t(`section.our_services.content.4.list1.${li}`) }</li>
               {/each}
             </ol>
-            <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.4.header2`) }</h3>
-            <a class="button-1" href='/services/epoxy'>{ $t('index.read_more') } &rarr;</a>
+            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.4.header2`) }</h3>
+            <a class="button-1" href='/services/epoxy'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 5}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.5.header1`) }</h3>
-            <p class="text-base">{ $t(`index.section.our_services.content.5.content1`) }</p>
+            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.5.header1`) }</h3>
+            <p class="text-base">{ $t(`section.our_services.content.5.content1`) }</p>
             <ol type="A" class="text-base mb-6">
               {#each Array(2) as _, li}
-                <li>{ $t(`index.section.our_services.content.5.list1.${li}`) }</li>
+                <li>{ $t(`section.our_services.content.5.list1.${li}`) }</li>
               {/each}
             </ol>
-            <h3 class="text-xl mb-2 text-primary">{ $t(`index.section.our_services.content.5.header2`) }</h3>
-            <a class="button-1" href='/services/decorative'>{ $t('index.read_more') } &rarr;</a>
+            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.5.header2`) }</h3>
+            <a class="button-1" href='/services/decorative'>{ $t('read_more') } &rarr;</a>
           {/if}
         </div>
       </Column>
@@ -166,8 +166,8 @@
   <Container fluid style="background: #f7f7f7" id="projects">
     <Container class="text-center p-6">
       <h1 class="text-3xl mb-3">
-        {@html $t('index.section.our_projects.header.format', { 
-          default: $t('index.section.our_projects.header.span') 
+        {@html $t('section.our_projects.header.format', { 
+          default: $t('section.our_projects.header.span') 
         })}
       </h1>
       <Row class="projects">
@@ -180,7 +180,7 @@
           </Column>
         {/each}
       </Row>
-      <a class="button-1 mt-3" href='/projects'>{ $t('index.see_more') } &rarr;</a>
+      <a class="button-1 mt-3" href='/projects'>{ $t('see_more') } &rarr;</a>
     </Container>
   </Container>
 </Lazy>

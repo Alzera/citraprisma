@@ -1,17 +1,6 @@
-<script context="module" lang="ts">
-  import { v } from '$lib/variables';
-  import { t, locale, loadTranslations } from '$lib/translations';
-  import type { Load } from "@sveltejs/kit"
-
-  export const load: Load = async ({ url }) => {
-    const { pathname } = url
-    const initLocale = locale.get() || 'id';
-    await loadTranslations(initLocale, pathname)
-    return { props: { url } };
-  }
-</script>
-
 <script lang="ts">
+  import { v } from '$lib/variables';
+  import { t } from '$lib/translations';
   import { initToast } from '$lib/toast'
   import { onMount } from 'svelte'
   import { mq } from '$lib/mediaquery';
@@ -47,12 +36,12 @@
 
   $: showBottomNav = y > 200;
   $: menus = [
-    { title: $t('__layout.menus.home'), link: "/" },
-    { title: $t('__layout.menus.about_us'), link: "/about-us" },
-    { title: $t('__layout.menus.services'), link: "/services" },
-    { title: $t('__layout.menus.projects'), link: "/projects" },
-    { title: $t('__layout.menus.brands'), link: "/brands" },
-    { title: $t('__layout.menus.contact_us'), link: "/contact-us" },
+    { title: $t('+layout.menus.home'), link: "/" },
+    { title: $t('+layout.menus.about_us'), link: "/about-us" },
+    { title: $t('+layout.menus.services'), link: "/services" },
+    { title: $t('+layout.menus.projects'), link: "/projects" },
+    { title: $t('+layout.menus.brands'), link: "/brands" },
+    { title: $t('+layout.menus.contact_us'), link: "/contact-us" },
   ]
 </script>
 
@@ -77,17 +66,17 @@
           <Row class="main-menu">
             <Column cols={ 4 }>
               <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
-                <span class="text-white">{ $t('__layout.menus.menu') }</span>
+                <span class="text-white">{ $t('+layout.menus.menu') }</span>
               </div>
             </Column>
             <Column cols={ 4 }>
               <a href="/" class={ menuStyle }>
-                <span class="text-white">{ $t('__layout.menus.home') }</span>
+                <span class="text-white">{ $t('+layout.menus.home') }</span>
               </a>
             </Column>
             <Column cols={ 4 }>
               <a href="/contact-us" class={ menuStyle }>
-                <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
+                <span class="text-white">{ $t('+layout.menus.contact_us') }</span>
               </a>
             </Column>
           </Row>
@@ -109,19 +98,19 @@
         <Column cols={ 4 }>
           <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
             <CloudinaryImage lazy={ false } widths="50px" src="hamburger.png" alt="hamburger" class="object-contain" style="height:26px" />
-            <span class="text-white">{ $t('__layout.menus.menu') }</span>
+            <span class="text-white">{ $t('+layout.menus.menu') }</span>
         </div>
         </Column>
         <Column cols={ 4 }>
           <a href="/" class={ menuStyle }>
             <CloudinaryImage lazy={ false } widths="50px" src="home.png" alt="home" class="object-contain" style="height:26px" />
-            <span class="text-white">{ $t('__layout.menus.home') }</span>
+            <span class="text-white">{ $t('+layout.menus.home') }</span>
           </a>
         </Column>
         <Column cols={ 4 }>
           <a href="/contact-us" class={ menuStyle }>
             <CloudinaryImage lazy={ false } widths="50px" src="customer_services.png" alt="customer_services" class="object-contain" style="height:35px;margin:-6px;" />
-            <span class="text-white">{ $t('__layout.menus.contact_us') }</span>
+            <span class="text-white">{ $t('+layout.menus.contact_us') }</span>
           </a>
         </Column>
       </Row>
@@ -137,8 +126,8 @@
     <Lazy>
       <Container fluid class="text-center px-0 py-6">
         <h1 class="text-3xl mb-3">
-          {@html $t('__layout.section_header.our_brands.format', { 
-            default: $t('__layout.section_header.our_brands.brands') 
+          {@html $t('+layout.section_header.our_brands.format', { 
+            default: $t('+layout.section_header.our_brands.brands') 
           })}
         </h1>
         {#await import("$lib/components/BrandsSlider.svelte") then { default: Comp }}

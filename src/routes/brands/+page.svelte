@@ -26,14 +26,14 @@
 </script>
 
 <MetaTags
-  title={ $t('brands.index.page.title') }
+  title={ $t('brands.page.title') }
   titleTemplate={ "%s | " + v.webName }
-  description={ $t('brands.index.page.description') }
+  description={ $t('brands.page.description') }
   canonical={ v.webLink + $page.url.pathname }
 />
 
 <Container class="my-2">
-  <h1 class="text-3xl mb-6 text-primary">{ $t('brands.index.title') }</h1>
+  <h1 class="text-3xl mb-6 text-primary">{ $t('brands.title') }</h1>
   <Row class="brands-row">
     {#each links as item}
     <Column cols={ 12 } md={ 6 }>
