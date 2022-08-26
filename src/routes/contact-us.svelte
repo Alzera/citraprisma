@@ -4,6 +4,7 @@
   import { page } from '$app/stores';
   import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
+  import { show } from '$lib/toast'
   const tp = 'contact-us.'
   
   import Row from "$lib/components/Row.svelte";
@@ -23,8 +24,8 @@
     loading = false
   
   function submit(){
-    if(this.loading) return
-    this.loading = true
+    if(loading) return
+    loading = true
     var now = Math.floor(Date.now() / 1000)
     var token = sign({ 
       foo: 'bar',
@@ -32,15 +33,15 @@
       nbf: now,
       iat: now,
       data: {
-        name: this.name,
-        email: this.email,
-        work: this.work,
-        otherwork: this.otherwork,
-        phone: this.phone,
-        address: this.address,
-        nacessties: this.nacessties,
-        othernacessties: this.othernacessties,
-        message: this.message,
+        name: name,
+        email: email,
+        work: work,
+        otherwork: otherwork,
+        phone: phone,
+        address: address,
+        nacessties: nacessties,
+        othernacessties: othernacessties,
+        message: message,
       }
     }, v.mailKey);
     fetch('https://www.citraprisma.com/php/mail.php', {
@@ -49,11 +50,11 @@
         'Authorization': 'Bearer ' + token
       }
     }).then(res => {
-      this.$toast.show(this.$t('message_sent'))
+      show($t('message_sent'))
     }).catch(err => {
-      this.$toast.show(this.$t('message_error'))
+      show($t('message_error'))
     }).finally(() => {
-      this.loading = false
+      loading = false
     })
   }
 </script>

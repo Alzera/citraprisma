@@ -1,10 +1,11 @@
 <script lang="ts">
   import { t } from '$lib/translations';
   import { mq } from '$lib/mediaquery';
-
+  import { onMount } from 'svelte'
   import { v } from '$lib/variables';
   import { page } from '$app/stores';
   import { MetaTags } from 'svelte-meta-tags';
+  import rest from '$lib/rest';
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -26,6 +27,19 @@
     { image: "projects/juanda/preview.jpg", alt: "Project juanda", text: "Bandara Juanda T2 - Surabaya", link: "/projects/juanda" },
   ]
   let serviceTab = 0
+
+  onMount(() => {
+    rest("users/login", "POST", {
+      email: "ala",
+      password: "ala"
+    })
+    .then(response => {
+      console.log(response);
+    })
+    .catch(err => {
+      console.error(err);
+    });
+  })
 </script>
 
 <MetaTags
