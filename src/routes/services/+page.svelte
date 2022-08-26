@@ -1,10 +1,8 @@
 <script lang="ts">
-  import { v } from '$lib/variables';
-  import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
 
   import Container from "$lib/components/Container.svelte";
+  import Meta from '$lib/components/Meta.svelte';
 
   const links = [
     { href:"/services/waterproofing", text: "Waterproofing, High Pressure Grouting, Epoxy Grouting" },
@@ -16,12 +14,7 @@
   ]
 </script>
 
-<MetaTags
-  title={ $t('services.page.title') }
-  titleTemplate={ "%s | " + v.webName }
-  description={ $t('services.page.description') }
-  canonical={ v.webLink + $page.url.pathname }
-/>
+<Meta title={ $t('services.page.title') } desc={ $t('services.page.description') } />
 
 <Container class="my-2">
   <h1 class="text-3xl mb-6 text-primary">{ $t('services.page.title') }</h1>

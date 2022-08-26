@@ -1,20 +1,13 @@
 <script lang="ts">
-  import { v } from '$lib/variables';
-  import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
   import Container from "$lib/components/Container.svelte";
+  import Meta from '$lib/components/Meta.svelte';
 </script>
 
-<MetaTags
-  title={ $t('about-us.page.title') }
-  titleTemplate={ "%s | " + v.webName }
-  description={ $t('about-us.page.description') }
-  canonical={ v.webLink + $page.url.pathname }
-/>
+<Meta title={ $t('about-us.page.title') } desc={ $t('about-us.page.description') } />
 
 <Container class="my-2">
   <h1 class="text-3xl mb-3 text-primary">{ $t('about-us.page.title') }</h1>

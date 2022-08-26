@@ -1,8 +1,6 @@
 <script lang="ts">
   import sign from 'jwt-encode'
   import { v } from '$lib/variables';
-  import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
   import { show } from '$lib/toast'
   const tp = 'contact-us.'
@@ -10,6 +8,7 @@
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
   import Container from "$lib/components/Container.svelte";
+  import Meta from '$lib/components/Meta.svelte';
 
   let
     name = "",
@@ -59,12 +58,7 @@
   }
 </script>
 
-<MetaTags
-  title={ $t(tp + 'page.title') }
-  titleTemplate={ "%s | " + v.webName }
-  description={ $t(tp + 'page.description') }
-  canonical={ v.webLink + $page.url.pathname }
-/>
+<Meta title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') } />
 
 <Container class="my-2">
   <h1 class="text-4xl text-primary">{ $t(tp + 'page.title') }</h1>

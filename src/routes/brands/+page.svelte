@@ -1,13 +1,11 @@
 <script lang="ts">
-  import { v } from '$lib/variables';
-  import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
   import Container from "$lib/components/Container.svelte";
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
+  import Meta from '$lib/components/Meta.svelte';
 
   const links = [
     { image: "logo_knauf.jpg", href: "/brands/knauf", text: "KNAUF\nGypsumboard, rangka, casting, compound" },
@@ -25,12 +23,7 @@
   ]
 </script>
 
-<MetaTags
-  title={ $t('brands.page.title') }
-  titleTemplate={ "%s | " + v.webName }
-  description={ $t('brands.page.description') }
-  canonical={ v.webLink + $page.url.pathname }
-/>
+<Meta title={ $t('brands.page.title') } desc={ $t('brands.page.description') } />
 
 <Container class="my-2">
   <h1 class="text-3xl mb-6 text-primary">{ $t('brands.title') }</h1>

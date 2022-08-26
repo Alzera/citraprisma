@@ -1,11 +1,11 @@
 <script lang="ts">
   import { v } from '$lib/variables';
   import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import { share } from '$lib/share';
 
   import Container from "$lib/components/Container.svelte";
   import Breadcrumb from "$lib/components/Breadcrumb.svelte";
+  import Meta from "$lib/components/Meta.svelte";
 
   export let
     title: string,
@@ -13,12 +13,7 @@
     subtitle: string | null = null
 </script>
 
-<MetaTags
-  title={ title }
-  titleTemplate={ "%s | " + v.webName }
-  description={ desc }
-  canonical={ v.webLink + $page.url.pathname }
-/>
+<Meta { title } { desc } />
 
 <Container class="my-2">
   <div class="flex mb-4 align-center">

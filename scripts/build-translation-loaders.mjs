@@ -13,9 +13,9 @@ glob(`${folder}**/*.+(svelte)`, function (er, files) {
     let normalizeI = i.replaceAll('+page', '')
     if(normalizeI.endsWith('/')) normalizeI = normalizeI.substring(0, normalizeI.length - 1);
     let
-      key = normalizeI.replaceAll('/', '.'),
+      key = normalizeI.replaceAll('/', '.').replaceAll('+', ''),
       routes = '/' + normalizeI.replaceAll('+layout', '')
-    if(routes != '/' && routes.endsWith('/'))
+    if(routes.endsWith('/') && (routes != '/' || key.endsWith('layout')))
       routes = routes.substring(0, routes.length - 1)
     if(underscoreRegex.test(routes)) routes = ''
     if(routes != '') routes = `routes: ['${routes}'], `

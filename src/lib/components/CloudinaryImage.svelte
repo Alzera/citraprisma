@@ -29,8 +29,6 @@
   }
 
   let url: string, 
-      // sizes: Nullable<string>, 
-      // srcset: Nullable<string>, 
       mdUrl: string, 
       width: Nullable<number> = null
   // let preloadHref: string = ''
@@ -47,11 +45,6 @@
         parseInt(extracted[2])
       width = normalizeMdWidth
       mdUrl = generateUrl(src, normalizeMdWidth, height, crop)
-      // sizes = `(max-width: 768px) ${normalizeWidth}px, ${normalizeMdWidth}px`
-      // srcset = `${url} ${normalizeWidth}w, ${mdUrl} ${normalizeMdWidth}w`
-    } else {
-      // sizes = null
-      // srcset = null
     }
   }
 
@@ -67,21 +60,14 @@
   {/if}
 </svelte:head> --> <!-- preload comes together with the component, the preload and image is loading on the same time, so the preload becomes redundant -->
 
-<!-- <img 
-  src={ url } 
-  { sizes } 
-  { srcset } 
-  { width }
-  { height }
-  loading={ lazy ? 'lazy' : null } 
-  alt={ alt } 
-  class={ $$props.class } style={ $$props.style } id={ $$props.id }/> -->
 <picture>
+  {#if mdUrl}
     <source srcset={ mdUrl } media="(min-width: 769px)">
-    <img src={ url } 
-      { alt } 
-      { width }
-      { height }
-      loading={ lazy ? 'lazy' : null }
-      class={ $$props.class } style={ $$props.style } id={ $$props.id }/>
+  {/if}
+  <img src={ url } 
+    { alt } 
+    { width }
+    { height }
+    loading={ lazy ? 'lazy' : null }
+    class={ $$props.class } style={ $$props.style } id={ $$props.id }/>
 </picture>

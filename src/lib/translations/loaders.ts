@@ -1,6 +1,6 @@
 export default [
-{ locale: 'id', key: '+layout', routes: ['/'], loader: async () => (await import('../../routes/+layout_id.json')).default, }, 
-{ locale: 'en', key: '+layout', routes: ['/'], loader: async () => (await import('../../routes/+layout_en.json')).default, }, 
+{ locale: 'id', key: 'layout', loader: async () => (await import('../../routes/+layout_id.json')).default, }, 
+{ locale: 'en', key: 'layout', loader: async () => (await import('../../routes/+layout_en.json')).default, }, 
 { locale: 'id', key: '', routes: ['/'], loader: async () => (await import('../../routes/+page_id.json')).default, }, 
 { locale: 'en', key: '', routes: ['/'], loader: async () => (await import('../../routes/+page_en.json')).default, }, 
 { locale: 'id', key: 'about-us', routes: ['/about-us'], loader: async () => (await import('../../routes/about-us/+page_id.json')).default, }, 

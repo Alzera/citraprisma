@@ -1,10 +1,8 @@
 <script lang="ts">
-  import { v } from '$lib/variables';
-  import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import { t } from '$lib/translations';
 
   import Container from "$lib/components/Container.svelte";
+  import Meta from '$lib/components/Meta.svelte';
 
   const links = [
     { href: "/projects/ngurah", text: "Bandara Ngurah Rai - Bali" },
@@ -18,12 +16,7 @@
   ]
 </script>
 
-<MetaTags
-  title={ $t('projects.page.title') }
-  titleTemplate={ "%s | " + v.webName }
-  description={ $t('projects.page.description') }
-  canonical={ v.webLink + $page.url.pathname }
-/>
+<Meta title={ $t('projects.page.title') } desc={ $t('projects.page.description') } />
 
 <Container class="my-2">
   <h1 class="text-3xl mb-6 text-primary">{ $t('projects.page.title') }</h1>

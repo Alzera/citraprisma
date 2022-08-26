@@ -2,9 +2,6 @@
   import { t } from '$lib/translations';
   import { mq } from '$lib/mediaquery';
   import { onMount } from 'svelte'
-  import { v } from '$lib/variables';
-  import { page } from '$app/stores';
-  import { MetaTags } from 'svelte-meta-tags';
   import rest from '$lib/rest';
 
   import Row from "$lib/components/Row.svelte";
@@ -12,6 +9,7 @@
   import Container from "$lib/components/Container.svelte";
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
   import Lazy from '$lib/components/Lazy.svelte';
+  import Meta from '$lib/components/Meta.svelte';
 
   const services = [
     "Waterproofing, High Pressure Grouting, Epoxy Grouting",
@@ -42,12 +40,7 @@
   })
 </script>
 
-<MetaTags
-  title={ $t('page.title') }
-  titleTemplate={ "%s | " + v.webName }
-  description={ $t('page.description') }
-  canonical={ v.webLink + $page.url.pathname }
-/>
+<Meta title={ $t('page.title') } desc={ $t('page.description') } />
 
 <Container fluid class="!p-0">
   <CloudinaryImage src="banner.jpg" alt="Banner" 

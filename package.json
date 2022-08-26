@@ -35,7 +35,6 @@
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.8.1",
 		"svelte-media": "^0.1.5",
-		"svelte-meta-tags": "^2.6.2",
 		"svelte-preprocess": "^4.10.7",
 		"svelte-sitemap": "^2.5.1",
 		"sveltekit-i18n": "^2.2.2",

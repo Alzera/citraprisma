@@ -15,12 +15,12 @@ const config = {
 	// 	}
 	// },
 	plugins: [
-    chunkSplitPlugin({
-      customSplitting: {
-        'Row-Column': [/src\/lib\/components\/(?:Row|Column).svelte/],
-        'Article-Breadcrumb': [/src\/lib\/components\/(?:Article|Breadcrumb).svelte/],
-      }
-    }),
+    // chunkSplitPlugin({
+    //   customSplitting: {
+    //     'Row-Column': [/src\/lib\/components\/(?:Row|Column).svelte/],
+    //     'Article-Breadcrumb': [/src\/lib\/components\/(?:Article|Breadcrumb).svelte/],
+    //   }
+    // }),
 		sveltekit(),
 		Unocss(),
 		// visualizer({
