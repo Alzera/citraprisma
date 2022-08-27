@@ -59,11 +59,11 @@
 
 <Container fluid style="background: #f7f7f7">
   <Container class="text-center p-6">
-    <h1 class="text-3xl mb-3">
+    <h2 class="text-3xl mb-3">
       {@html $t('section.about_us.header.format', { 
         default: $t('section.about_us.header.span') 
       })}
-    </h1>
+    </h2>
     <p class="text-xl mb-6">{ $t('section.about_us.content') }</p>
     <a class="button-1" href='/about-us'>{ $t('read_more') } &rarr;</a>
   </Container>
@@ -71,11 +71,11 @@
 
 <Container fluid>
   <Container class="text-center p-6" style="max-width: 1200px">
-    <h1 class="text-3xl mb-3">
+    <h2 class="text-3xl mb-3">
       {@html $t('section.our_services.header.format', { 
         default: $t('section.our_services.header.span') 
       })}
-    </h1>
+    </h2>
     <Row class="home-service-block">
       <Column cols={ 12 } md={ 6 }>
         <div class="tab-selectors border border-slate-300 rounded-md">
@@ -158,11 +158,11 @@
 <Lazy>
   <Container fluid style="background: #f7f7f7" id="projects">
     <Container class="text-center p-6">
-      <h1 class="text-3xl mb-3">
+      <h2 class="text-3xl mb-3">
         {@html $t('section.our_projects.header.format', { 
           default: $t('section.our_projects.header.span') 
         })}
-      </h1>
+      </h2>
       <Row class="projects">
         {#each projects as item}
           <Column cols={ 12 } md={ 3 }>

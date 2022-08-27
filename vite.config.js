@@ -10,13 +10,21 @@ const config = {
 		rollupOptions: {
 			output: {
 				manualChunks: {
-					'Row-Column': [
-						'src/lib/components/Row.svelte',
-						'src/lib/components/Column.svelte',
-					],
-					'Article-Breadcrumb': [
+					'Layout': [
+						'src/routes/+layout.svelte',
 						'src/lib/components/Article.svelte',
+						'src/lib/components/BrandsSlider.svelte',
 						'src/lib/components/Breadcrumb.svelte',
+						'src/lib/components/CloudinaryImage.svelte',
+						'src/lib/components/Column.svelte',
+						'src/lib/components/Container.svelte',
+						'src/lib/components/Footer.svelte',
+						'src/lib/components/LanguageSelector.svelte',
+						'src/lib/components/Lazy.svelte',
+						'src/lib/components/LoadingIndicator.svelte',
+						'src/lib/components/Meta.svelte',
+						'src/lib/components/PageTransition.svelte',
+						'src/lib/components/Row.svelte',
 					],
 				}
 			}
