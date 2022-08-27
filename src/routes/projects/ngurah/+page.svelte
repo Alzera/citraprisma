@@ -7,7 +7,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t('projects.ngurah.page.title') } desc={ $t('projects.ngurah.page.description') } subtitle={ $t('projects.ngurah.subtitle') }>
+<Article title={ $t('projects.ngurah.page.title') } subtitle={ $t('projects.ngurah.subtitle') }>
   <div class="flex justify-center items-center">
     <CloudinaryImage src="projects/ngurah/1.png" alt={ `Ngurah project preview` } widths="90vw md:430px" />
   </div>

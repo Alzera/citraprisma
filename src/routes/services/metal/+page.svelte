@@ -6,7 +6,7 @@
   import Images from '$lib/components/services/Images.svelte';
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') }>
   <h3 class="text-xl text-orange underline">{ $t(tp + 'title') }</h3>
   <p class="mb-3">{ $t(tp + 'content') }</p>
   <Images src="services/metal/metal" />

@@ -7,7 +7,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t('projects.juanda.page.title') } desc={ $t('projects.juanda.page.description') } subtitle={ $t('projects.juanda.subtitle') }>
+<Article title={ $t('projects.juanda.page.title') } subtitle={ $t('projects.juanda.subtitle') }>
   <div class="flex justify-center items-center">
     <CloudinaryImage src="projects/juanda/1.png" alt={ `Juanda project preview` } widths="90vw md:430px" />
   </div>

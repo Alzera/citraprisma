@@ -35,7 +35,7 @@
   class="w-vw-center object-cover h-52 md:h-88" />
 <Article 
   title={ $t(tp + 'page.title') } 
-  desc={ $t(tp + 'page.description') }
+ 
   subtitle={ $t(tp + 'page.description') }>
   <p class="text-base mb-5">{ $t(tp + 'content') }</p>
   <h2 class="text-2xl">BITULINE® PP300</h2>

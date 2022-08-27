@@ -20,7 +20,7 @@
   class="w-vw-center object-cover h-52 md:h-88" />
 <Article 
   title={ $t(tp + 'page.title') } 
-  desc={ $t(tp + 'page.description') }
+ 
   subtitle={ $t(tp + 'page.description') }>
   <Row class="uppercase my-4">
     <Column cols={ 6 } md={ 3 } class="flex flex-col items-center mb-3 md:mb-0">

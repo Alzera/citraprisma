@@ -58,7 +58,7 @@
   }
 </script>
 
-<Meta title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') } />
+<Meta title={ $t(tp + 'page.title') } />
 
 <Container class="my-2">
   <h1 class="text-4xl text-primary">{ $t(tp + 'page.title') }</h1>

@@ -9,7 +9,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') }>
   <h3 class="text-xl text-orange underline mb-2">{ $t(tp + 'section1.title') }</h3>
   <Images src="services/gypsum/gypsum" />
   <h4 class="t-head">{ $t(tp + 'section1.wall') } (Knauf / USG Boral / Yoshino)</h4>

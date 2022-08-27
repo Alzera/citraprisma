@@ -40,7 +40,7 @@
   // })
 </script>
 
-<Meta title={ $t('page.title') } desc={ $t('page.description') } />
+<Meta title={ $t('page.title') } />
 
 <Container fluid class="!p-0">
   <CloudinaryImage src="banner.jpg" alt="Banner" 

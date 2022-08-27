@@ -32,7 +32,7 @@
   })
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') }>
   <h3 class="text-xl text-orange underline mb-3">{ $t(tp + 'section1.title') }</h3>
   <Images src="services/epoxy/coating" />
   <p class="mb-3">{ $t(tp + 'section1.content') }</p>

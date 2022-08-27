@@ -23,7 +23,7 @@
   ]
 </script>
 
-<Meta title={ $t('brands.page.title') } desc={ $t('brands.page.description') } />
+<Meta title={ $t('brands.page.title') } />
 
 <Container class="my-2">
   <h1 class="text-3xl mb-6 text-primary">{ $t('brands.title') }</h1>

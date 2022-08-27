@@ -13,7 +13,7 @@
   ]
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') } subtitle={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') } subtitle={ $t(tp + 'page.description') }>
   <Row>
     {#each links as link}
       <Column cols={ 12 } md={ 6 }>

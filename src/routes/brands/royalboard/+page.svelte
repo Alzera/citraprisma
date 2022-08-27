@@ -8,7 +8,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') } subtitle={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') } subtitle={ $t(tp + 'page.description') }>
   <p class="text-base mb-3">{ $t(tp + 'content1') }</p>
   <p class="text-base mb-3">{ $t(tp + 'content2') }</p>
   <hr class="my-3">

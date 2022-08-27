@@ -19,7 +19,7 @@
   ]
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') }>
   <p class="text-base mb-3">{ $t(tp + 'content') }</p>
   <br/>
   {#each sections as section, i}

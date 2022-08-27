@@ -13,7 +13,7 @@
   ]
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') }>
   <p class="text-base mb-3">{ $t(tp + 'content') }</p>
   <br/>
   <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section1.title') }</h1>

@@ -45,6 +45,9 @@
   ]
 </script>
 
+<svelte:head>
+  <meta content={ $t('layout.description') } name="description">
+</svelte:head>
 <svelte:window bind:scrollY={y} />
 
 <header>

@@ -7,7 +7,7 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 </script>
 
-<Article title={ $t('projects.sheikhzayed.page.title') } desc={ $t('projects.sheikhzayed.page.description') } subtitle={ $t('projects.sheikhzayed.subtitle') }>
+<Article title={ $t('projects.sheikhzayed.page.title') } subtitle={ $t('projects.sheikhzayed.subtitle') }>
   <Row>
     {#each Array(8) as _, index}
       {@const i = index + 1}

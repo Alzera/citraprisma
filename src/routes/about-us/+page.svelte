@@ -7,7 +7,7 @@
   import Meta from '$lib/components/Meta.svelte';
 </script>
 
-<Meta title={ $t('about-us.page.title') } desc={ $t('about-us.page.description') } />
+<Meta title={ $t('about-us.page.title') } />
 
 <Container class="my-2">
   <h1 class="text-3xl mb-3 text-primary">{ $t('about-us.page.title') }</h1>

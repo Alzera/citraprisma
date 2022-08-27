@@ -16,7 +16,7 @@
   ]
 </script>
 
-<Article title={ $t(tp + 'page.title') } desc={ $t(tp + 'page.description') }>
+<Article title={ $t(tp + 'page.title') }>
   <p class="text-base mb-3">{ $t(tp + 'content1') }</p>
   <p class="text-base mb-3">{ $t(tp + 'content2') }</p>
   <br/>

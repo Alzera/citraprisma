@@ -9,11 +9,10 @@
 
   export let
     title: string,
-    desc: string,
     subtitle: string | null = null
 </script>
 
-<Meta { title } { desc } />
+<Meta { title } />
 
 <Container class="my-2">
   <div class="flex mb-4 align-center">
