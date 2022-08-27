@@ -3,17 +3,26 @@ import Unocss from 'unocss/vite'
 import { visualizer } from "rollup-plugin-visualizer";
 import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
 import { VitePWA } from 'vite-plugin-pwa'
-import { pwaConfiguration } from './pwa-configuration.js'
+import pwaConfig from './pwa.config.js'
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	// build: {
-	// 	rollupOptions: {
-	// 		output: {
-	// 			manualChunks: undefined
-	// 		}
-	// 	}
-	// },
+	build: {
+		rollupOptions: {
+			output: {
+				manualChunks: {
+					'Row-Column': [
+						'src/lib/components/Row.svelte',
+						'src/lib/components/Column.svelte',
+					],
+					'Article-Breadcrumb': [
+						'src/lib/components/Article.svelte',
+						'src/lib/components/Breadcrumb.svelte',
+					],
+				}
+			}
+		}
+	},
 	plugins: [
     // chunkSplitPlugin({
     //   customSplitting: {
@@ -28,7 +37,7 @@ const config = {
 		// 	emitFile: true,
 		// 	brotliSize: true,
 		// }),
-		VitePWA(pwaConfiguration)
+		VitePWA(pwaConfig)
 	]
 };
 

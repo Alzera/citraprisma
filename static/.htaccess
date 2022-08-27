@@ -3,16 +3,18 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^citraprisma.com [NC]
 RewriteRule ^(.*)$ https://www.citraprisma.com/$1 [L,R=301,NC] 
 
+RewriteEngine On 
+RewriteRule ^img/(.*)$ https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto:low,e_blur:5,$1 [R=302,NC,L]
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)  /$1.html [L]
+
 # Force access to file first instead of folder
 DirectorySlash Off 
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)  /$1.html [L]
-
-# Force .html
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # Prevent viewing of .htaccess file
 <Files .htaccess>
@@ -45,7 +47,6 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 # Rules to correctly serve gzip compressed CSS and JS files.
 # Requires both mod_rewrite and mod_headers to be enabled.
 <IfModule mod_headers.c>
-    # https://leonardovinsen.medium.com/nuxtjs-static-assets-compression-with-nuxt-compress-c929f9d62135
     RewriteEngine on
     # Brotli
     RewriteCond %{HTTP:Accept-encoding} br

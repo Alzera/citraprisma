@@ -18,7 +18,6 @@
   function generateUrl(src: string, width: Nullable<number>, height: Nullable<number>, crop: string){
     let url: string[] = [
       'f_auto',
-      // 'q_auto',
       'q_auto:low',
       'e_blur:5'
     ];

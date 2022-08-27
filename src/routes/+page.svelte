@@ -1,8 +1,8 @@
 <script lang="ts">
   import { t } from '$lib/translations';
   import { mq } from '$lib/mediaquery';
-  import { onMount } from 'svelte'
-  import rest from '$lib/rest';
+  // import { onMount } from 'svelte'
+  // import rest from '$lib/rest';
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -26,18 +26,18 @@
   ]
   let serviceTab = 0
 
-  onMount(() => {
-    rest("users/login", "POST", {
-      email: "ala",
-      password: "ala"
-    })
-    .then(response => {
-      console.log(response);
-    })
-    .catch(err => {
-      console.error(err);
-    });
-  })
+  // onMount(() => {
+  //   rest("users/login", "POST", {
+  //     email: "ala",
+  //     password: "ala"
+  //   })
+  //   .then(response => {
+  //     console.log(response);
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   });
+  // })
 </script>
 
 <Meta title={ $t('page.title') } desc={ $t('page.description') } />

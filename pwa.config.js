@@ -1,4 +1,4 @@
-const pwaConfiguration = {
+export default {
   srcDir: './build',
   outDir: './.svelte-kit/output/client',
   includeManifestIcons: false,
@@ -66,5 +66,3 @@ const pwaConfiguration = {
     }]
   }
 }
-
-export { pwaConfiguration }
