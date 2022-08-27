@@ -17,5 +17,12 @@
   "black": "Hitam",
   "green": "Hijau",
   "red": "Merah",
-  "installation_instructions": "Petunjuk Pemasangan"
+  "installation_instructions": "Petunjuk Pemasangan",
+  "primer": {
+    "content": "BITULINE PRIMER merupakan Emulsi bitumen non-ionik berkualitas tinggi yang diproduksi sesuai dengan TS113 yang dijadikan sebagai lapisan dasar sebelum aplikasi produk waterproofing membran bakar (BITULINE PP 300)",
+    "material": "Material",
+    "color": "Coklat (Dikemasan), Hitam Setelah Kering",
+    "weight": "Berat",
+    "spreadability": "Daya Sebar"
+  }
 }

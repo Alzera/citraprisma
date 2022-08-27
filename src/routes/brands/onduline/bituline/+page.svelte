@@ -35,48 +35,102 @@
   class="w-vw-center object-cover h-52 md:h-88" />
 <Article 
   title={ $t(tp + 'page.title') } 
- 
   subtitle={ $t(tp + 'page.description') }>
   <p class="text-base mb-5">{ $t(tp + 'content') }</p>
-  <h2 class="text-2xl">BITULINE® PP300</h2>
-  <CloudinaryImage class="w-full h-64 object-contain" src="brands/onduline/img29.jpg" alt="BITULINE® PP300 Image" widths="300px" lazy={ false } height={ 300 } />
-  <table class="w-full text-lg custom mb-8">
-    <tr style="background: #e1464a" class="text-white">
-      <th>{ $t(tp + "type") }</th>
-      <th>{ $t(tp + "length") } (mm)</th>
-      <th>{ $t(tp + "width") } (mm)</th>
-      <th>{ $t(tp + "thickness") } (mm)</th>
-      <th>{ $t(tp + "color") }</th>
-    </tr>
-    <tr>
-      <td>PP300</td>
-      <td>10.000</td>
-      <td>1.000</td>
-      <td>3</td>
-      <td>{ $t(tp + "black") }</td>
-    </tr>
-  </table>
-
-  <h2 class="text-2xl">BITULINE® PP40</h2>
-  <CloudinaryImage class="w-full h-64 object-contain" src="brands/onduline/img28.jpg" alt="BITULINE® PP40 Image" widths="300px" lazy={ false } height={ 300 } />
-  <table class="w-full text-lg custom mb-8">
-    <tr style="background: #e1464a" class="text-white">
-      <th>{ $t(tp + "type") }</th>
-      <th>{ $t(tp + "length") } (mm)</th>
-      <th>{ $t(tp + "width") } (mm)</th>
-      <th>{ $t(tp + "thickness") } (mm)</th>
-      <th>{ $t(tp + "color") }</th>
-    </tr>
-    <tr>
-      <td>PP40</td>
-      <td>10.000</td>
-      <td>1.000</td>
-      <td>3.5</td>
-      <td>{ $t(tp + "green") } & { $t(tp + "red") }</td>
-    </tr>
-  </table>
+  <h2 class="text-2xl mb-2">BITULINE® PP300</h2>
+  <Row class="mb-2">
+    <Column cols={ 12 } md={ 6 } class="md:order-2">
+      <CloudinaryImage class="w-full max-w-84 md:max-w-none mx-auto object-contain" src="brands/onduline/img29.jpg" alt="BITULINE® PP300 Image" widths="300px" lazy={ false } height={ 200 } />
+    </Column>
+    <Column cols={ 12 } md={ 6 } class="md:order-1">
+      <table class="w-full text-lg custom">
+        <tr>
+          <th>{ $t(tp + "type") }</th>
+          <td>PP300</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "length") } (mm)</th>
+          <td>10.000</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "width") } (mm)</th>
+          <td>1.000</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "thickness") } (mm)</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "color") }</th>
+          <td>{ $t(tp + "black") }</td>
+        </tr>
+      </table>
+    </Column>
+  </Row>
+  <a href="/pdfs/tds/onduline/TDS BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="button">Download TDS</a><br/>
+  <hr class="my-3"/>
+  <h2 class="text-2xl mb-2">BITULINE® PP40</h2>
+  <Row>
+    <Column cols={ 12 } md={ 6 } class="md:order-2">
+      <CloudinaryImage class="w-full max-w-84 md:max-w-none mx-auto object-contain" src="brands/onduline/img28.jpg" alt="BITULINE® PP40 Image" widths="300px" lazy={ false } height={ 200 } />
+    </Column>
+    <Column cols={ 12 } md={ 6 } class="md:order-1">
+      <table class="w-full text-lg custom">
+        <tr>
+          <th>{ $t(tp + "type") }</th>
+          <td>PP40</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "length") } (mm)</th>
+          <td>10.000</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "width") } (mm)</th>
+          <td>1.000</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "thickness") } (mm)</th>
+          <td>3.5</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "color") }</th>
+          <td>{ $t(tp + "green") } & { $t(tp + "red") }</td>
+        </tr>
+      </table>
+    </Column>
+  </Row>
+  <hr class="my-3"/>
+  <h2 class="text-2xl mb-2">BITULINE® Primer</h2>
+  <p class="text-base mb-5">{ $t(tp + 'primer.content') }</p>
+  <Row class="mb-2">
+    <Column cols={ 12 } md={ 6 } class="md:order-2">
+      <CloudinaryImage class="w-full max-w-84 max-h-52 md:max-w-none mx-auto object-contain" src="brands/onduline/img39.jpg" alt="BITULINE® Primer" widths="300px" lazy={ false } height={ 200 } />
+    </Column>
+    <Column cols={ 12 } md={ 6 } class="md:order-1">
+      <table class="w-full text-lg custom">
+        <tr>
+          <th>{ $t(tp + "primer.material") }</th>
+          <td>BITUMEN</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "color") }</th>
+          <td>{ $t(tp + "primer.color") }</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "primer.weight") } (kg)</th>
+          <td>17</td>
+        </tr>
+        <tr>
+          <th>{ $t(tp + "primer.spreadability") }</th>
+          <td>2-3 m<sup>2</sup>/kg</td>
+        </tr>
+      </table>
+    </Column>
+  </Row>
+  <a href="/pdfs/tds/onduline/TDS BITULINE PRIMER.pdf" download target="_blank" rel="noopener noreferrer external" class="button">Download TDS</a><br/>
   <br />
   <br />
+  <h4 class="text-xl text-primary mb-2">Videos</h4>
   <Row>
     {#each videos as item}
       <Column cols={ 12 } md={ 4 }>
@@ -87,8 +141,8 @@
       </Column>
     {/each}
   </Row>
+  <br />
   <p class="text-base">
-    <a href="/pdfs/tds/onduline/TECHNICAL DATA SHEET ONDUCASA.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
     <a href="/pdfs/BROSUR BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
     <a href="/pdfs/Panduan Pemasangan Bituline.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
   </p>
@@ -99,13 +153,26 @@
 
 <style lang="scss">
   .custom {
+    line-height: 2.3rem;
+    th {
+      background: #e1464a;
+      color: white;
+      width: 50%;
+      font-weight: normal;
+    }
+
     th, td {
       text-align: center;
     }
     
     border: 2px solid #e1464a;
-    td:not(:last-child) {
-      border-right: 2px solid #e1464a;
+    tr:not(:last-child) {
+      th {
+        border-bottom: 1px solid #aa393d;
+      }
+      td {
+        border-bottom: 1px solid #e1464a;
+      }
     }
   }
 </style>

@@ -17,5 +17,12 @@
   "black": "Black",
   "green": "Green",
   "red": "red",
-  "installation_instructions": "Installation Instructions"
+  "installation_instructions": "Installation Instructions",
+  "primer": {
+    "content": "BITULINE PRIMER is a high quality non-ionic bituminous emulsion manufactured in accordance with TS113 which is used as a base coat prior to application of fire membrane waterproofing products (BITULINE PP 300)",
+    "material": "Materials",
+    "color": "Brown (Packaged), Black After Drying",
+    "weight": "Weight",
+    "spreadability": "Spreadability"
+  }
 }
