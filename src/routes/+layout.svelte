@@ -57,16 +57,16 @@
       <Column cols={ 12 } md={ 3 } class="flex justify-center md:justify-start pb-0">
         <CloudinaryImage lazy={ false } src="logo.jpg" alt="Website Logo" widths="60vw md:400px" height={ 150 } class="h-24 object-contain"/>
       </Column>
-      <Column cols={ 12 } md={ 9 } class="flex flex-col md:justify-end items-center md:items-end pb-0">
+      <Column cols={ 12 } md={ 9 } class="flex flex-col md:justify-end items-center md:items-end">
         <LanguageSelector />
       </Column>
     </Row>
   </Container>
   <nav>
-    <div style="background:var(--c-primary)">
+    <div style="background:var(--c-primary)" class="h-12">
       <Container>
         {#if $mq.mobile}
-          <Row class="main-menu">
+          <Row class="md:hidden main-menu">
             <Column cols={ 4 }>
               <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
                 <span class="text-white">{ $t('layout.menus.menu') }</span>
@@ -84,7 +84,7 @@
             </Column>
           </Row>
         {:else}
-          <Row class="md:flex main-menu">
+          <Row class="!hidden !md:flex main-menu">
             {#each menus as i}
               <Column class="flex justify-center">
                 <a href={ i.link } class="menu text-lg">

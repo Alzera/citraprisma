@@ -36,63 +36,63 @@
         {/if}
       </Column>
       <Column cols={ 12 } md={ 4 } class="footer-col">
-        <h3 class="text-primary">Surabaya - Head Office</h3>
-        <a href="https://g.page/CitraPrisma?share" target="_blank" rel="noopener noreferrer">
+        <h5 class="text-primary">Surabaya - Head Office</h5>
+        <a href="https://g.page/CitraPrisma?share" rel="noopener noreferrer external">
           Komp. Manyar Megah Indah B6<br/>Jl. Ngagel Jaya Selatan,<br/>Surabaya 60284
         </a>
         {#if $mq.mobile}
           <div class="flex flex-col">
-            <a href="tel:+62315040788">Phone : (031) 5040788</a>
-            <a href="tel:+62315043488">Fax   : (031) 5043488</a>
-            <a href="https://wa.me/6281334153798">Whatsapp   : 0813 3415 3798</a>
+            <a href="tel:+62315040788" rel="noopener noreferrer external">Phone : (031) 5040788</a>
+            <a href="tel:+62315043488" rel="noopener noreferrer external">Fax   : (031) 5043488</a>
+            <a href="https://wa.me/6281334153798" rel="noopener noreferrer external">Whatsapp   : 0813 3415 3798</a>
           </div>
         {/if}
         <h5 class="text-primary mt-2">Marketing email :</h5>
         <p class="flex flex-col">
-          <a href="mailto:sales@citraprisma.com">sales@citraprisma.com</a>
+          <a href="mailto:sales@citraprisma.com" rel="noopener noreferrer external">sales@citraprisma.com</a>
         </p>
         <h5 class="text-primary mt-2">Recruitment email :</h5>
         <p class="flex flex-col">
-          <a href="mailto:personalia@citraprisma.com">personalia@citraprisma.com</a>
+          <a href="mailto:personalia@citraprisma.com" rel="noopener noreferrer external">personalia@citraprisma.com</a>
         </p>
       </Column>
       <Column cols={ 12 } md={ 4 } class="footer-col">
         {#if !$mq.mobile}
-          <h3 class="text-primary">&nbsp;</h3>
+          <h5 class="text-primary">&nbsp;</h5>
           <div class="flex flex-col">
-            <a href="tel:+62315040788">Phone : (031) 5040788</a>
-            <a href="tel:+62315043488">Fax   : (031) 5043488</a>
-            <a href="https://wa.me/6281334153798">Whatsapp   : 0813 3415 3798</a>
+            <a href="tel:+62315040788" rel="noopener noreferrer external">Phone : (031) 5040788</a>
+            <a href="tel:+62315043488" rel="noopener noreferrer external">Fax   : (031) 5043488</a>
+            <a href="https://wa.me/6281334153798" rel="noopener noreferrer external">Whatsapp   : 0813 3415 3798</a>
           </div>
         {/if}
         <div class="flex flex-col">
-          <h3 class="text-primary mt-2">Follow Us :</h3>
+          <h5 class="text-primary mt-2">Follow Us :</h5>
           {#each socials as item}
-            <a href={ item.link } target="_blank" rel="noopener noreferrer">
+            <a href={ item.link } target="_blank" rel="noopener noreferrer external">
               { item.text }
             </a>
           {/each}
         </div>
       </Column>
       <Column cols={ 12 } md={ 4 } class="footer-col">
-      <h3 class="text-primary">Jakarta - Branch</h3>
+      <h5 class="text-primary">Jakarta - Branch</h5>
         <p class="flex flex-col">
-          <a href="https://goo.gl/maps/CAQfp7YGWi1aiW6h6" target="_blank" rel="noopener noreferrer">
+          <a href="https://goo.gl/maps/CAQfp7YGWi1aiW6h6" rel="noopener noreferrer external">
             Gudang Arcadia Blok G5 No.3<br/>Daan Mogot KM, 21 Batuceper<br/>Tangerang
           </a>
-          <a href="tel:+622155783659">Phone : (021) 5578 3659</a>
-          <a href="https://wa.me/6285691620098">Whatsapp   : 0856 9162 0098</a>
+          <a href="tel:+622155783659" rel="noopener noreferrer external">Phone : (021) 5578 3659</a>
+          <a href="https://wa.me/6285691620098" rel="noopener noreferrer external">Whatsapp   : 0856 9162 0098</a>
         </p>
       </Column>
       <Column cols={ 12 } md={ 4 } class="footer-col">
-        <h3 class="text-primary">Banjarmasin - Branch</h3>
+        <h5 class="text-primary">Banjarmasin - Branch</h5>
         <p class="flex flex-col">
-          <a href="https://goo.gl/maps/fyyXcQBcYZaiEPqSA" target="_blank" rel="noopener noreferrer">
+          <a href="https://goo.gl/maps/fyyXcQBcYZaiEPqSA" rel="noopener noreferrer external">
             Jl. A. Yani 55 KM 4,5<br/>Banjarmasin
           </a>
-          <a href="tel:+625113262266">Phone : (0511) 3262266</a>
-          <a href="tel:+625113271277">Fax   : (0511) 3271277</a>
-          <a href="https://wa.me/6281232373728">Whatsapp   : 0813 3237 3728</a>
+          <a href="tel:+625113262266" rel="noopener noreferrer external">Phone : (0511) 3262266</a>
+          <a href="tel:+625113271277" rel="noopener noreferrer external">Fax   : (0511) 3271277</a>
+          <a href="https://wa.me/6281232373728" rel="noopener noreferrer external">Whatsapp   : 0813 3237 3728</a>
         </p>
       </Column>
     </Row>
@@ -109,7 +109,7 @@
       text-align: left;
     }
     >:nth-child(1){
-      background: #eee !important;
+      background: #f7f7f7 !important;
     }
     >:nth-child(2){
       background: #555 !important;

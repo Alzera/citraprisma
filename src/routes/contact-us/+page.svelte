@@ -70,36 +70,36 @@
         <tr>
           <td><i class="i-mdi-map text-lg block text-primary mr-2" /></td>
           <td>
-            <a class="contact-page-visible" href="https://g.page/CitraPrisma?share" target="_blank" rel="noopener noreferrer">
+            <a class="contact-page-visible" href="https://g.page/CitraPrisma?share" rel="noopener noreferrer external">
               Komp. Manyar Megah Indah B6<br/>Jl. Ngagel Jaya Selatan, Surabaya 60284
             </a>
           </td>
         </tr>
         <tr>
           <td><i class="i-mdi-phone text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="tel:+62315040788">Phone : (031) 5040788</a></td>
+          <td><a class="contact-page-visible" href="tel:+62315040788" rel="noopener noreferrer external">Phone : (031) 5040788</a></td>
         </tr>
         <tr>
           <td><i class="i-mdi-fax text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="tel:+62315043488">Fax   : (031) 5043488</a></td>
+          <td><a class="contact-page-visible" href="tel:+62315043488" rel="noopener noreferrer external">Fax   : (031) 5043488</a></td>
         </tr>
         <tr>
           <td><i class="i-mdi-whatsapp text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="https://wa.me/6281334153798">Whatsapp   : 0813 3415 3798</a></td>
+          <td><a class="contact-page-visible" href="https://wa.me/6281334153798" rel="noopener noreferrer external">Whatsapp   : 0813 3415 3798</a></td>
         </tr>
       </table>
       <h5 class="text-lg">Marketing email:</h5>
       <table class="text-base">
         <tr>
           <td><i class="i-mdi-email text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="mailto:sales@citraprisma.com">sales@citraprisma.com</a></td>
+          <td><a class="contact-page-visible" href="mailto:sales@citraprisma.com" rel="noopener noreferrer external">sales@citraprisma.com</a></td>
         </tr>
       </table>
       <h5 class="text-lg">Recruitment email:</h5>
       <table class="text-base">
         <tr>
           <td><i class="i-mdi-email text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="mailto:personalia@citraprisma.com">personalia@citraprisma.com</a></td>
+          <td><a class="contact-page-visible" href="mailto:personalia@citraprisma.com" rel="noopener noreferrer external">personalia@citraprisma.com</a></td>
         </tr>
       </table>
     </Column>
@@ -109,18 +109,18 @@
         <tr>
           <td><i class="i-mdi-map text-lg block text-primary mr-2" /></td>
           <td>
-            <a class="contact-page-visible" href="https://goo.gl/maps/CAQfp7YGWi1aiW6h6" target="_blank" rel="noopener noreferrer">
+            <a class="contact-page-visible" href="https://goo.gl/maps/CAQfp7YGWi1aiW6h6" rel="noopener noreferrer external">
               Gudang Arcadia Blok G5 No.3<br/>Daan Mogot KM, 21 Batuceper – Tangerang
             </a>
           </td>
         </tr>
         <tr>
           <td><i class="i-mdi-phone text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="tel:+622155783659">Phone : (021) 5578 3659</a></td>
+          <td><a class="contact-page-visible" href="tel:+622155783659" rel="noopener noreferrer external">Phone : (021) 5578 3659</a></td>
         </tr>
         <tr>
           <td><i class="i-mdi-whatsapp text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="https://wa.me/6285691620098">Whatsapp   : 0856 9162 0098</a></td>
+          <td><a class="contact-page-visible" href="https://wa.me/6285691620098" rel="noopener noreferrer external">Whatsapp   : 0856 9162 0098</a></td>
         </tr>
       </table>
       <br>
@@ -129,22 +129,22 @@
         <tr>
           <td><i class="i-mdi-map text-lg block text-primary mr-2" /></td>
           <td>
-            <a class="contact-page-visible" href="https://goo.gl/maps/fyyXcQBcYZaiEPqSA" target="_blank" rel="noopener noreferrer">
+            <a class="contact-page-visible" href="https://goo.gl/maps/fyyXcQBcYZaiEPqSA" rel="noopener noreferrer external">
               Jl. A. Yani 55 KM 4,5, Banjarmasin
             </a>
           </td>
         </tr>
         <tr>
           <td><i class="i-mdi-phone text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="tel:+625113262266">Phone : (0511) 3262266</a></td>
+          <td><a class="contact-page-visible" href="tel:+625113262266" rel="noopener noreferrer external">Phone : (0511) 3262266</a></td>
         </tr>
         <tr>
           <td><i class="i-mdi-fax text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="tel:+625113271277">Fax   : (0511) 3271277</a></td>
+          <td><a class="contact-page-visible" href="tel:+625113271277" rel="noopener noreferrer external">Fax   : (0511) 3271277</a></td>
         </tr>
         <tr>
           <td><i class="i-mdi-whatsapp text-lg block text-primary mr-2" /></td>
-          <td><a class="contact-page-visible" href="https://wa.me/6281232373728">Whatsapp   : 0813 3237 3728</a></td>
+          <td><a class="contact-page-visible" href="https://wa.me/6281232373728" rel="noopener noreferrer external">Whatsapp   : 0813 3237 3728</a></td>
         </tr>
       </table>
     </Column>

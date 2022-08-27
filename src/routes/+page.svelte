@@ -48,8 +48,7 @@
     crop="fill" 
     lazy={ false }
     height={ 200 }
-    style={ $mq.mobile ? 'height:200px' : 'height:300px' }
-    class="w-full object-cover h-52 md:h-88" />
+    class="w-full object-cover h-64" />
 </Container>
 
 <div class="text-center m-6">
@@ -187,7 +186,7 @@
       }
     }
     .child {
-      background: #eee;
+      background: #f7f7f7;
     }
   }
   .projects {
