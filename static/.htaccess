@@ -11,9 +11,9 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # RewriteEngine On 
 # RewriteRule ^img/(.*)$ https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto:low,e_blur:5,$1 [R=302,NC,L]
 
-RewriteEngine on 
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)  /$1.html [L]
+# RewriteEngine on 
+# RewriteCond %{REQUEST_FILENAME}\.html -f
+# RewriteRule ^(.*)  /$1.html [L]
 
 # Force access to file first instead of folder
 DirectorySlash Off 

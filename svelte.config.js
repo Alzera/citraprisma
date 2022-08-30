@@ -13,13 +13,11 @@ const config = {
   }),
 
   kit: {
-    adapter: adapter({
-      // precompress: true
-	  }),
-  
+    adapter: adapter(),
+    appDir: 'app',
 	  prerender: {
-      default: true
-	  }
+      default: true,
+    }
 	},
 };
 

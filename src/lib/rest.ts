@@ -1,9 +1,10 @@
 import { show } from '$lib/toast'
 
-export default (url: string, method: string, params: object | string | null): Promise<any> => {
+export default (url: string, method: string, params: object | string | null = null): Promise<any> => {
   const body = params && params instanceof Object ? JSON.stringify(params) : params;
   return new Promise<any>((resolve, _) => {
     fetch("https://www.citraprisma.com/api/" + url, {
+      credentials: 'include',
       method,
       headers: {
         "content-type": "application/json"
@@ -12,7 +13,8 @@ export default (url: string, method: string, params: object | string | null): Pr
     })
     .then(r => r.json())
     .then(r => {
-      resolve(r)
+      if(r.status) resolve(r)
+      else throw "API Fail"
     })
     .catch(err => {
       console.error(err);

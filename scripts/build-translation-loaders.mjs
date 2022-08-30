@@ -10,7 +10,7 @@ console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using build-translation-loaders")
 glob(`${folder}**/*.+(svelte)`, function (er, files) {
   let loaders = ""
   files.map(i => i.replaceAll(folder, '').replaceAll('.svelte', '')).forEach(function (i) {
-    let normalizeI = i.replaceAll('+page', '')
+    let normalizeI = i.replaceAll('+page', '').replaceAll(/\(\S+\)\//g, '').replaceAll(/@\S*/g, '')
     if(normalizeI.endsWith('/')) normalizeI = normalizeI.substring(0, normalizeI.length - 1);
     let
       key = normalizeI.replaceAll('/', '.').replaceAll('+', ''),
