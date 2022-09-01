@@ -1,6 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import Unocss from 'unocss/vite'
-import { visualizer } from "rollup-plugin-visualizer";
 import { VitePWA } from 'vite-plugin-pwa'
 import pwaConfig from './pwa.config.js'
 
@@ -33,11 +32,6 @@ const config = {
 	plugins: [
 		sveltekit(),
 		Unocss(),
-		visualizer({
-			open: true,
-			emitFile: true,
-			brotliSize: true,
-		}),
 		VitePWA(pwaConfig)
 	]
 };

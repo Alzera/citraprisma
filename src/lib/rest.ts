@@ -1,4 +1,4 @@
-import { show } from '$lib/toast'
+import { toast } from '$lib/toast'
 
 export default (url: string, method: string, params: object | string | null = null): Promise<any> => {
   const body = params && params instanceof Object ? JSON.stringify(params) : params;
@@ -18,7 +18,7 @@ export default (url: string, method: string, params: object | string | null = nu
     })
     .catch(err => {
       console.error(err);
-      show("Something wrong, please contact administrator")
+      toast("Something wrong, please contact administrator")
     });
   })
 }

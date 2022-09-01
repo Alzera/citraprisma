@@ -23,9 +23,9 @@
       <Column cols={ 12 } md={ 4 } class="footer-col">
         <CloudinaryImage src="/logo_transparent.png" 
           alt="Website Logo" 
-          widths="60vw md:400px"
+          widths="461px"
           height={ 120 }
-          style="max-width: 200px;object-fit:contain;" />
+          class="object-contain max-w-52" />
         {#if !$mq.mobile}
           <div class="flex flex-col">
             {#each menus as item}

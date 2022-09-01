@@ -65,7 +65,7 @@
     </Row>
   </Container>
   <nav>
-    <div style="background:var(--c-primary)" class="h-12">
+    <div class="h-12 bg-primary">
       <Container>
         {#if $mq.mobile}
           <Row class="md:hidden main-menu">
@@ -147,3 +147,56 @@
     <Comp { menus } />
   {/await}
 </Lazy>
+
+<style lang="scss">
+a.visible {
+  color: var(--c-primary);
+  text-decoration: underline;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+a.button {
+  color: white;
+  background: var(--c-primary);
+  text-decoration: none;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1rem;
+}
+img.bounded {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+
+.main-menu>div {
+  position: relative;
+  &:not(:last-child):after {
+    content: " ";
+    background: #ffffffee;
+    width: 2px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    bottom: 30%;
+  }
+  >.menu { 
+    color: white !important;
+    text-decoration: none;
+  }
+}
+.mobile-main-menu {
+  height: 70px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--c-primary);
+  padding: .3rem;
+  z-index: 29;
+  img {
+    filter: invert(1);
+  }
+}
+</style>

@@ -14,7 +14,7 @@
   <aside class={ `transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 ${show ? 'translate-x-0' : '-translate-x-full'}` }>
     <CloudinaryImage src="/logo.jpg" 
       alt="Website Logo" 
-      widths="60vw md:400px"
+      widths="461px"
       height={150}
       class="object-contain"
       style="margin: 1rem auto;height: 100px;" />

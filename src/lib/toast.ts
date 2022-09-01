@@ -7,7 +7,7 @@ export const initToast = () => {
   document.body.appendChild(toastContainer);
 }
 
-export const show = (text: string) => {
+export const toast = (text: string) => {
   if(!toastContainer) initToast()
   var newToast = document.createElement('div');
   newToast.className = 'toast';

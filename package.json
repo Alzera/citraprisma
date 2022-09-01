@@ -29,7 +29,6 @@
 		"html-minifier-terser": "^7.0.0",
 		"jwt-encode": "^1.0.1",
 		"path": "^0.12.7",
-		"rollup-plugin-visualizer": "^5.8.0",
 		"sass": "^1.54.7",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.9.0",
