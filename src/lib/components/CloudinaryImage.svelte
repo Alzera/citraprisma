@@ -9,8 +9,8 @@
     height: Nullable<number> = null,
     widths: Nullable<string> = null,
     crop: string = 'limit',
-    lazy: boolean = true
-    // preload: boolean = false
+    lazy: boolean = true,
+    preload: boolean = false
 
   const base = 'https://res.cloudinary.com/citraprisma/image/upload/',
     widthsValidation = /^([0-9]+(?:vw|px))(?: md:([0-9]+(?:vw|px)))*$/
@@ -28,24 +28,25 @@
   }
 
   let url: string, 
-      mdUrl: string, 
+      mdUrl: Nullable<string> = null, 
       width: Nullable<number> = null
   // let preloadHref: string = ''
-  $: {
-    const extracted = (widths && widths.match(widthsValidation)) || []
-    const normalizeWidth = extracted[1] && extracted[1].endsWith('vw') ? 
-      Math.round(7.68 * parseInt(extracted[1])) : 
-      parseInt(extracted[1])
-    width = normalizeWidth
-    url = generateUrl(src, normalizeWidth, height, crop)
-    if(extracted[2] !== undefined){
-      let normalizeMdWidth = extracted[2] && extracted[2].endsWith('vw') ? 
-        Math.round(10.24 * parseInt(extracted[2])) : 
-        parseInt(extracted[2])
-      width = normalizeMdWidth
-      mdUrl = generateUrl(src, normalizeMdWidth, height, crop)
-    }
+  
+  const extracted = (widths && widths.match(widthsValidation)) || []
+  const normalizeWidth = extracted[1] && extracted[1].endsWith('vw') ? 
+    Math.round(7.68 * parseInt(extracted[1])) : 
+    parseInt(extracted[1])
+  width = normalizeWidth
+  url = generateUrl(src, normalizeWidth, height, crop)
+  if(extracted[2] !== undefined){
+    let normalizeMdWidth = extracted[2] && extracted[2].endsWith('vw') ? 
+      Math.round(10.24 * parseInt(extracted[2])) : 
+      parseInt(extracted[2])
+    width = normalizeMdWidth
+    mdUrl = generateUrl(src, normalizeMdWidth, height, crop)
   }
+  
+  console.log(url, mdUrl, preload);
 
   // onMount(() => {
   //   if(preload && preloadHref == '')
@@ -53,11 +54,14 @@
   // })
 </script>
 
-<!-- <svelte:head> 
+<svelte:head> 
   {#if preload}
-	  <link rel="preload" as="image" href={ preloadHref }>
+    {#if mdUrl}
+      <link rel="preload" media="(min-width: 769px)" href={ mdUrl } as="image">
+    {/if}
+    <link rel="preload" media="(max-width: 768px)" href={ url } as="image">
   {/if}
-</svelte:head> --> <!-- preload comes together with the component, the preload and image is loading on the same time, so the preload becomes redundant -->
+</svelte:head>
 
 <picture>
   {#if mdUrl}
