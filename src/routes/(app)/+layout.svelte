@@ -1,4 +1,6 @@
 <script lang="ts">
+  export const prerender = true;
+  
   import { v } from '$lib/variables';
   import { t } from '$lib/translations';
   import { initToast } from '$lib/toast'
@@ -55,7 +57,7 @@
   <Container>
     <Row>
       <Column cols={ 12 } md={ 3 } class="flex justify-center md:justify-start pb-0">
-        <CloudinaryImage lazy={ false } src="logo.jpg" alt="Website Logo" widths="60vw md:400px" height={ 150 } class="h-24 object-contain"/>
+        <CloudinaryImage preload={ true } lazy={ false } src="logo.jpg" alt="Website Logo" widths="461px" height={ 150 } class="h-24 object-contain"/>
       </Column>
       <Column cols={ 12 } md={ 9 } class="flex flex-col md:justify-end items-center md:items-end">
         <LanguageSelector />
@@ -100,19 +102,19 @@
       <Row class="mobile-main-menu ease-in-out transition-all duration-300" style={ showBottomNav ? '' : 'transform:translateY(100%)' }>
         <Column cols={ 4 }>
           <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
-            <CloudinaryImage lazy={ false } widths="50px" src="hamburger.png" alt="hamburger" class="object-contain" style="height:26px" />
+            <CloudinaryImage widths="50px" src="hamburger.png" alt="hamburger" class="object-contain" style="height:26px" />
             <span class="text-white">{ $t('layout.menus.menu') }</span>
         </div>
         </Column>
         <Column cols={ 4 }>
           <a href="/" class={ menuStyle }>
-            <CloudinaryImage lazy={ false } widths="50px" src="home.png" alt="home" class="object-contain" style="height:26px" />
+            <CloudinaryImage widths="50px" src="home.png" alt="home" class="object-contain" style="height:26px" />
             <span class="text-white">{ $t('layout.menus.home') }</span>
           </a>
         </Column>
         <Column cols={ 4 }>
           <a href="/contact-us" class={ menuStyle }>
-            <CloudinaryImage lazy={ false } widths="50px" src="customer_services.png" alt="customer_services" class="object-contain" style="height:35px;margin:-6px;" />
+            <CloudinaryImage widths="50px" src="customer_services.png" alt="customer_services" class="object-contain" style="height:35px;margin:-6px;" />
             <span class="text-white">{ $t('layout.menus.contact_us') }</span>
           </a>
         </Column>

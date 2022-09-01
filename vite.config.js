@@ -10,8 +10,8 @@ const config = {
 		rollupOptions: {
 			output: {
 				manualChunks: {
-					'Layout': [
-						'src/routes/+layout.svelte',
+					'comps': [
+						// 'src/routes/(app)/+layout.svelte',
 						'src/lib/components/Article.svelte',
 						'src/lib/components/BrandsSlider.svelte',
 						'src/lib/components/Breadcrumb.svelte',
@@ -33,11 +33,11 @@ const config = {
 	plugins: [
 		sveltekit(),
 		Unocss(),
-		// visualizer({
-		// 	open: true,
-		// 	emitFile: true,
-		// 	brotliSize: true,
-		// }),
+		visualizer({
+			open: true,
+			emitFile: true,
+			brotliSize: true,
+		}),
 		VitePWA(pwaConfig)
 	]
 };

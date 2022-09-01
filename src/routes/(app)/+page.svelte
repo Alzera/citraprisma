@@ -48,6 +48,7 @@
     crop="fill" 
     lazy={ false }
     height={ 200 }
+    preload={ true }
     class="w-full object-cover h-64" />
 </Container>
 

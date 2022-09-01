@@ -1,5 +1,5 @@
 import { writable, get } from 'svelte/store';
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
 
 const name = '02d4061bafa777762af25bab8bc34f3b'
 

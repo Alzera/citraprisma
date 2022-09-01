@@ -1,7 +1,7 @@
 import { getUser } from '$lib/stores'
 import { goto } from '$app/navigation';
 import type { LayoutLoad } from "./$types"
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
 
 export const load: LayoutLoad = async () => {
   if(!browser) return;

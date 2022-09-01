@@ -1,5 +1,5 @@
 import { minify } from 'html-minifier-terser';
-import { prerendering } from '$app/env';
+import { prerendering } from '$app/environment';
  
 const minification_options = {
   collapseBooleanAttributes: true,

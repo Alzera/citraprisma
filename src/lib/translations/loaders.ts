@@ -1,12 +1,4 @@
 export default [
-{ locale: 'id', key: '4dm1n.layout', routes: ['/4dm1n'], loader: async () => (await import('../../routes/(admin)/4dm1n/+layout_id.json')).default, }, 
-{ locale: 'en', key: '4dm1n.layout', routes: ['/4dm1n'], loader: async () => (await import('../../routes/(admin)/4dm1n/+layout_en.json')).default, }, 
-{ locale: 'id', key: '4dm1n', routes: ['/4dm1n'], loader: async () => (await import('../../routes/(admin)/4dm1n/+page_id.json')).default, }, 
-{ locale: 'en', key: '4dm1n', routes: ['/4dm1n'], loader: async () => (await import('../../routes/(admin)/4dm1n/+page_en.json')).default, }, 
-{ locale: 'id', key: '4dm1n.login.layout', routes: ['/4dm1n/login'], loader: async () => (await import('../../routes/(admin)/4dm1n/login/+layout@_id.json')).default, }, 
-{ locale: 'en', key: '4dm1n.login.layout', routes: ['/4dm1n/login'], loader: async () => (await import('../../routes/(admin)/4dm1n/login/+layout@_en.json')).default, }, 
-{ locale: 'id', key: '4dm1n.login', routes: ['/4dm1n/login'], loader: async () => (await import('../../routes/(admin)/4dm1n/login/+page_id.json')).default, }, 
-{ locale: 'en', key: '4dm1n.login', routes: ['/4dm1n/login'], loader: async () => (await import('../../routes/(admin)/4dm1n/login/+page_en.json')).default, }, 
 { locale: 'id', key: 'layout', loader: async () => (await import('../../routes/(app)/+layout_id.json')).default, }, 
 { locale: 'en', key: 'layout', loader: async () => (await import('../../routes/(app)/+layout_en.json')).default, }, 
 { locale: 'id', key: '', routes: ['/'], loader: async () => (await import('../../routes/(app)/+page_id.json')).default, }, 

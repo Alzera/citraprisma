@@ -1,6 +1,4 @@
 <script lang="ts">
-  // import { onMount } from 'svelte'
-
   type Nullable<T> = T | undefined | null;
 
   export let
@@ -30,7 +28,6 @@
   let url: string, 
       mdUrl: Nullable<string> = null, 
       width: Nullable<number> = null
-  // let preloadHref: string = ''
   
   const extracted = (widths && widths.match(widthsValidation)) || []
   const normalizeWidth = extracted[1] && extracted[1].endsWith('vw') ? 
@@ -45,13 +42,6 @@
     width = normalizeMdWidth
     mdUrl = generateUrl(src, normalizeMdWidth, height, crop)
   }
-  
-  console.log(url, mdUrl, preload);
-
-  // onMount(() => {
-  //   if(preload && preloadHref == '')
-  //     preloadHref = !window.matchMedia('(max-width: 768px)').matches && mdUrl ? mdUrl : url
-  // })
 </script>
 
 <svelte:head> 
