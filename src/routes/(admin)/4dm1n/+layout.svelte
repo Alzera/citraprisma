@@ -5,7 +5,8 @@
   import Drawer from '$lib/components/admin/Drawer.svelte';
 
   import '@unocss/reset/tailwind.css'
-  import 'uno.css'
+  import '../../../components.css'
+  import './uno.css'
   import "../../../app.scss";
 </script>
 

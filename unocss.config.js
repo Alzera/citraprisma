@@ -1,5 +1,17 @@
 import presetUno from '@unocss/preset-uno'
 import presetIcons from '@unocss/preset-icons'
+import { exec } from 'child_process'
+
+export const customUnocssPlaugin = function() {
+  return {
+    name: 'custom-unocss-plugin', // required, will show up in warnings and errors
+    buildStart(opts) {
+			exec("unocss \"src/routes/[(]app[)]/**/*.svelte\" --out-file \"src/routes/(app)/uno.css\"")
+			exec("unocss \"src/routes/[(]admin[)]/**/*.svelte\" --out-file \"src/routes/(admin)/4dm1n/uno.css\"")
+			exec("unocss \"src/lib/components/**/*.svelte\" --out-file \"src/components.css\"")
+    },
+  }
+}
 
 export default { 
   presets: [
