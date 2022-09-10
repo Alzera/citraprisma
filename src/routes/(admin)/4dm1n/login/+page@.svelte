@@ -24,11 +24,11 @@
       return;
     }
     loading = true
-    rest("users/login", "POST", {
+    rest("/users/login", "POST", {
       email,
       password
     })
-    .then(() => rest("users/me", "GET"))
+    .then(() => rest("/users/me", "GET"))
     .then(res => {
       if(res.data) {
         user.set(res.data)
