@@ -1,5 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { customUnocssPlaugin } from './unocss.config'
+import Unocss from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import pwaConfig from './pwa.config'
 
@@ -31,7 +31,7 @@ const config = {
 	},
 	plugins: [
 		sveltekit(),
-		customUnocssPlaugin(),
+		Unocss(),
 		VitePWA(pwaConfig)
 	]
 };

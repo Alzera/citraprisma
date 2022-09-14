@@ -16,10 +16,9 @@
   })
 
   import '@unocss/reset/tailwind.css'
-  import '../../components.css'
-  import './uno.css'
-  import "../../app.scss";
-  import "../../frontend.scss";
+  import 'uno.css'
+  import "../app.scss";
+  import "../frontend.scss";
   
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";

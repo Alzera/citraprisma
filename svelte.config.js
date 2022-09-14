@@ -15,6 +15,7 @@ const config = {
   kit: {
     adapter: adapter(),
     appDir: 'app',
+    trailingSlash: 'always',
 	},
 };
 

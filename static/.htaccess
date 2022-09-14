@@ -8,18 +8,17 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+RewriteEngine On
+RewriteRule ^shop/?$ /shop/
+
 # RewriteEngine On 
 # RewriteRule ^img/(.*)$ https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto:low,e_blur:5,$1 [R=302,NC,L]
 
+# Force access to file first instead of folder
+# DirectorySlash Off 
 # RewriteEngine on 
 # RewriteCond %{REQUEST_FILENAME}\.html -f
 # RewriteRule ^(.*)  /$1.html [L]
-
-# Force access to file first instead of folder
-DirectorySlash Off 
-RewriteEngine on 
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)  /$1.html [L]
 
 # Prevent viewing of .htaccess file
 <Files .htaccess>
@@ -84,6 +83,36 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
          Header append Vary Accept-Encoding
     </FilesMatch>
 </IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit -1
+   php_value post_max_size 32M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/opt/alt/php81/var/lib/php/session"
+   php_value upload_max_filesize 32M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit -1
+   php_value post_max_size 32M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/opt/alt/php81/var/lib/php/session"
+   php_value upload_max_filesize 32M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “alt-php81” package as the default “PHP” programming language.
