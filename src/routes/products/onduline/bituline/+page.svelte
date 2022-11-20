@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.onduline.bituline.'
+  const tp = 'products.onduline.bituline.'
 
   import { mq } from '$lib/mediaquery';
 
@@ -26,7 +26,7 @@
   }
 </script>
 
-<CloudinaryImage src="brands/onduline/img635.jpg" alt="Banner" 
+<CloudinaryImage src="products/onduline/img635.jpg" alt="Banner" 
   widths="600px md:1024px" 
   crop="fill" 
   lazy={ false }
@@ -40,7 +40,7 @@
   <h2 class="text-2xl mb-2">BITULINE® PP300</h2>
   <Row class="mb-2">
     <Column cols={ 12 } md={ 6 } class="md:order-2">
-      <CloudinaryImage class="w-full max-w-84 md:max-w-none mx-auto object-contain" src="brands/onduline/img29.jpg" alt="BITULINE® PP300 Image" widths="300px" lazy={ false } height={ 200 } />
+      <CloudinaryImage class="w-full max-w-84 md:max-w-none mx-auto object-contain" src="products/onduline/img29.jpg" alt="BITULINE® PP300 Image" widths="300px" lazy={ false } height={ 200 } />
     </Column>
     <Column cols={ 12 } md={ 6 } class="md:order-1">
       <table class="w-full text-lg custom">
@@ -72,7 +72,7 @@
   <h2 class="text-2xl mb-2">BITULINE® PP40</h2>
   <Row>
     <Column cols={ 12 } md={ 6 } class="md:order-2">
-      <CloudinaryImage class="w-full max-w-84 md:max-w-none mx-auto object-contain" src="brands/onduline/img28.jpg" alt="BITULINE® PP40 Image" widths="300px" lazy={ false } height={ 200 } />
+      <CloudinaryImage class="w-full max-w-84 md:max-w-none mx-auto object-contain" src="products/onduline/img28.jpg" alt="BITULINE® PP40 Image" widths="300px" lazy={ false } height={ 200 } />
     </Column>
     <Column cols={ 12 } md={ 6 } class="md:order-1">
       <table class="w-full text-lg custom">
@@ -104,7 +104,7 @@
   <p class="text-base mb-5">{ $t(tp + 'primer.content') }</p>
   <Row class="mb-2">
     <Column cols={ 12 } md={ 6 } class="md:order-2">
-      <CloudinaryImage class="w-full max-w-84 max-h-52 md:max-w-none mx-auto object-contain" src="brands/onduline/img39.jpg" alt="BITULINE® Primer" widths="300px" lazy={ false } height={ 200 } />
+      <CloudinaryImage class="w-full max-w-84 max-h-52 md:max-w-none mx-auto object-contain" src="products/onduline/img39.jpg" alt="BITULINE® Primer" widths="300px" lazy={ false } height={ 200 } />
     </Column>
     <Column cols={ 12 } md={ 6 } class="md:order-1">
       <table class="w-full text-lg custom">
@@ -135,7 +135,7 @@
     {#each videos as item}
       <Column cols={ 12 } md={ 4 }>
         <div on:click={ () => showDialog(item) } class="mb-2 rounded-lg border border-gray-200 shadow-sm h-full bg-slate-50">
-          <CloudinaryImage class="w-full h-52 object-cover aspect-video rounded-t-lg" src={ `brands/onduline/${item.img}` } alt={ item.img } widths="300px md:270px" />
+          <CloudinaryImage class="w-full h-52 object-cover aspect-video rounded-t-lg" src={ `products/onduline/${item.img}` } alt={ item.img } widths="300px md:270px" />
           <h5 class="p-4 text-lg tracking-tight text-gray-900">{ item.text }</h5>
         </div>
       </Column>

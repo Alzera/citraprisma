@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { t } from '$lib/translations';
+  
   import { mq } from '$lib/mediaquery';
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
@@ -23,5 +25,8 @@
         { i.title }
       </a>
     {/each}
+    <a href="/shop" on:click={ () => show = false } class="w-full py-3 px-6 block cursor-pointer">
+      { $t('layout.menus.shop') }
+    </a>
   </aside>
 {/if}

@@ -43,7 +43,7 @@
     { title: $t('layout.menus.about_us'), link: "/about-us" },
     { title: $t('layout.menus.services'), link: "/services" },
     { title: $t('layout.menus.projects'), link: "/projects" },
-    { title: $t('layout.menus.brands'), link: "/brands" },
+    { title: $t('layout.menus.products'), link: "/products" },
     { title: $t('layout.menus.contact_us'), link: "/contact-us" },
   ]
 </script>
@@ -95,6 +95,11 @@
                 </a>
               </Column>
             {/each}
+            <Column class="flex justify-center">
+              <a href="/shop" rel="external" class="menu text-lg">
+                <span class="text-white">{ $t('layout.menus.shop') }</span>
+              </a>
+            </Column>
           </Row>
         {/if}
       </Container>

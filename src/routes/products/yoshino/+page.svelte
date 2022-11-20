@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.yoshino.'
+  const tp = 'products.yoshino.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -28,7 +28,7 @@
         <h3 class="text-lg">{ $t(tp + `section${i}.content`) }</h3>
       </Column>
       <Column cols={ 12 } md={ 4 } class="order-1 md:order-2">
-        <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src={ `brands/yoshino/${item}` } alt={ `yoshino ${i}` } widths="300px md:270px" />
+        <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src={ `products/yoshino/${item}` } alt={ `yoshino ${i}` } widths="300px md:270px" />
       </Column>
     </Row>
     <hr class="my-3">

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.conwood.'
+  const tp = 'products.conwood.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -20,10 +20,10 @@
         <Column cols={ 12 } md={ 8 } class="order-2 md:order-1">
           <h2 class="text-2xl">{ $t(tp + `section${sectioni}.subsection${i}.title`) }</h2>
           <h3 class="text-lg">{ $t(tp + `section${sectioni}.subsection${i}.content`) }</h3>
-          <CloudinaryImage src={ `brands/conwood/plank-${sectioni}-${i}.jpg` } alt={ `conwood-plank-${sectioni}-${i}.jpg` } height={ 200 } widths="200px" />
+          <CloudinaryImage src={ `products/conwood/plank-${sectioni}-${i}.jpg` } alt={ `conwood-plank-${sectioni}-${i}.jpg` } height={ 200 } widths="200px" />
         </Column>
         <Column cols={ 12 } md={ 4 } class="order-1 md:order-2">
-          <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src={ `brands/conwood/sample-${sectioni}-${i}.jpg`} alt={ `conwood-sample-${sectioni}-${i}.jpg` } widths="300px md:270px" />
+          <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src={ `products/conwood/sample-${sectioni}-${i}.jpg`} alt={ `conwood-sample-${sectioni}-${i}.jpg` } widths="300px md:270px" />
         </Column>
       </Row>
       <hr class="my-3">

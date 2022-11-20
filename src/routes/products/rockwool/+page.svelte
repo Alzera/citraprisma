@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.rockwool.'
+  const tp = 'products.rockwool.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -32,7 +32,7 @@
   <p class="text-base mb-3">{ $t(tp + 'content.0') }</p>
   <p class="text-base mb-3">{ $t(tp + 'content.1') }</p>
   <p class="text-base mb-3">{ $t(tp + 'content.2') }</p>
-  <CloudinaryImage class="mx-auto h-52 object-contain" src="brands/rockwool/rockwool.png" alt="rockwool" widths="300px md:270px" />
+  <CloudinaryImage class="mx-auto h-52 object-contain" src="products/rockwool/rockwool.png" alt="rockwool" widths="300px md:270px" />
   <p class="text-base mb-3">{ $t(tp + 'content.3') }</p>
   <p class="text-base">{ $t(tp + 'advantages') }</p>
   <ul>
@@ -45,7 +45,7 @@
     {#each videos as item}
       <Column cols={ 12 } md={ 4 }>
         <div on:click={ () => showDialog(item) } class="mb-2 rounded-lg border border-gray-200 shadow-sm h-full bg-slate-50">
-          <CloudinaryImage class="w-full h-52 object-cover aspect-video rounded-t-lg" src={ `brands/rockwool/${item.img}` } alt={ item.img } widths="300px md:270px" />
+          <CloudinaryImage class="w-full h-52 object-cover aspect-video rounded-t-lg" src={ `products/rockwool/${item.img}` } alt={ item.img } widths="300px md:270px" />
           <h5 class="p-4 text-lg tracking-tight text-gray-900">{ item.text }</h5>
         </div>
       </Column>

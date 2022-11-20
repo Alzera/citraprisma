@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.bostik.'
+  const tp = 'products.bostik.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -71,7 +71,7 @@
           <a href={ '/pdfs/tds/bostik/' + sub.tds } download target="_blank" rel="noopener noreferrer external" class="button">Download TDS</a>
         </Column>
         <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-          <CloudinaryImage class="mx-auto h-52 object-contain" src={ `brands/bostik/${sub.img}` } alt={ sub.img } widths="300px md:270px" />
+          <CloudinaryImage class="mx-auto h-52 object-contain" src={ `products/bostik/${sub.img}` } alt={ sub.img } widths="300px md:270px" />
         </Column>
       </Row>
       {#if i !== sections[i].length - 1}

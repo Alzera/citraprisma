@@ -5,8 +5,9 @@
     "about_us": "Tentang Kami",
     "services": "Layanan",
     "projects": "Proyek",
-    "brands": "Merek",
-    "contact_us": "Kontak Kami"
+    "products": "Produk",
+    "contact_us": "Kontak Kami",
+    "shop": "Toko"
   },
   "section_header": {
     "our_brands": {

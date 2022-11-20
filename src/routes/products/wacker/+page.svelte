@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.wacker.'
+  const tp = 'products.wacker.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -42,7 +42,7 @@
         {/if}
       </Column>
       <Column cols={ 12 } md={ 2 } class="order-1 md:order-2 flex align-center">
-        <CloudinaryImage class="mx-auto max-h-64 object-contain" src={ `brands/wacker/${section.image}` } alt={ `wacker-${i}` } widths="300px md:270px" lazy />
+        <CloudinaryImage class="mx-auto max-h-64 object-contain" src={ `products/wacker/${section.image}` } alt={ `wacker-${i}` } widths="300px md:270px" lazy />
       </Column>
     </Row>
     <hr class="my-6">

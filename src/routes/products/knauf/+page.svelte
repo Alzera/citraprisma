@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.knauf.'
+  const tp = 'products.knauf.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -61,7 +61,7 @@
       </table>
     </Column>
     <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="brands/knauf/standardboard.jpg" alt="knauf standardboard" widths="300px md:270px" />
+      <CloudinaryImage class="mx-auto" src="products/knauf/standardboard.jpg" alt="knauf standardboard" widths="300px md:270px" />
     </Column>
   </Row>
   <hr class="my-3">
@@ -122,7 +122,7 @@
       </table>
     </Column>
     <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="brands/knauf/moistureshield.jpg" alt="knauf moistureshield" widths="300px md:270px" />
+      <CloudinaryImage class="mx-auto" src="products/knauf/moistureshield.jpg" alt="knauf moistureshield" widths="300px md:270px" />
     </Column>
   </Row>
   <hr class="my-3">
@@ -182,7 +182,7 @@
       </table>
     </Column>
     <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="brands/knauf/densishield.jpg" alt="knauf densishield" widths="300px md:270px" />
+      <CloudinaryImage class="mx-auto" src="products/knauf/densishield.jpg" alt="knauf densishield" widths="300px md:270px" />
     </Column>
   </Row>
   <hr class="my-3">
@@ -249,7 +249,7 @@
       </table>
     </Column>
     <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="brands/knauf/fireshield.jpg" alt="knauf fireshield" widths="300px md:270px" />
+      <CloudinaryImage class="mx-auto" src="products/knauf/fireshield.jpg" alt="knauf fireshield" widths="300px md:270px" />
     </Column>
   </Row>
   <hr class="my-3">

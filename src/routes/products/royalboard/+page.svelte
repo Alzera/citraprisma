@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.royalboard.'
+  const tp = 'products.royalboard.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -20,7 +20,7 @@
       <p class="text-base">{ $t(tp + 'classic3') }</p>
     </Column>
     <Column cols={ 12 } md={ 4 } class="order-1 md:order-2">
-      <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src="brands/royalboard/ClassicRB" alt="RB Classic" widths="300px md:270px" />
+      <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src="products/royalboard/ClassicRB" alt="RB Classic" widths="300px md:270px" />
     </Column>
   </Row>
   <hr class="my-3">
@@ -31,7 +31,7 @@
       <p class="text-base">{ $t(tp + 'fascia') }</p>
     </Column>
     <Column cols={ 12 } md={ 4 } class="order-1 md:order-2">
-      <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src="brands/royalboard/rb" alt="RB Fascia" widths="300px md:270px" />
+      <CloudinaryImage class="ml-auto mr-auto md:mr-0" crop="fill" src="products/royalboard/rb" alt="RB Fascia" widths="300px md:270px" />
     </Column>
   </Row>
   <br />

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations';
-  const tp = 'brands.onduline.'
+  const tp = 'products.onduline.'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -8,8 +8,8 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
   const links = [
-    { image: "brands/onduline/img19.jpg", logo: "brands/onduline/Logo_Onducasa.png", href: "/brands/onduline/onducasa", text: "ONDUCASA", content:"onducasa" },
-    { image: "brands/onduline/img635.jpg", logo: "brands/onduline/Logo_Bituline.png", href: "/brands/onduline/bituline", text: "BITULINE", content:"bituline" },  
+    { image: "products/onduline/img19.jpg", logo: "products/onduline/Logo_Onducasa.png", href: "/products/onduline/onducasa", text: "ONDUCASA", content:"onducasa" },
+    { image: "products/onduline/img635.jpg", logo: "products/onduline/Logo_Bituline.png", href: "/products/onduline/bituline", text: "BITULINE", content:"bituline" },  
   ]
 </script>
 
