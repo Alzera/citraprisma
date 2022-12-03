@@ -36,6 +36,7 @@
 
   let y = 0
   let drawer = false
+  let shopsub = false
 
   $: showBottomNav = y > 200;
   $: menus = [
@@ -87,7 +88,7 @@
             </Column>
           </Row>
         {:else}
-          <Row class="!hidden !md:flex main-menu">
+          <Row class="!hidden !md:flex main-menu overflow-visible">
             {#each menus as i}
               <Column class="flex justify-center">
                 <a href={ i.link } class="menu text-lg">
@@ -95,10 +96,26 @@
                 </a>
               </Column>
             {/each}
-            <Column class="flex justify-center">
+            <Column class="flex justify-center overflow-visible" on:hover={ () => { shopsub = !shopsub } }>
               <a href="/shop" rel="external" class="menu text-lg">
-                <span class="text-white">{ $t('layout.menus.shop') }</span>
+                <span class="text-white">{ $t('layout.menus.shop.title') }</span>
               </a>
+              {#if shopsub}
+                <div class="bg-primary absolute top-10.3 left-0 px-4 min-w-50 shadow-2xl">
+                  <a href="/shop/my-account" rel="external" class="menu block text-base py-1">
+                    <span class="text-white">{ $t('layout.menus.shop.my_account') }</span>
+                  </a>
+                  <a href="/shop/products" rel="external" class="menu block text-base py-1">
+                    <span class="text-white">{ $t('layout.menus.shop.products') }</span>
+                  </a>
+                  <a href="/shop/categories" rel="external" class="menu block text-base py-1">
+                    <span class="text-white">{ $t('layout.menus.shop.categories') }</span>
+                  </a>
+                  <a href="/shop/brands" rel="external" class="menu block text-base py-1">
+                    <span class="text-white">{ $t('layout.menus.shop.brands') }</span>
+                  </a>
+                </div>
+              {/if}
             </Column>
           </Row>
         {/if}
