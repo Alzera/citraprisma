@@ -48,11 +48,11 @@
     {#each slideshows as slide, i}
     <SwiperSlide>
       <CloudinaryImage src={slide} alt={'slide-' + i}
-        widths="500px md:1024px" 
+        widths="500px md:1600px" 
         crop="fill" 
         lazy={ false }
         preload={ true }
-        class="w-full object-cover h-140" />
+        class="w-full object-cover md:h-140" />
     </SwiperSlide>
     {/each}
   </Swiper>
