@@ -1,6 +1,12 @@
 <script lang="ts">
   import { t } from '$lib/translations'
 
+  import { Swiper, SwiperSlide } from 'swiper/svelte';
+  import { EffectFade, Autoplay, Lazy as SwiperLazy } from 'swiper';
+
+  import 'swiper/css';
+  import 'swiper/css/effect-fade';
+
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
   import Container from "$lib/components/Container.svelte";
@@ -20,6 +26,11 @@
     { image: "projects/waterplace/preview.jpg", alt: "Project waterplace", text: "Water Place - Surabaya", link: "/projects/waterplace" },
     { image: "projects/satrio/preview.jpg", alt: "Project satrio", text: "Satrio Tower - Jakarta", link: "/projects/satrio" },
     { image: "projects/juanda/preview.jpg", alt: "Project juanda", text: "Bandara Juanda T2 - Surabaya", link: "/projects/juanda" },
+  ], slideshows = [
+    "slideshows/Banner_Conwood_1_g5t7nm.jpg",
+    "slideshows/Banner_4_sbudc1.jpg",
+    "slideshows/Banner_3_ldyjsj.jpg",
+    "slideshows/Banner_2_nnh7gp.jpg",
   ]
   let serviceTab = 0
 </script>
@@ -27,13 +38,24 @@
 <Meta title={ $t('page.title') } />
 
 <Container fluid class="!p-0">
-  <CloudinaryImage src="banner.jpg" alt="Banner" 
-    widths="500px md:1024px" 
-    crop="fill" 
-    lazy={ false }
-    height={ 200 }
-    preload={ true }
-    class="w-full object-cover h-64" />
+  <Swiper modules="{[EffectFade, Autoplay, SwiperLazy]}" 
+    autoplay={{
+      delay: 5000,
+      disableOnInteraction: false,
+    }}
+    lazy={true}
+    effect="fade">
+    {#each slideshows as slide, i}
+    <SwiperSlide>
+      <CloudinaryImage src={slide} alt={'slide-' + i}
+        widths="500px md:1024px" 
+        crop="fill" 
+        lazy={ false }
+        preload={ true }
+        class="w-full object-cover h-140" />
+    </SwiperSlide>
+    {/each}
+  </Swiper>
 </Container>
 
 <div class="text-center m-6">
