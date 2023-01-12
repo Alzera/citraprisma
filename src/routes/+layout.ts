@@ -8,3 +8,4 @@ export const load: LayoutLoad = async ({ url }) => {
   return { url };
 }
 export const prerender = true;
+export const trailingSlash = 'always';

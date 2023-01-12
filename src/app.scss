@@ -11,6 +11,11 @@ ul { list-style-type: disc; }
 hr {
   border-color: #e5e7eb;
 }
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-align: justify;
+}
 
 .text-primary { color: var(--c-primary) }
 .text-orange { color: var(--c-orange) }

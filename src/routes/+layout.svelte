@@ -1,6 +1,4 @@
-<script lang="ts">
-  export const prerender = true;
-  
+<script lang="ts">  
   import { v } from '$lib/variables';
   import { t } from '$lib/translations';
   import { initToast } from '$lib/toast'

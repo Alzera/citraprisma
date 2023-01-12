@@ -21,7 +21,7 @@
           <CloudinaryImage class="w-full h-64 object-cover" src={ link.image } alt={ `banner ${link.text}` } widths="300px" lazy={ false } height={ 300 } crop="fill" />
           <CloudinaryImage class="absolute top-8 right-0" src={ link.logo } alt={ `logo ${link.text}` } widths="150px" lazy={ false } height={ 100 } />
           <h1 class="text-4xl m-3" style="color:#e1464a">{ link.text }</h1>
-          <p class="text-base m-3">{ $t(tp + link.content) }</p>
+          <p class="m-3">{ $t(tp + link.content) }</p>
         </a>
       </Column>
     {/each}

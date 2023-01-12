@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { v } from '$lib/variables';
-  import { page } from '$app/stores';
   import { share } from '$lib/share';
 
   import Container from "$lib/components/Container.svelte";

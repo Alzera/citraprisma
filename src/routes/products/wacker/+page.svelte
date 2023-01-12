@@ -7,7 +7,7 @@
   import Article from '$lib/components/Article.svelte';
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
-  $: sections = [
+  const sections = [
     { image: "gp.jpg", applications_count: 2, },
     { image: "gp-n.jpg", applications_count: 1, tds: "GPN.pdf", },
     { image: "pa.jpg", applications_count: 1, },
@@ -20,13 +20,13 @@
 </script>
 
 <Article title={ $t(tp + 'page.title') }>
-  <p class="text-base mb-3">{ $t(tp + 'content') }</p>
+  <p class="mb-3">{ $t(tp + 'content') }</p>
   <br/>
   {#each sections as section, i}
     <Row>
       <Column cols={ 12 } md={ 10 } class="order-2 md:order-1">
         <h2 class="text-2xl">{ $t(tp + `section.${i}.title`) }</h2>
-        <p class="text-base">
+        <p>
           { $t(tp + `section.${i}.content`) }
           <br/>
           { $t(tp + 'applications') }:
@@ -49,7 +49,9 @@
   {/each}
   <br />
   <br />
-  <p class="text-base">
-    <a href="/pdfs/Wacker.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
+  <p>
+    <a href="/pdfs/Wacker.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+      <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
+    </a>
   </p>
 </Article>

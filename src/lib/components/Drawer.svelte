@@ -21,7 +21,7 @@
       class="object-contain"
       style="margin: 1rem auto;height: 100px;" />
     {#each menus as i}
-      <a href={ i.link } on:click={ () => show = false } class="w-full py-3 px-6 block cursor-pointer">
+      <a href={ i.link } on:click={ () => show = false } class="aside-menu">
         { i.title }
       </a>
     {/each}

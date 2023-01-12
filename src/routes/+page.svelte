@@ -27,10 +27,15 @@
     { image: "projects/satrio/preview.jpg", alt: "Project satrio", text: "Satrio Tower - Jakarta", link: "/projects/satrio" },
     { image: "projects/juanda/preview.jpg", alt: "Project juanda", text: "Bandara Juanda T2 - Surabaya", link: "/projects/juanda" },
   ], slideshows = [
-    "slideshows/Banner_Conwood_1_g5t7nm.jpg",
-    "slideshows/Banner_4_sbudc1.jpg",
-    "slideshows/Banner_3_ldyjsj.jpg",
-    "slideshows/Banner_2_nnh7gp.jpg",
+    "slideshows/Banner_2.jpg",
+    "slideshows/Banner_7.jpg",
+    "slideshows/Banner_3.jpg",
+    "slideshows/Banner_1.jpg",
+    "slideshows/Banner_8.jpg",
+    "slideshows/Banner_4.jpg",
+    "slideshows/Banner_6.jpg",
+    "slideshows/Banner_9.jpg",
+    "slideshows/Banner_10.jpg",
   ]
   let serviceTab = 0
 </script>
@@ -52,15 +57,15 @@
         crop="fill" 
         lazy={ false }
         preload={ true }
-        class="w-full object-cover md:h-140" />
+        class="w-full object-cover" />
     </SwiperSlide>
     {/each}
   </Swiper>
 </Container>
 
-<div class="text-center m-6">
-  <h1 class="text-3xl text-primary">{ $t('section.distributor.header') }</h1>
-  <p class="text-xl">{ $t('section.distributor.content') }</p>
+<div class="m-6">
+  <h1 class="text-3xl text-primary text-center">{ $t('section.distributor.header') }</h1>
+  <p class="text-xl text-center">{ $t('section.distributor.content') }</p>
 </div>
 
 <Container fluid style="background: #f7f7f7">
@@ -70,7 +75,7 @@
         default: $t('section.about_us.header.span') 
       })}
     </h2>
-    <p class="text-xl mb-6">{ $t('section.about_us.content') }</p>
+    <p class="text-xl text-center mb-6">{ $t('section.about_us.content') }</p>
     <a class="button-1" href='/about-us'>{ $t('read_more') } &rarr;</a>
   </Container>
 </Container>
@@ -100,7 +105,7 @@
             {#each [5, 3, 2] as n, ni}
               {@const i = ni + 1}
               <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.0.header${i}`) }</h3>
-              <p class="text-base">{ $t(`section.our_services.content.0.content${i}`) }</p>
+              <p>{ $t(`section.our_services.content.0.content${i}`) }</p>
               <ol type="A" class="text-base mb-6">
                 {#each Array(n) as _, li}
                   <li>{ $t(`section.our_services.content.0.list${i}.${li}`) }</li>
@@ -123,11 +128,11 @@
             <a class="button-1" href='/services/gypsum'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 2}
             <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.2.header1`) }</h3>
-            <p class="text-base mb-6">{ $t(`section.our_services.content.2.content1`) }</p>
+            <p class="mb-6">{ $t(`section.our_services.content.2.content1`) }</p>
             <a class="button-1" href='/services/metal'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 3}
             <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.3.header1`) }</h3>
-            <p class="text-base">{ $t(`section.our_services.content.3.content1`) }</p>
+            <p>{ $t(`section.our_services.content.3.content1`) }</p>
             <ol type="A" class="text-base mb-6">
               {#each Array(2) as _, li}
                 <li>{ $t(`section.our_services.content.3.list1.${li}`) }</li>
@@ -136,7 +141,7 @@
             <a class="button-1" href='/services/sealants'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 4}
             <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.4.header1`) }</h3>
-            <p class="text-base">{ $t(`section.our_services.content.4.content1`) }</p>
+            <p>{ $t(`section.our_services.content.4.content1`) }</p>
             <ol type="A" class="text-base mb-6">
               {#each Array(2) as _, li}
                 <li>{ $t(`section.our_services.content.4.list1.${li}`) }</li>
@@ -146,7 +151,7 @@
             <a class="button-1" href='/services/epoxy'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 5}
             <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.5.header1`) }</h3>
-            <p class="text-base">{ $t(`section.our_services.content.5.content1`) }</p>
+            <p>{ $t(`section.our_services.content.5.content1`) }</p>
             <ol type="A" class="text-base mb-6">
               {#each Array(2) as _, li}
                 <li>{ $t(`section.our_services.content.5.list1.${li}`) }</li>

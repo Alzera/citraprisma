@@ -1,0 +1,43 @@
+{
+  "page": {
+    "title": "Troldtekt"
+  },
+  "section1": {
+    "title": "Superior acoustics – naturally",
+    "subtitle1": "Troldtekt ensures that aesthetics, superior acoustics",
+    "subtitle2": "and a comfortable indoor climate go hand in hand in architecture."
+  },
+  "section2": {
+    "title": "6 good reasons for choosing Troldtekt",
+    "content": [
+      "Good acoustics",
+      "Healthy indoor climate",
+      "Documented sustainability",
+      "Effective fire protection",
+      "Natural strength",
+      "Flexible design options "
+    ]
+  },
+  "section3": {
+    "title": "A simple recipe based on natural ingredients",
+    "subtitle": "Troldtekt cement-bonded wood wool is produced from wood and cement. As it has been since 1935.",
+    "content": [
+      { 
+        "title": "Wood", 
+        "subtitle": "We use Danish Norway spruce, which is a carbon-neutral resource. During its growth, each tree absorbs just as much carbon dioxide as is released during its care, felling and ® transport. Troldtekt is approved to offer products in the ‘FSC ® 100%’ category (FSC C115450), which means that all the wood in a single panel complies with the FSC requirements."
+      },
+      { 
+        "title": "Cement", 
+        "subtitle": "We only use cement from Aalborg Portland, which extracts the raw materials from the Danish underground with minimal environmental impact. Aalborg Portland is certified according to the ISO 14001 environmental management system and the European Eco-Management and Audit Scheme (EMAS)."
+      },
+      { 
+        "title": "Cement-bonded wood wool", 
+        "subtitle": "At our factory in Denmark, we produce Troldtekt acoustic panels from cement-bonded wood wool, which combines the inherent strength of cement with the natural properties of wood."
+      }
+    ]
+  },
+  "section4": {
+    "title": "Choice of structures and colours",
+    "subtitle": "Extreme fine or a distinctly coarse structure? Nature’s own colours"
+  }
+}

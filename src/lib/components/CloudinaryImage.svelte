@@ -4,6 +4,7 @@
   export let
     src: string,
     alt: string,
+    rotate: Nullable<number> = null,
     height: Nullable<number> = null,
     widths: Nullable<string> = null,
     crop: string = 'limit',
@@ -13,7 +14,7 @@
   const base = 'https://res.cloudinary.com/citraprisma/image/upload/',
     widthsValidation = /^([0-9]+(?:vw|px))(?: md:([0-9]+(?:vw|px)))*$/
 
-  function generateUrl(src: string, width: Nullable<number>, height: Nullable<number>, crop: string){
+  function generateUrl(src: string, width: Nullable<number>, height: Nullable<number>, crop: string, rotate: Nullable<number>){
     let url: string[] = [
       'f_auto',
       'q_auto:low',
@@ -22,6 +23,7 @@
     if(width) url.push('w_' + width)
     if(height) url.push('h_' + height)
     if(crop) url.push('c_' + crop)
+    if(rotate) url.push('a_' + rotate)
     return base + url.join(',') + (src.startsWith('/') ? src : '/' + src)
   }
 
@@ -34,13 +36,13 @@
     Math.round(7.68 * parseInt(extracted[1])) : 
     parseInt(extracted[1])
   width = normalizeWidth
-  url = generateUrl(src, normalizeWidth, height, crop)
+  url = generateUrl(src, normalizeWidth, height, crop, rotate)
   if(extracted[2] !== undefined){
     let normalizeMdWidth = extracted[2] && extracted[2].endsWith('vw') ? 
       Math.round(10.24 * parseInt(extracted[2])) : 
       parseInt(extracted[2])
     width = normalizeMdWidth
-    mdUrl = generateUrl(src, normalizeMdWidth, height, crop)
+    mdUrl = generateUrl(src, normalizeMdWidth, height, crop, rotate)
   }
 </script>
 

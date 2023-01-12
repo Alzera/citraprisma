@@ -29,12 +29,12 @@
 </script>
 
 <Article title={ $t(tp + 'page.title') }>
-  <p class="text-base mb-3">{ $t(tp + 'content.0') }</p>
-  <p class="text-base mb-3">{ $t(tp + 'content.1') }</p>
-  <p class="text-base mb-3">{ $t(tp + 'content.2') }</p>
+  <p class="mb-3">{ $t(tp + 'content.0') }</p>
+  <p class="mb-3">{ $t(tp + 'content.1') }</p>
+  <p class="mb-3">{ $t(tp + 'content.2') }</p>
   <CloudinaryImage class="mx-auto h-52 object-contain" src="products/rockwool/rockwool.png" alt="rockwool" widths="300px md:270px" />
-  <p class="text-base mb-3">{ $t(tp + 'content.3') }</p>
-  <p class="text-base">{ $t(tp + 'advantages') }</p>
+  <p class="mb-3">{ $t(tp + 'content.3') }</p>
+  <p>{ $t(tp + 'advantages') }</p>
   <ul>
     {#each Array(4) as _, i}
       <li>{ $t(tp + `advantages_items.${i}`) }</li>
@@ -52,10 +52,10 @@
     {/each}
   </Row>
   <br />
-  <p class="text-base">
-    <a href="/pdfs/Rockwool CNC.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog CNC</a>
-    <br/>
-    <a href="/pdfs/Rockwool SNS.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog SNS</a>
+  <p>
+    <a href="/pdfs/Rockwool.zip" download target="_blank" rel="noopener noreferrer external" class="visible">
+      <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
+    </a>
   </p>
 </Article>
 <dialog on:click={handleBackdrop} class="p-0 aspect-video w-240 max-w-full" bind:this={ dialog }>

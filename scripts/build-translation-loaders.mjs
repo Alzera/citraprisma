@@ -16,7 +16,7 @@ glob(`${folder}**/*.+(svelte)`, function (er, files) {
       routes = '/' + normalizeI.replaceAll('+layout', '')
     if(key.endsWith('layout'))
       routes = routes.substring(0, routes.length - 1)
-    else if(!routes.endsWith('/')) routes += '/'
+    else if(!routes.endsWith('/')) routes = routes + "', '" + routes + "/"
     if(routes != '') routes = `routes: ['${routes}'], `
     for(const l of langs){
       const json = `${i}_${l}.json`

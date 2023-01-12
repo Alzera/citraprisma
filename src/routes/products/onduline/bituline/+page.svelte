@@ -36,7 +36,7 @@
 <Article 
   title={ $t(tp + 'page.title') } 
   subtitle={ $t(tp + 'page.description') }>
-  <p class="text-base mb-5">{ $t(tp + 'content') }</p>
+  <p class="mb-5">{ $t(tp + 'content') }</p>
   <h2 class="text-2xl mb-2">BITULINE® PP300</h2>
   <Row class="mb-2">
     <Column cols={ 12 } md={ 6 } class="md:order-2">
@@ -101,7 +101,7 @@
   </Row>
   <hr class="my-3"/>
   <h2 class="text-2xl mb-2">BITULINE® Primer</h2>
-  <p class="text-base mb-5">{ $t(tp + 'primer.content') }</p>
+  <p class="mb-5">{ $t(tp + 'primer.content') }</p>
   <Row class="mb-2">
     <Column cols={ 12 } md={ 6 } class="md:order-2">
       <CloudinaryImage class="w-full max-w-84 max-h-52 md:max-w-none mx-auto object-contain" src="products/onduline/img39.jpg" alt="BITULINE® Primer" widths="300px" lazy={ false } height={ 200 } />
@@ -142,8 +142,10 @@
     {/each}
   </Row>
   <br />
-  <p class="text-base">
-    <a href="/pdfs/BROSUR BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
+  <p>
+    <a href="/pdfs/BROSUR BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+      <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
+    </a><br/>
     <a href="/pdfs/Panduan Pemasangan Bituline.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
   </p>
 </Article>

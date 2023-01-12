@@ -9,7 +9,7 @@
 </script>
 
 <Article title={ $t(tp + 'page.title') }>
-  <p class="text-base mb-3">{ $t(tp + 'content') }</p>
+  <p class="mb-3">{ $t(tp + 'content') }</p>
   <br/>
   {#each [3, 7, 3, 3] as sectionCount, index}
     {@const sectioni = index + 1}
@@ -31,7 +31,9 @@
   {/each}
   <br />
   <br />
-  <p class="text-base">
-    <a href="/pdfs/Conwood.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
+  <p>
+    <a href="/pdfs/Conwood.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+      <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
+    </a>
   </p>
 </Article>

@@ -21,6 +21,7 @@
     { image:"/products/logo_kalsi.jpg", alt: "Brand kalsi", link: "#" },
     { image:"/products/logo_onduline.jpg", alt: "Brand onduline", link: "#" },
     { image:"/products/logo_royalboard.jpg", alt: "Brand royalboard", link: "#" },
+    { image:"/products/logo_troldtekt.jpg", alt: "Brand troldtekt", link: "#" },
   ]
 </script>
 

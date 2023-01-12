@@ -9,6 +9,8 @@
   import Article from '$lib/components/Article.svelte';
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
+  const specTableNameClass = "px-3 py-1.5 bg-gray-100",
+        specTableValueClass = "px-3 py-1.5 bg-gray-50"
 </script>
 
 <CloudinaryImage src="products/onduline/img19.jpg" alt="Banner" 
@@ -53,36 +55,36 @@
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'material') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">Selulosa bitumen</td>
+          <td class={specTableNameClass}>{ $t(tp + 'material') }</td>
+          <td class={specTableValueClass}>Selulosa bitumen</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'width') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">97 cm</td>
+          <td class={specTableNameClass}>{ $t(tp + 'width') }</td>
+          <td class={specTableValueClass}>97 cm</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'length') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">57 cm</td>
+          <td class={specTableNameClass}>{ $t(tp + 'length') }</td>
+          <td class={specTableValueClass}>57 cm</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'thickness') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">0,3 cm</td>
+          <td class={specTableNameClass}>{ $t(tp + 'thickness') }</td>
+          <td class={specTableValueClass}>0,3 cm</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'wave_height') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">3,8 cm</td>
+          <td class={specTableNameClass}>{ $t(tp + 'wave_height') }</td>
+          <td class={specTableValueClass}>3,8 cm</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'large') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">0,39 m<sup>2</sup> / { $t(tp + 'sheet') }</td>
+          <td class={specTableNameClass}>{ $t(tp + 'large') }</td>
+          <td class={specTableValueClass}>0,39 m<sup>2</sup> / { $t(tp + 'sheet') }</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'weight') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">1,72 kg / { $t(tp + 'sheet') }</td>
+          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
+          <td class={specTableValueClass}>1,72 kg / { $t(tp + 'sheet') }</td>
         </tr>
         <tr>
-          <td class="px-3 py-1.5 bg-gray-100">{ $t(tp + 'items_per_pack') }</td>
-          <td class="px-3 py-1.5 bg-gray-50">10 { $t(tp + 'sheet') }</td>
+          <td class={specTableNameClass}>{ $t(tp + 'items_per_pack') }</td>
+          <td class={specTableValueClass}>10 { $t(tp + 'sheet') }</td>
         </tr>
       </table>
     </Column>
@@ -104,9 +106,11 @@
   </Row>
   <br />
   <br />
-  <p class="text-base">
+  <p>
     <a href="/pdfs/tds/onduline/TDS BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
-    <a href="/pdfs/brosur onducasa - rev.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a><br/>
+    <a href="/pdfs/brosur onducasa - rev.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+      <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
+    </a><br/>
     <a href="/pdfs/Panduan Pemasangan Onducasa.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
   </p>
 </Article>

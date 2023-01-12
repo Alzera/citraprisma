@@ -1,0 +1,43 @@
+{
+  "page": {
+    "title": "Troldtekt"
+  },
+  "section1": {
+    "title": "Akustik superior – alami",
+    "subtitle1": "Troldtekt memastikan bahwa estetika, akustik unggul",
+    "subtitle2": "dan iklim dalam ruangan yang nyaman sejalan dengan arsitektur."
+  },
+  "section2": {
+    "title": "6 alasan bagus untuk memilih Troldtekt",
+    "content": [
+      "Akustik yang bagus",
+      "Iklim dalam ruangan yang sehat",
+      "Keberlanjutan terdokumentasi",
+      "Perlindungan kebakaran yang efektif",
+      "kekuatan alami",
+      "Pilihan desain yang fleksibel"
+    ]
+  },
+  "section3": {
+    "title": "Resep sederhana berdasarkan bahan-bahan alami",
+    "subtitle": "Wol kayu berikat semen Troldtekt diproduksi dari kayu dan semen. Seperti yang sudah ada sejak 1935.",
+    "content": [
+      {
+        "title": "Kayu",
+        "subtitle": "Kami menggunakan pohon cemara Norwegia Denmark, yang merupakan sumber daya netral karbon. Selama pertumbuhannya, setiap pohon menyerap karbon dioksida sebanyak yang dilepaskan selama perawatan, penebangan, dan pengangkutannya. Troldtekt disetujui untuk menawarkan produk dalam kategori 'FSC ® 100%' (FSC C115450), yang berarti bahwa semua kayu dalam satu panel memenuhi persyaratan FSC."
+      },
+      {
+        "title": "Semen",
+        "subtitle": "Kami hanya menggunakan semen dari Aalborg Portland, yang mengekstraksi bahan mentah dari bawah tanah Denmark dengan dampak lingkungan minimal. Aalborg Portland disertifikasi menurut sistem manajemen lingkungan ISO 14001 dan European Eco-Management and Audit Scheme (EMAS )."
+      },
+      {
+        "title": "Wol kayu berikat semen",
+        "subtitle": "Di pabrik kami di Denmark, kami memproduksi panel akustik Troldtekt dari wol kayu yang diikat semen, yang menggabungkan kekuatan bawaan semen dengan sifat alami kayu."
+      }
+    ]
+  },
+  "section4": {
+    "title": "Pilihan struktur dan warna",
+    "subtitle": "Struktur yang sangat halus atau sangat kasar? Warna alamnya sendiri"
+  }
+}

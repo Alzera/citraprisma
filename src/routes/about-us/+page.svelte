@@ -12,11 +12,11 @@
 <Container class="my-2">
   <h1 class="text-3xl mb-3 text-primary">{ $t('about-us.page.title') }</h1>
   <h2 class="text-xl text-primary">{ $t('about-us.subtitle') }</h2>
-  <p class="text-base mb-1">{ $t('about-us.body1') }</p>
-  <p class="text-base mb-1">{ $t('about-us.body2') }</p>
-  <p class="text-base mb-2">{ $t('about-us.body3') }</p>
+  <p class="mb-1">{ $t('about-us.body1') }</p>
+  <p class="mb-1">{ $t('about-us.body2') }</p>
+  <p class="mb-2">{ $t('about-us.body3') }</p>
   <h2 class="text-xl text-primary">{ $t('about-us.vision_mission_title') }</h2>
-  <p class="text-base mb-2">{ $t('about-us.vision_mission') }</p>
+  <p class="mb-2">{ $t('about-us.vision_mission') }</p>
   <Row>
     <Column cols={ 12 } md={ 6 }>
       <h2 class="text-xl text-primary">{ $t('about-us.distributor_title') }</h2>

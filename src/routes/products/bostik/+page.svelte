@@ -7,7 +7,7 @@
   import Article from '$lib/components/Article.svelte';
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
-  $: sections = [
+  const sections = [
     [
       { img: "img46.jpg", tds: "BOSTIK Boscoprime 1 Rev1.pdf", },
       { img: "img48.jpg", tds: "BOSTIK Boscoseal PUXRev 1.pdf", },
@@ -38,7 +38,7 @@
 </script>
 
 <Article title={ $t(tp + 'page.title') }>
-  <p class="text-base mb-3">{ $t(tp + 'content') }</p>
+  <p class="mb-3">{ $t(tp + 'content') }</p>
   <br/>
   {#each sections as item, i}
     {@const section = i + 1}
@@ -51,9 +51,9 @@
           <h3 class="text-lg">{ $t(tp + tMidfix + 'subtitle') }</h3>
         </Column>
         <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
-          <p class="text-base mb-3">{ $t(tp + tMidfix + 'content') }</p>
+          <p class="mb-3">{ $t(tp + tMidfix + 'content') }</p>
           {#if sub.useApplication}
-            <p class="text-base mb-3">
+            <p class="mb-3">
               <i>{ $t(tp + 'application_title') }</i>
               {#if sub.count}
                 <span>
@@ -81,7 +81,9 @@
   {/each}
   <br />
   <br />
-  <p class="text-base">
-    <a href="/pdfs/Bostik Catalogue 2021-LR.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download Catalog</a>
+  <p>
+    <a href="/pdfs/Bostik Catalogue 2021-LR.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+      <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
+    </a>
   </p>
 </Article>

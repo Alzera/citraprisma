@@ -48,6 +48,8 @@ export default {
     'toast': 'bg-gray-800 px-6 py-2 text-white mb-2',
     'row': 'flex flex-wrap flex-row overflow-hidden -m-1',
     'col': 'flex-auto overflow-hidden',
+    'cont': 'p-3 max-w-4xl md:mx-auto',
+    'aside-menu': 'w-full py-3 px-6 block cursor-pointer',
   },
   safelist: [
     'toast-container',

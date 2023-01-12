@@ -20,6 +20,7 @@
     { image: "logo_wacker.jpg", href: "/products/wacker", text: "WACKER\nSilicone Sealants" },
     { image: "logo_royalboard.jpg", href: "/products/royalboard", text: "ROYALBOARD\nSilicate board for various applications" },
     { image: "logo_onduline.jpg", href: "/products/onduline", text: "ONDULINE\nLightweight roofing system" },
+    { image: "logo_troldtekt.jpg", href: "/products/troldtekt", text: "Troldtekt\nAccoustic System" },
   ]
 </script>
 
