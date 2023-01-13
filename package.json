@@ -44,8 +44,5 @@
 		"vite": "^4.0.4",
 		"vite-plugin-pwa": "^0.14.1",
 		"zlib": "^1.0.5"
-	},
-	"dependencies": {
-		"swiper": "^8.4.5"
 	}
 }

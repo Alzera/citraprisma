@@ -13,12 +13,17 @@
 
   const base = 'https://res.cloudinary.com/citraprisma/image/upload/',
     widthsValidation = /^([0-9]+(?:vw|px))(?: md:([0-9]+(?:vw|px)))*$/
-
+    
   function generateUrl(src: string, width: Nullable<number>, height: Nullable<number>, crop: string, rotate: Nullable<number>){
+    // let defaultUrl: string[] = [
+    //   't_low',
+    //   'f_auto',
+    // ];
+    //+ '/' + defaultUrl.join(',') 
     let url: string[] = [
       'f_auto',
-      'q_auto:low',
-      'e_blur:5'
+      'q_30',
+      'e_blur:10',
     ];
     if(width) url.push('w_' + width)
     if(height) url.push('h_' + height)

@@ -10,7 +10,6 @@ const config = {
 			output: {
 				manualChunks: {
 					'comps': [
-						// 'src/routes/(app)/+layout.svelte',
 						'src/lib/components/Article.svelte',
 						'src/lib/components/BrandsSlider.svelte',
 						'src/lib/components/Breadcrumb.svelte',

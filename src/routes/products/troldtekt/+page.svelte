@@ -28,7 +28,7 @@
   <p class="text-center">{ $t(tp + 'section1.subtitle1') }</p>
   <p class="text-center">{ $t(tp + 'section1.subtitle2') }</p>
 </Container>
-<Container fluid style="background: #f7f7f7">
+<Container fluid class="bg-lightgray">
   <Container class="p-6">
     <h2 class="text-4xl text-center mb-4">{ $t(tp + 'section2.title') }</h2>
     <ul class="text-base ml-12 md:ml-42">
@@ -53,7 +53,7 @@
     </Row>
   {/each}
 </Container>
-<Container fluid style="background: #f7f7f7">
+<Container fluid class="bg-lightgray">
   <Container class="p-6">
     <h2 class="text-4xl mb-4">{ $t(tp + 'section4.title') }</h2>
     <p class="mb-6">{ $t(tp + 'section4.subtitle') }</p>

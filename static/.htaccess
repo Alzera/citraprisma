@@ -1,3 +1,9 @@
+# Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
 # Force www:
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^citraprisma.com [NC]
@@ -14,17 +20,19 @@ RewriteRule ^shop/?$ /shop/
 # RewriteEngine On 
 # RewriteRule ^img/(.*)$ https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto:low,e_blur:5,$1 [R=302,NC,L]
 
-# Force access to file first instead of folder
-# DirectorySlash Off 
-# RewriteEngine on 
-# RewriteCond %{REQUEST_FILENAME}\.html -f
-# RewriteRule ^(.*)  /$1.html [L]
+# Force remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R]
 
-# Prevent viewing of .htaccess file
-<Files .htaccess>
-order allow,deny
-deny from all
-</Files>
+# Force trailing slash
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*[^/])$ /$1/ [L,R]
+
+# Force access to file first instead of folder
+DirectorySlash Off 
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)  /$1.html [L]
 
 # Enable authorization
 SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1

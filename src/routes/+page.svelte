@@ -1,11 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations'
-
-  import { Swiper, SwiperSlide } from 'swiper/svelte';
-  import { EffectFade, Autoplay, Lazy as SwiperLazy } from 'swiper';
-
-  import 'swiper/css';
-  import 'swiper/css/effect-fade';
+  import { onMount } from 'svelte'
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -38,29 +33,36 @@
     "slideshows/Banner_10.jpg",
   ]
   let serviceTab = 0
+
+  onMount(() => {
+    const slides = document.getElementById('slideshow').children
+
+    document.addEventListener('animationend', function (e) {
+      if (e.animationName === 'fade-out')
+        (e.target as Element).classList.remove('show', 'show-out')
+    });
+
+    var curIndex = 0
+    function slideShow() {
+      slides[curIndex].classList.add('show-out')
+      curIndex = (curIndex + 1) % slides.length
+      slides[curIndex].classList.add('show')
+    }
+    slides[curIndex].classList.add('show')
+    setInterval(slideShow, 5000)
+  })
 </script>
 
 <Meta title={ $t('page.title') } />
 
-<Container fluid class="!p-0">
-  <Swiper modules="{[EffectFade, Autoplay, SwiperLazy]}" 
-    autoplay={{
-      delay: 5000,
-      disableOnInteraction: false,
-    }}
-    lazy={true}
-    effect="fade">
-    {#each slideshows as slide, i}
-    <SwiperSlide>
-      <CloudinaryImage src={slide} alt={'slide-' + i}
-        widths="500px md:1600px" 
-        crop="fill" 
-        lazy={ false }
-        preload={ true }
-        class="w-full object-cover" />
-    </SwiperSlide>
-    {/each}
-  </Swiper>
+<Container fluid class="!p-0" id="slideshow">
+  {#each slideshows as slideshow, i}
+    <CloudinaryImage src={slideshow} alt={'slide-' + i}
+      widths="512px md:1408px" 
+      crop="fill" 
+      lazy={ false }
+      class="w-full object-cover" />
+  {/each}
 </Container>
 
 <div class="m-6">
@@ -68,7 +70,7 @@
   <p class="text-xl text-center">{ $t('section.distributor.content') }</p>
 </div>
 
-<Container fluid style="background: #f7f7f7">
+<Container fluid class="bg-lightgray">
   <Container class="text-center p-6">
     <h2 class="text-3xl mb-3">
       {@html $t('section.about_us.header.format', { 
@@ -167,7 +169,7 @@
 </Container>
 
 <Lazy>
-  <Container fluid style="background: #f7f7f7" id="projects">
+  <Container fluid class="bg-lightgray" id="projects">
     <Container class="text-center p-6">
       <h2 class="text-3xl mb-3">
         {@html $t('section.our_projects.header.format', { 
@@ -230,5 +232,32 @@
       color: white !important;
       background: var(--c-primary);
     }
+  }
+  #slideshow { 
+    position: relative;
+    aspect-ratio: 1600 / 670;
+  }
+  #slideshow > picture {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+  #slideshow > picture.show {
+    display: block;
+    animation-duration: 1s;
+    animation-name: fade-in;
+  }
+  #slideshow > picture.show-out {
+    animation-name: fade-out;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
   }
 </style>
