@@ -17,5 +17,18 @@
 		<div>%sveltekit.body%</div>
 		<script src="/scripts/minimal-analytics-ga4.js" defer></script>
 		<script>"serviceWorker"in navigator&&window.addEventListener("load",()=>{navigator.serviceWorker.register("/sw.js",{scope:"/"})});</script>
+		<!-- <script>
+			document.onreadystatechange = function () {
+				const m = "https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_30,e_blur:10,"
+				if (document.readyState == "interactive") {
+					document.querySelectorAll('img[src^="cld:"]').forEach(i => {
+						i.src = i.src.replace("cld:", m)
+					})
+					document.querySelectorAll('source[srcset^="cld:"]').forEach(i => {
+						i.srcset = i.srcset.replace("cld:", m)
+					})
+				}
+			}
+		</script> -->
 	</body>
 </html>

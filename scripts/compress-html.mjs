@@ -1,6 +1,5 @@
 import glob from 'glob'
 import fs from 'fs'
-import { execSync } from "child_process";
 import { minify } from 'html-minifier-terser';
 
 const minification_options = {
@@ -21,7 +20,7 @@ const minification_options = {
   // sortAttributes: true,
   // sortClassName: true
 };
-console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using html-single-line")
+console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using compress-html")
 let summaryBefore = 0, summaryAfter = 0, finishCount = 0, filesCount = 0
 glob(`./build/**/*.+(html)`, function (er, files) {
   filesCount = files.length

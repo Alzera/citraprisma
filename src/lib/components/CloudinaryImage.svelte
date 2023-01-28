@@ -11,25 +11,20 @@
     lazy: boolean = true,
     preload: boolean = false
 
-  const base = 'https://res.cloudinary.com/citraprisma/image/upload/',
+  // https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_30,e_blur:10,
+  const base = 'https://res.cloudinary.com/cprisma/f_auto,t_low',
     widthsValidation = /^([0-9]+(?:vw|px))(?: md:([0-9]+(?:vw|px)))*$/
     
   function generateUrl(src: string, width: Nullable<number>, height: Nullable<number>, crop: string, rotate: Nullable<number>){
-    // let defaultUrl: string[] = [
-    //   't_low',
-    //   'f_auto',
-    // ];
-    //+ '/' + defaultUrl.join(',') 
-    let url: string[] = [
-      'f_auto',
-      'q_30',
-      'e_blur:10',
-    ];
-    if(width) url.push('w_' + width)
-    if(height) url.push('h_' + height)
+    let url: string[] = [];
     if(crop) url.push('c_' + crop)
     if(rotate) url.push('a_' + rotate)
-    return base + url.join(',') + (src.startsWith('/') ? src : '/' + src)
+    if(width) url.push('w_' + width)
+    if(height) url.push('h_' + height)
+    return base 
+      + (url.length > 0 ? ',' : '') 
+      + url.join(',') 
+      + (src.startsWith('/') ? src : '/' + src)
   }
 
   let url: string, 

@@ -7,13 +7,7 @@
     "projects": "Projects",
     "products": "Products",
     "contact_us": "Contact Us",
-    "shop": {
-      "title": "Shop",
-      "my_account": "My Account",
-      "products": "Products",
-      "categories": "Categories",
-      "brands": "Brands"
-    }
+    "shop": "Shop"
   },
   "section_header": {
     "our_brands": {

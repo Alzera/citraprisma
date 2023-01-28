@@ -7,13 +7,7 @@
     "projects": "Proyek",
     "products": "Produk",
     "contact_us": "Kontak Kami",
-    "shop": {
-      "title": "Toko",
-      "my_account": "Akun",
-      "products": "Produk",
-      "categories": "Kategori",
-      "brands": "Merek"
-    }
+    "shop": "Toko"
   },
   "section_header": {
     "our_brands": {

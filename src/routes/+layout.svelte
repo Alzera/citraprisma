@@ -34,7 +34,7 @@
 
   let y = 0
   let drawer = false
-  let shopsub = false
+  // let shopsub = false
 
   $: showBottomNav = y > 200;
   $: menus = [
@@ -94,10 +94,12 @@
                 </a>
               </Column>
             {/each}
-            <Column class="flex justify-center overflow-visible" on:hover={ () => { shopsub = !shopsub } }>
+            <Column class="flex justify-center overflow-visible">
               <a href="/shop" rel="external" class="menu text-lg">
-                <span class="text-white">{ $t('layout.menus.shop.title') }</span>
+                <span class="text-white">{ $t('layout.menus.shop') }</span>
               </a>
+              <!-- 
+                on:hover={ () => { shopsub = !shopsub } }
               {#if shopsub}
                 <div class="bg-primary absolute top-10.3 left-0 px-4 min-w-50 shadow-2xl">
                   <a href="/shop/my-account" rel="external" class="menu block text-base py-1">
@@ -113,7 +115,7 @@
                     <span class="text-white">{ $t('layout.menus.shop.brands') }</span>
                   </a>
                 </div>
-              {/if}
+              {/if} -->
             </Column>
           </Row>
         {/if}
