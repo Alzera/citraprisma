@@ -21,18 +21,18 @@ RewriteRule ^shop/?$ /shop/
 # RewriteRule ^img/(.*)$ https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_auto:low,e_blur:5,$1 [R=302,NC,L]
 
 # Force remove trailing slash
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ /$1 [L,R]
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)/$ /$1 [L,R]
 
 # Force trailing slash
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteRule ^(.*[^/])$ /$1/ [L,R]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*[^/])$ /$1/ [L,R]
 
 # Force access to file first instead of folder
-DirectorySlash Off 
-RewriteEngine on 
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)  /$1.html [L]
+# DirectorySlash Off 
+# RewriteEngine on 
+# RewriteCond %{REQUEST_FILENAME}\.html -f
+# RewriteRule ^(.*)  /$1.html [L]
 
 # Enable authorization
 SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1

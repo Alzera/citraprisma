@@ -11,6 +11,33 @@
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
   $: title = $t(tp + 'page.title')
+
+  let dialog: HTMLDialogElement, iframe: HTMLIFrameElement
+  function showDialog(item: any){
+    iframe.src = item.video
+    dialog.showModal()
+  }
+  function handleBackdrop(e: any){
+    var rect = dialog.getBoundingClientRect();
+    if (!(rect.top <= e.clientY && e.clientY <= rect.top + rect.height
+      && rect.left <= e.clientX && e.clientX <= rect.left + rect.width)) {
+        dialog.close();
+    }
+  }
+
+  const videos = [
+    { video: "https://drive.google.com/file/d/11tr-OZLZk0bhHPPRE600ZJ1sBRzwjZgd/preview", img: "new_troldtekt_production_line_in_one_minute.png", text: "New Troldtekt production line in one minute" },
+    { video: "https://drive.google.com/file/d/12qAWkSSErI79cJAM8ljfYDz9S9SYldEN/preview", img: "monteringinstallationmontage_troldtekt_plus_akustikloftacoustic_ceilingakustikdecke.png", text: "Montering Installation Montage Troldtekt Plus akustik loft acoustic ceiling Akustik decke" },
+    { video: "https://drive.google.com/file/d/1ChXrGZHeVYP3N2KFdgKWo7kKfCFQcS0w/preview", img: "troldtekt_-_based_on_futurecem_-_acoustic_panels_with_negative_carbon_footprint_during_production.png", text: "Troldtekt - Based on FUTURECEM - Acoustic panels with negative carbon footprint during production" },
+    { video: "https://drive.google.com/file/d/1GDttNaMdnPRsWhIDt2KPmy9_mtVZ05or/preview", img: "certfied_wood_-_from_forest_to_architecture_short_version.png", text: "Certified wood - from forest to architecture (short version)" },
+    { video: "https://drive.google.com/file/d/1GzgTCg-11RIf4KPuPczTu1zPu94Xgely/preview", img: "troldtekt_acoustic_panels_-_a_sustainable_solution.png", text: "Troldtekt acoustic panels - a sustainable solution" },
+    { video: "https://drive.google.com/file/d/1MRTNJ24tZi1AEBuIHSWO4MHwd3novT9T/preview", img: "monteringinstallationmontage_troldtekt_acoustic_ceiling_with_exposed_t_profiles.png", text: "Montering Installation Montage Troldtekt acoustic ceiling with exposed T profiles" },
+    { video: "https://drive.google.com/file/d/1T62vI-8--bSnBH4DpKQp3piMw7N-mlf7/preview", img: "healthy_learning_environment_with_troldtekt_acoustic_solutions.png", text: "Healthy learning environment with Troldtekt acoustic solutions" },
+    { video: "https://drive.google.com/file/d/1ZJsM09N0I_kwtV0Pw-8DF1F3tYNHWrgO/preview", img: "an_introduction_to_room_acoustics.png", text: "An Introduction to Room Acoustics" },
+    { video: "https://drive.google.com/file/d/1k3taxOKIObKxATwIrTNnygjtumbLbVxS/preview", img: "certified_wood_-_from_forest_to_architecture_full_version.png", text: "Certified wood - from forest to architecture (full version)" },
+    { video: "https://drive.google.com/file/d/1nswaGAUxCDiBNHdXT0TRlrLujxhIgtTk/preview", img: "monteringinstallationmontage_troldtekt_acoustic_ceiling_with_c60_profile_system.png", text: "Montering Installation Montage Troldtekt acoustic ceiling with C60 profile system" },
+    { video: "https://drive.google.com/file/d/1xhnrwnxTE-2DMAz3UUunSb0untnGfH-r/preview", img: "monteringinstallationmontage_troldtekt_acoustic_with_concealed_t_profiles.png", text: "Montering Installation Montage Troldtekt acoustic with concealed T profiles" },
+  ]
 </script>
 
 <Meta { title } />
@@ -23,6 +50,11 @@
   </div>
   <h1 class="text-4xl text-primary">{ title }</h1>
 </Container>
+<CloudinaryImage src="products/troldtekt/banner.jpg" alt="Banner" 
+  widths="512px md:1408px" 
+  crop="fill" 
+  lazy={ false }
+  class="w-vw-center object-cover md:h-128" />
 <Container class="p-6">
   <h2 class="text-4xl text-center mb-4">{ $t(tp + 'section1.title') }</h2>
   <p class="text-center">{ $t(tp + 'section1.subtitle1') }</p>
@@ -86,7 +118,7 @@
         <CloudinaryImage class="w-full" src={ `products/troldtekt/img101.jpg` } alt="img101" widths="300px md:270px" />
       </Column>
     </Row>
-    <Row class="mb-6">
+    <Row class="mb-12">
       <Column cols10={ 10 } md10={ 2 }>
         <CloudinaryImage class="w-full" src={ `products/troldtekt/img102.jpg` } alt="img102" widths="300px md:270px" />
         White 101
@@ -109,8 +141,21 @@
       </Column>
     </Row>
   
+    <CloudinaryImage src="icon_watch_video.jpg" alt="Watch Video" widths="145px" />
+    <div class="snap-x snap-mandatory overflow-x-scroll overflow-y-hidden whitespace-nowrap w-full mb-12">
+      {#each videos as item}
+        <div on:click={ () => showDialog(item) } class="video-item">
+          <CloudinaryImage class="video-item-img" src={ `products/troldtekt/${item.img}` } alt={ item.img } widths="300px md:270px" />
+          <h5 class="video-item-txt">{ item.text }</h5>
+        </div>
+      {/each}
+    </div>
+
     <a href="/pdfs/troldtekt_profil_brochure_eng.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
       <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
     </a>
   </Container>
 </Container>
+<dialog on:click={handleBackdrop} class="p-0 aspect-video w-240 max-w-full" bind:this={ dialog }>
+  <iframe bind:this={ iframe } title="video" class="border-0 w-full h-full"></iframe>
+</dialog>

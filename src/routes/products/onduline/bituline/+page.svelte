@@ -130,17 +130,15 @@
   <a href="/pdfs/tds/onduline/TDS BITULINE PRIMER.pdf" download target="_blank" rel="noopener noreferrer external" class="button">Download TDS</a><br/>
   <br />
   <br />
-  <h4 class="text-xl text-primary mb-2">Videos</h4>
-  <Row>
+  <CloudinaryImage src="icon_watch_video.jpg" alt="Watch Video" widths="145px" />
+  <div class="snap-x snap-mandatory overflow-x-scroll overflow-y-hidden whitespace-nowrap w-full mb-12">
     {#each videos as item}
-      <Column cols={ 12 } md={ 4 }>
-        <div on:click={ () => showDialog(item) } class="mb-2 rounded-lg border border-gray-200 shadow-sm h-full bg-slate-50">
-          <CloudinaryImage class="w-full h-52 object-cover aspect-video rounded-t-lg" src={ `products/onduline/${item.img}` } alt={ item.img } widths="300px md:270px" />
-          <h5 class="p-4 text-lg tracking-tight text-gray-900">{ item.text }</h5>
-        </div>
-      </Column>
+      <div on:click={ () => showDialog(item) } class="video-item">
+        <CloudinaryImage class="video-item-img" src={ `products/onduline/${item.img}` } alt={ item.img } widths="300px md:270px" />
+        <h5 class="video-item-txt">{ item.text }</h5>
+      </div>
     {/each}
-  </Row>
+    </div>
   <br />
   <p>
     <a href="/pdfs/BROSUR BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">

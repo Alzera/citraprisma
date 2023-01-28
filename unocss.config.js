@@ -50,6 +50,9 @@ export default {
     'col': 'flex-auto overflow-hidden',
     'cont': 'p-3 max-w-4xl md:mx-auto',
     'aside-menu': 'w-full py-3 px-6 block cursor-pointer',
+    'video-item': 'w-90 mb-2 mr-2 rounded-lg border border-gray-200 shadow-sm h-full bg-slate-50 snap-center inline-block align-top',
+    'video-item-img': 'w-full h-52 object-cover aspect-video rounded-t-lg',
+    'video-item-txt': 'p-4 text-lg tracking-tight text-gray-900 whitespace-normal',
   },
   safelist: [
     'toast-container',

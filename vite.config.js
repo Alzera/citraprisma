@@ -31,7 +31,7 @@ const config = {
 	plugins: [
 		sveltekit(),
 		Unocss(),
-		VitePWA(pwaConfig)
+		VitePWA(pwaConfig),
 	]
 };
 

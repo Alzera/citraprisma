@@ -1,5 +1,5 @@
 import { minify } from 'html-minifier-terser';
-import { prerendering } from '$app/environment';
+import { building } from '$app/environment';
  
 const minification_options = {
   collapseBooleanAttributes: true,
@@ -23,7 +23,8 @@ import type { Handle } from "@sveltejs/kit"
 export const handle: Handle = async ({ event, resolve }) => {
   const response = await resolve(event);
  
-  if (prerendering && response.headers.get('content-type') === 'text/html') {
+  console.log(response.headers.get('content-type'))
+  if (building && response.headers.get('content-type') === 'text/html') {
     return new Response(await minify(await response.text(), minification_options), {
       status: response.status,
       headers: response.headers
