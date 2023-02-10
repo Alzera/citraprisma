@@ -44,11 +44,12 @@
 
     var curIndex = 0
     function slideShow() {
+      slides[curIndex].classList.remove('no-anim')
       slides[curIndex].classList.add('show-out')
       curIndex = (curIndex + 1) % slides.length
       slides[curIndex].classList.add('show')
     }
-    slides[curIndex].classList.add('show')
+    slides[curIndex].classList.add('show', 'no-anim')
     setInterval(slideShow, 5000)
   })
 </script>
@@ -248,6 +249,9 @@
     display: none;
     position: absolute;
     top: 0;
+  }
+  #slideshow > picture.no-anim {
+    animation-name: none !important;
   }
   #slideshow > picture.show {
     display: block;
