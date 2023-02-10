@@ -1,17 +1,17 @@
 import presetUno from '@unocss/preset-uno'
 import presetIcons from '@unocss/preset-icons'
-import { exec } from 'child_process'
+// import { exec } from 'child_process'
 
-export const customUnocssPlaugin = function() {
-  return {
-    name: 'custom-unocss-plugin', // required, will show up in warnings and errors
-    buildStart(opts) {
-			exec("unocss \"src/routes/[(]app[)]/**/*.svelte\" --out-file \"src/routes/(app)/uno.css\"")
-			exec("unocss \"src/routes/[(]admin[)]/**/*.svelte\" --out-file \"src/routes/(admin)/4dm1n/uno.css\"")
-			exec("unocss \"src/lib/components/**/*.svelte\" --out-file \"src/components.css\"")
-    },
-  }
-}
+// export const customUnocssPlaugin = function() {
+//   return {
+//     name: 'custom-unocss-plugin', // required, will show up in warnings and errors
+//     buildStart(opts) {
+// 			exec("unocss \"src/routes/[(]app[)]/**/*.svelte\" --out-file \"src/routes/(app)/uno.css\"")
+// 			exec("unocss \"src/routes/[(]admin[)]/**/*.svelte\" --out-file \"src/routes/(admin)/4dm1n/uno.css\"")
+// 			exec("unocss \"src/lib/components/**/*.svelte\" --out-file \"src/components.css\"")
+//     },
+//   }
+// }
 
 export default { 
   presets: [
@@ -40,6 +40,9 @@ export default {
       "line-height": "1.75rem",
       "text-align": "justify",
     }],
+    [ 'content-visibility-auto', {
+      "content-visibility": "auto",
+    }],
   ],
   shortcuts: {
     'form-input': 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5',
@@ -48,7 +51,7 @@ export default {
     'toast': 'bg-gray-800 px-6 py-2 text-white mb-2',
     'row': 'flex flex-wrap flex-row overflow-hidden -m-1',
     'col': 'flex-auto overflow-hidden',
-    'cont': 'p-3 max-w-4xl md:mx-auto',
+    'cont': 'p-3 max-w-4xl md:mx-auto content-visibility-auto',
     'aside-menu': 'w-full py-3 px-6 block cursor-pointer',
     'video-item': 'w-90 mb-2 mr-2 rounded-lg border border-gray-200 shadow-sm h-full bg-slate-50 snap-center inline-block align-top',
     'video-item-img': 'w-full h-52 object-cover aspect-video rounded-t-lg',

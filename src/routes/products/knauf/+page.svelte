@@ -255,6 +255,69 @@
     </Column>
   </Row>
   <hr class="my-3">
+  <Row>
+    <Column cols={ 12 } class="order-1">
+      <h2 class="text-2xl">{ $t(tp + 'section1.subsection5.title') }</h2>
+      <h3 class="text-lg">{ $t(tp + 'section1.subsection5.subtitle') }</h3>
+    </Column>
+    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
+      <table class="w-full leading-5">
+        <tr>
+          <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'feature') }</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="px-3 py-2 bg-gray-50">
+            <ul class="leading-7">
+              {#each Array(2) as _, i}
+                <li>{ $t(tp + `section1.subsection5.feature.${i}`) }</li>
+              {/each}
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
+        </tr>
+        <tr>
+          <td class={specTableNameClass}>{ $t(tp + 'appearance') }</td>
+          <td class={specTableValueClass}>{ $t(tp + 'section1.subsection5.appearance') }</td>
+        </tr>
+        <tr>
+          <td class={specTableNameClass}>{ $t(tp + 'board_density') }</td>
+          <td class={specTableValueClass}>885 kg/m<sup>3</sup></td>
+        </tr>
+        <tr>
+          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
+          <td class={specTableValueClass}>
+            12.5mm : nominal 11,06 kg/m<sup>3</sup><br>
+            15mm : nominal 13,17 kg/m<sup>3</sup>
+          </td>
+        </tr>
+        <tr>
+          <td class={specTableNameClass}>{ $t(tp + 'edge') }</td>
+          <td class={specTableValueClass}>Tapered Edge</td>
+        </tr>
+        <tr>
+          <td class={specTableNameClass}>{ $t(tp + 'dimension_metric') }</td>
+          <td class={specTableValueClass}>
+            12mm x 1200mm x 2400mm<br>
+            15mm x 1200mm x 2400mm
+          </td>
+        </tr>
+        <tr>
+          <td class={specTableNameClass}></td>
+          <td class={specTableValueClass}>
+            K : 0,24 w/mk<br>
+            R : 12mm = 0,05 m<sup>2</sup> k/w<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15mm = 0,06 m<sup>2</sup> k/w
+          </td>
+        </tr>
+      </table>
+    </Column>
+    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
+      <CloudinaryImage class="mx-auto" src="products/knauf/densishield.jpg" alt="knauf soundshield" widths="300px md:270px" />
+    </Column>
+  </Row>
+  <hr class="my-3">
 
   <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section2.title') }</h1>
   <Row>

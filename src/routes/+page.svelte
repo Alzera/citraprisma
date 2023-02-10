@@ -56,11 +56,16 @@
 <Meta title={ $t('page.title') } />
 
 <Container fluid class="!p-0" id="slideshow">
-  {#each slideshows as slideshow, i}
+  <CloudinaryImage src={slideshows[0]} alt={'slide-0'}
+    widths="512px md:1408px" 
+    crop="fill" 
+    lazy={ false }
+    class="w-full object-cover" />
+  {#each slideshows.slice(1) as slideshow, i}
     <CloudinaryImage src={slideshow} alt={'slide-' + i}
       widths="512px md:1408px" 
       crop="fill" 
-      lazy={ false }
+      lazy={ true }
       class="w-full object-cover" />
   {/each}
 </Container>

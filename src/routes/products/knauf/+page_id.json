@@ -60,6 +60,15 @@
         "Kemampuan yang lebih tinggi dalam menahan api dibanding dengan papan gypsum standar",
         "Bahan tambahan berupa ber glass akan mempertahankan kekuatannya ketika terjadi kebakaran."
       ]
+    },
+    "subsection5": {
+      "title": "Soundshield",
+      "subtitle": "Performa reduksi suara",
+      "appearance": "Grey paper",
+      "feature": [
+        "Mempunyai kerapatan, reinforce core yang tinggi (high-density plasterboard)",
+        "Digunakan pada area yang membutuhkan tingkat insulasi suara yang tinggi"
+      ]
     }
   },
   "section2": {
