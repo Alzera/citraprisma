@@ -9,26 +9,17 @@
 		<style>@font-face{font-family:'Dosis';font-weight:500;src:url("/fonts/dosis.woff2") format('woff2');font-display:swap;}</style>
 		<meta content="index,follow" name="robots">
 		<meta content="index,follow" name="googlebot">
+		<!-- <link rel="preconnect" href="https://www.citraprisma.com">
+		<link rel="dns-prefetch" href="https://www.citraprisma.com"> -->
 		<link rel="preconnect" href="https://res.cloudinary.com">
+		<link rel="dns-prefetch" href="https://res.cloudinary.com">
 		%sveltekit.head%
 		<link rel="manifest" href="/manifest.webmanifest">
+		<link rel="preload" href="/pwa-192x192.png" as="image">
 	</head>
 	<body>
 		<div>%sveltekit.body%</div>
 		<script src="/scripts/minimal-analytics-ga4.js" defer></script>
 		<script>"serviceWorker"in navigator&&window.addEventListener("load",()=>{navigator.serviceWorker.register("/sw.js",{scope:"/"})});</script>
-		<!-- <script>
-			document.onreadystatechange = function () {
-				const m = "https://res.cloudinary.com/citraprisma/image/upload/f_auto,q_30,e_blur:10,"
-				if (document.readyState == "interactive") {
-					document.querySelectorAll('img[src^="cld:"]').forEach(i => {
-						i.src = i.src.replace("cld:", m)
-					})
-					document.querySelectorAll('source[srcset^="cld:"]').forEach(i => {
-						i.srcset = i.srcset.replace("cld:", m)
-					})
-				}
-			}
-		</script> -->
 	</body>
 </html>

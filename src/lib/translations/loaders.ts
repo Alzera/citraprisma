@@ -13,6 +13,8 @@ export default [
 { locale: 'en', key: 'products.bostik', routes: ['/products/bostik', '/products/bostik/'], loader: async () => (await import('../../routes/products/bostik/+page_en.json')).default, }, 
 { locale: 'id', key: 'products.conwood', routes: ['/products/conwood', '/products/conwood/'], loader: async () => (await import('../../routes/products/conwood/+page_id.json')).default, }, 
 { locale: 'en', key: 'products.conwood', routes: ['/products/conwood', '/products/conwood/'], loader: async () => (await import('../../routes/products/conwood/+page_en.json')).default, }, 
+{ locale: 'id', key: 'products.kalsi', routes: ['/products/kalsi', '/products/kalsi/'], loader: async () => (await import('../../routes/products/kalsi/+page_id.json')).default, }, 
+{ locale: 'en', key: 'products.kalsi', routes: ['/products/kalsi', '/products/kalsi/'], loader: async () => (await import('../../routes/products/kalsi/+page_en.json')).default, }, 
 { locale: 'id', key: 'products.knauf', routes: ['/products/knauf', '/products/knauf/'], loader: async () => (await import('../../routes/products/knauf/+page_id.json')).default, }, 
 { locale: 'en', key: 'products.knauf', routes: ['/products/knauf', '/products/knauf/'], loader: async () => (await import('../../routes/products/knauf/+page_en.json')).default, }, 
 { locale: 'id', key: 'products.onduline', routes: ['/products/onduline', '/products/onduline/'], loader: async () => (await import('../../routes/products/onduline/+page_id.json')).default, }, 

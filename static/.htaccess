@@ -49,9 +49,10 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
   ExpiresDefault "access plus 2 days"
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType text/plain "access plus 1 year"
+  ExpiresByType application/manifest+json "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType image/ico "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
   ExpiresByType text/html "access plus 600 seconds"
 
   AddType application/x-font-woff2 .woff2

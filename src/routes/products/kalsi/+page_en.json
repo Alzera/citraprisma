@@ -1,0 +1,61 @@
+{
+  "page": {
+    "title": "Kalsi"
+  },
+  "thickness": "Thickness",
+  "width": "Width",
+  "length": "Length",
+  "weight": "Weight",
+  "section1": {
+    "title": "A. Ceiling Application",
+    "subsection1": {
+      "title": "KalsiRata 3",
+      "content": "KALSIRata 3 is a building board with a thickness of 3mm, suitable for indoor ceilings. It is recommended to apply KALSINail 3-4.5 nails to a wood frame ceiling. Connections between boards should be left open (visible joints). KALSIRata 3 is an economical and strong solution to replace plywood."
+    },
+    "subsection2": {
+      "title": "KalsiBoard Ling 3.5",
+      "content": "KALSIBoard Ling 3.5 is a board with a thickness of 3.5 mm, suitable for indoor ceiling applications, applied using KALSINails 3-4.5 nails on a wooden frame. Connections between boards should be left open (visible joints)."
+    },
+    "subsection3": {
+      "title": "KalsiBoard Ling 4",
+      "content": "KALSIBoard Ling 4 is a ceiling board with a thickness of 4mm which is perfect for interior and exterior ceilings (soffits). KALSIBoard Ling 4 will produce a perfectly flat ceiling with a flush joint system."
+    },
+    "subsection4": {
+      "title": "KalsiBoard Ling 4.5",
+      "content": "KALSIBoard Ling 4.5 is a ceiling board with a thickness of 4.5mm which is perfect for interior and exterior ceilings (soffits). KALSIBoard Ling 4.5 will produce a perfectly flat ceiling with a flush joint system."
+    },
+    "subsection5": {
+      "title": "KalsiBoard Ling 6",
+      "content": "KALSIBoard Ling 6 is our best ceiling board. With a thickness of 6 mm it is suitable for interior and exterior ceilings (soffits). KALSIBoard Ling 4 will produce a perfectly flat ceiling with a flush joint system. Has a recessed edge variant R2 & R4 on each side."
+    }
+  },
+  "section2": {
+    "title": "B. Partition Application",
+    "subsection1": {
+      "title": "KalsiPart 8",
+      "content": "KALSIPart 8 is a board for interior wall / partition applications with a thickness of 8 mm. The connection between KALSI Part 8 boards is applied with an open connection system or closed connection using KALSI Kompon IN-F and KALSI Tape FG-50. KALSIPart 8 was applied to the KALSIFrame MT-51 and KALSIFrame MS-51 steel frames which were installed according to KALSI recommendations to obtain a complete partition system that has good durability. The KALSIPart 8 partition system is a partition system that has high quality and is sturdy because it has passed international standard laboratory tests for acoustic performance, mechanical strength, and fire resistance. KALSI Part 8 is also available in 2 and 4 recess corner variants (KALSI Part 8-R2 & KALSI Part 8 – R4). Make sure you get a genuine KALSI Part 8 product by checking the KALSI Part 8 printing label on each side."
+    }
+  },
+  "section3": {
+    "title": "C. Siding Plank Application",
+    "subsection1": {
+      "title": "KalsiPlank",
+      "content": "KALSI Plank is a decorative board for cladding exterior and interior walls of buildings with thicknesses of 8mm, 9mm and 10mm. For optimal end results, please follow the installation instructions carefully. For final finishes use suitable paint products (example: water- and oil-based paints specifically for external applications). Use the KALSI Frame frame for optimal results, if using a wooden frame, protect the wood with paint or a protective layer so that the wood does not rot and is eaten by termites. Make sure you get genuine KALSIPlank products by checking the printing label printed on each side."
+    }
+  },
+  "section4": {
+    "title": "D. External Wall Application",
+    "subsection1": {
+      "title": "KalsiClad",
+      "content": "KALSIClad is a board suitable for use as an exterior wall. KALSIClad should be mounted on a suitable steel frame (our recommended design, dimensions, thickness and spacing). Parameters such as wind load, dead load, building height and seismic risk level need to be carefully calculated. When installing exterior siding, joints can be left open (visible joints) or closed (flush joints) using a special sealant to resist weather changes and moisture movement. We recommend using polyurethane sealants with UV protection and paintable sealants."
+    }
+  },
+  "section5": {
+    "title": "E. Floor Application",
+    "subsection1": {
+      "title": "KalsiFloor",
+      "content1": "KALSIFloor 20 is a floor covering board with a thickness of 20 mm which is used for indoor applications in houses, apartments and public buildings with large loads. KALSIFloor 20 is applied by installing KALSIScrew FL screws on a steel frame (design adjusted to live load and other parameters), KALSIFloor 20 can be used for mezzanines, additional rooms and others with faster construction preparation.",
+      "content2": "The advantage is that the structural load is lighter, the installation system is easy, clean, flexible and earthquake resistant. If used for floors with heavy loads, KALSIFloor 20 must be coated with cement mortar and chicken wire before covering with ceramic, vinyl floor carpet, parquet to prevent friction and impact. Consult your project with Kalsi's team of experts."
+    }
+  }
+}

@@ -14,13 +14,14 @@
     { image: "logo_bostik.jpg", href: "/products/bostik", text: "BOSTIK\nWaterproofing, mortar, sealant" },
     { image: "logo_grace.jpg", href: "#", text: "GRACE\nWaterproofing dan injeksi" },
     { image: "logo_kcc.jpg", href: "#", text: "KCC\nCat, floor coating" },
-    { image: "logo_rockwool.png", href: "/products/rockwool", text: "ROCKWOOL\nSave n' Silent&trade; Pro" },
+    { image: "logo_rockwool.png", href: "/products/rockwool", text: "ROCKWOOL\nSave n' Silent™ Pro" },
     { image: "logo_conwood.jpg", href: "/products/conwood", text: "CONWOOD\nLisplang dan Dekoratif" },
     { image: "logo_pioneer.jpg", href: "#", text: "PIONEER\nEpoxy dan Adhesive" },
     { image: "logo_wacker.jpg", href: "/products/wacker", text: "WACKER\nSilicone Sealants" },
     { image: "logo_royalboard.jpg", href: "/products/royalboard", text: "ROYALBOARD\nSilicate board for various applications" },
+    { image: "logo_kalsi.jpg", href: "/products/kalsi", text: "KALSI\nAsbestos free board" },
     { image: "logo_onduline.jpg", href: "/products/onduline", text: "ONDULINE\nLightweight roofing system" },
-    { image: "logo_troldtekt.jpg", href: "/products/troldtekt", text: "Troldtekt\nAccoustic System" },
+    { image: "logo_troldtekt.jpg", href: "/products/troldtekt", text: "TROLDTEKT\nAccoustic System" },
   ]
 </script>
 

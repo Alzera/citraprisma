@@ -50,7 +50,10 @@
       slides[curIndex].classList.add('show')
     }
     slides[curIndex].classList.add('show', 'no-anim')
-    setInterval(slideShow, 5000)
+    setTimeout(() => {
+      slideShow()
+      setInterval(slideShow, 5000)
+    }, 10000);
   })
 </script>
 
@@ -61,6 +64,7 @@
     widths="512px md:1408px" 
     crop="fill" 
     lazy={ false }
+    preload={ true }
     class="w-full object-cover" />
   {#each slideshows.slice(1) as slideshow, i}
     <CloudinaryImage src={slideshow} alt={'slide-' + i}
