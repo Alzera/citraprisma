@@ -15,11 +15,9 @@
   <br/>
   <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section1.title') }</h1>
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 } md={ 7 }>
       <h2 class="text-2xl">{ $t(tp + 'section1.subsection1.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section1.subsection1.content') }</h3>
-    </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -57,17 +55,17 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 } md={ 5 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsi3.jpg" alt="kalsi 3" widths="720px" />
     </Column>
   </Row>
   <hr class="my-3">
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 }>
       <h2 class="text-2xl">{ $t(tp + 'section1.subsection2.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section1.subsection2.content') }</h3>
     </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
+    <Column cols={ 12 }>
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -93,17 +91,15 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsi3.5.jpg" alt="kalsi 3.5" widths="720px" />
     </Column>
   </Row>
   <hr class="my-3">
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 } md={ 6 }>
       <h2 class="text-2xl">{ $t(tp + 'section1.subsection3.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section1.subsection3.content') }</h3>
-    </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -129,17 +125,15 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 } md={ 6 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsi4.5.jpg" alt="kalsi 4.5" widths="720px md:810px" />
     </Column>
   </Row>
   <hr class="my-3">
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 } md={ 6 }>
       <h2 class="text-2xl">{ $t(tp + 'section1.subsection4.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section1.subsection4.content') }</h3>
-    </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -165,17 +159,15 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 } md={ 6 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsi4.5.jpg" alt="kalsi 4.5" widths="720px md:810px" />
     </Column>
   </Row>
   <hr class="my-3">
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 } md={ 6 }>
       <h2 class="text-2xl">{ $t(tp + 'section1.subsection5.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section1.subsection5.content') }</h3>
-    </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -213,18 +205,16 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 } md={ 6 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsi4.5.jpg" alt="kalsi 4.5" widths="720px md:810px" />
     </Column>
   </Row>
   <hr class="my-3">
   <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section2.title') }</h1>
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 } md={ 6 }>
       <h2 class="text-2xl">{ $t(tp + 'section2.subsection1.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section2.subsection1.content') }</h3>
-    </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -262,18 +252,18 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 } md={ 6 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsipart.jpg" alt="kalsi part" widths="720px md:810px" />
     </Column>
   </Row>
   <hr class="my-3">
   <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section3.title') }</h1>
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 }>
       <h2 class="text-2xl">{ $t(tp + 'section3.subsection1.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section3.subsection1.content') }</h3>
     </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
+    <Column cols={ 12 }>
       <table class="w-full leading-5">
         <tr>
           <th class={tableHead}></th>
@@ -318,18 +308,18 @@
         </tr>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsiplank.jpg" alt="kalsi plank" widths="720px md:640px" />
     </Column>
   </Row>
   <hr class="my-3">
   <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section4.title') }</h1>
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 }>
       <h2 class="text-2xl">{ $t(tp + 'section4.subsection1.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section4.subsection1.content') }</h3>
     </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
+    <Column cols={ 12 }>
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -385,19 +375,17 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsiclad.jpg" alt="kalsi clad" widths="720px md:640px" />
     </Column>
   </Row>
   <hr class="my-3">
-  <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section4.title') }</h1>
+  <h1 class="text-3xl text-primary mb-1">{ $t(tp + 'section5.title') }</h1>
   <Row>
-    <Column cols={ 12 } class="order-1">
+    <Column cols={ 12 } md={ 6 }>
       <h2 class="text-2xl">{ $t(tp + 'section5.subsection1.title') }</h2>
       <h3 class="text-lg">{ $t(tp + 'section5.subsection1.content1') }</h3>
       <h3 class="text-lg">{ $t(tp + 'section5.subsection1.content2') }</h3>
-    </Column>
-    <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
       <table class="w-full leading-5">
         <thead>
           <tr>
@@ -417,8 +405,8 @@
         </tbody>
       </table>
     </Column>
-    <Column cols={ 12 } md={ 4 } class="order-2 md:order-3">
-      <CloudinaryImage class="mx-auto" src="products/kalsi/standardboard.jpg" alt="kalsi standardboard" widths="300px md:270px" />
+    <Column cols={ 12 } md={ 6 }>
+      <CloudinaryImage class="mx-auto" src="products/kalsi/kalsifloor.jpg" alt="kalsi floor" widths="720px md:810px" />
     </Column>
   </Row>
   <hr class="my-3">
