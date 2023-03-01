@@ -39,6 +39,7 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 
 <IfModule mod_mime.c>
     AddType application/manifest+json webmanifest
+    AddType text/javascript js mjs
 </IfModule>
 
 # BEGIN Expire headers  
@@ -66,28 +67,30 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
     RewriteEngine on
     # Brotli
     RewriteCond %{HTTP:Accept-encoding} br
-    RewriteCond %{REQUEST_URI} .*\.(css|html|js)
+    RewriteCond %{REQUEST_URI} .*\.(css|html|js|mjs)
     RewriteCond %{REQUEST_FILENAME}.br -s
     RewriteRule ^(.+) $1.br
     
     RewriteRule "\.css\.br$" "-" [T=text/css,E=no-brotli,E=no-gzip]
     RewriteRule "\.html\.br$" "-" [T=text/html,E=no-brotli,E=no-gzip]
     RewriteRule "\.js\.br$" "-" [T=application/javascript,E=no-brotli,E=no-gzip]
+    RewriteRule "\.mjs\.br$" "-" [T=application/javascript,E=no-brotli,E=no-gzip]
     
     RewriteCond %{HTTP:Accept-Encoding} gzip
-    RewriteCond %{REQUEST_URI} .*\.(css|html|js)
+    RewriteCond %{REQUEST_URI} .*\.(css|html|js|mjs)
     RewriteCond %{REQUEST_FILENAME}.gz -s
     RewriteRule ^(.+) $1.gz
     
     RewriteRule "\.css\.gz$" "-" [T=text/css,E=no-brotli,E=no-gzip]
     RewriteRule "\.html\.gz$" "-" [T=text/html,E=no-brotli,E=no-gzip]
     RewriteRule "\.js\.gz$" "-" [T=application/javascript,E=no-brotli,E=no-gzip]
-    <FilesMatch "\.(css|html|js)\.br$">
+    RewriteRule "\.mjs\.gz$" "-" [T=application/javascript,E=no-brotli,E=no-gzip]
+    <FilesMatch "\.(css|html|js|mjs)\.br$">
          RemoveLanguage .br
          Header set Content-Encoding br
          Header append Vary Accept-Encoding
     </FilesMatch>
-    <FilesMatch "\.(css|html|js)\.gz$">
+    <FilesMatch "\.(css|html|js|mjs)\.gz$">
          Header set Content-Encoding gzip
          Header append Vary Accept-Encoding
     </FilesMatch>
