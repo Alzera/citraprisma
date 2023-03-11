@@ -4,7 +4,7 @@ import zlib from "zlib";
 
 console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using compress")
 let summary = 0, brSummary = 0, gzSummary = 0
-glob('./build/**/*.+(json|mjs|js|css|html|xml)', function (er, files) {
+glob('./build/**/*.+(json|mjs|js|css|html|xml)').then((files) => {
   files.forEach(function (file) {
     const sizeBefore = fs.statSync(file).size
     const data = fs.readFileSync(file)

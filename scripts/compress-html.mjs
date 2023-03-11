@@ -22,7 +22,7 @@ const minification_options = {
 };
 console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using compress-html")
 let summaryBefore = 0, summaryAfter = 0, finishCount = 0, filesCount = 0
-glob(`./build/**/*.+(html)`, function (er, files) {
+glob("./build/**/*.+(html)").then((files) => {
   filesCount = files.length
   files.forEach(async (path, i) => {
     const sizeBefore = fs.statSync(path).size / 1024
