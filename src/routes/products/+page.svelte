@@ -22,6 +22,7 @@
     { image: "logo_kalsi.jpg", href: "/products/kalsi", text: "KALSI\nAsbestos free board" },
     { image: "logo_onduline.jpg", href: "/products/onduline", text: "ONDULINE\nLightweight roofing system" },
     { image: "logo_troldtekt.jpg", href: "/products/troldtekt", text: "TROLDTEKT\nAccoustic System" },
+    { image: "logo_blesscon.jpg", href: "/products/blesscon", text: "BLESSCON\nLightweight brick friendly environment" },
   ]
 </script>
 

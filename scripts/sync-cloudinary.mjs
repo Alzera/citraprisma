@@ -7,7 +7,7 @@ import glob from "glob";
 const assetsFolder = 'assets/images';
 
 var count = 0;
-glob(`./${assetsFolder}/**/*.+(jpg|jpeg|png)`, function (er, files) {
+glob(`./${assetsFolder}/**/*.+(jpg|jpeg|png)`).then((files) => {
   files.forEach(function (file) {
     const folder = path.relative(assetsFolder, path.dirname(file));
     const normalized = folder.replace(/\\/g, "/")

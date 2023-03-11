@@ -1,0 +1,60 @@
+{
+  "pages": {
+    "title": "Blesscon"
+  },
+  "section1": {
+    "title": "Eco-friendly lightweight brick",
+    "subtitle": "As a pioneer of eco-friendly light brick, Blesscon has been certified Green Label Indonesia, which means Blesscon light brick :",
+    "details": [
+      "Contains no harmful metals",
+      "Efficiently produced",
+      "Minimal waste",
+      "Recyclable"
+    ]
+  },
+  "section2": {
+    "title": "Advantages of AAC Lightweight Brick",
+    "excellence": [
+      {
+        "title": "Economical",
+        "desc": "Save materials, labor, time, and more efficient so that the construction costs are lower"
+      },
+      {
+        "title": "Save Time",
+        "desc": "Installation is 3x faster than red brick"
+      },
+      {
+        "title": "Fire Resistant",
+        "desc": "Resists fire up to 4 hours longer than conventional bricks"
+      },
+      {
+        "title": "Lighter",
+        "desc": "Up to 70% lighter building load with the same area"
+      },
+      {
+        "title": "Environmentally Friendly",
+        "desc": "Does not contain harmful heavy metals that may harm health"
+      },
+      {
+        "title": "Tham Earthquake",
+        "desc": "Maintain the structure of the building in the event of severe shaking"
+      }
+    ]
+  },
+  "section3": {
+    "title": "Total pcs/m3",
+    "length": "Length",
+    "width": "Width",
+    "height": "Height",
+    "wide": "Wall Width",
+    "iso": "Blesscon lightweight bricks have been manufactured according to the ISO 9001:2015 standard"
+  },
+  "section4": {
+    "title": "Physical Specifications",
+    "weight": "Normal weight",
+    "press": "Tough press",
+    "conductivity": "Thermic conductivity",
+    "insulation": "Sound insulation",
+    "sni": "The level of fire resistance meets the standard (TKA) -/240/240/240 according to SNI 1739-2008"
+  }
+}

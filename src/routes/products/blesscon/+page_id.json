@@ -1,0 +1,60 @@
+{
+  "page": {
+    "title": "Blesscon"
+  },
+  "section1": {
+    "title": "Bata ringan ramah lingkungan",
+    "subtitle": "Sebagai pelopor bata ringan ramah lingkungan, Blesscon telah tersertifikasi Green Label Indonesia, yang berarti bata ringan Blesscon :",
+    "details": [
+      "Tidak mengandung logam berbahaya",
+      "Diproduksi dengan efisien",
+      "Minimal waste",
+      "Dapat didaur ulang"
+    ]
+  },
+  "section2": {
+    "title": "Keunggulan Bata Ringan AAC",
+    "excellence": [
+      {
+        "title": "Ekonomis",
+        "desc": "Menghemat bahan, tenaga, waktu, dan lebih efisien sehingga biaya pembangunan lebih rendah"
+      },
+      {
+        "title": "Hemat Waktu",
+        "desc": "Proses pemasangan 3x lebih cepat daripada bata merah"
+      },
+      {
+        "title": "Tahan Api",
+        "desc": "Menahan laju api hingga 4 jam lebih alama daripada bata konvensional"
+      },
+      {
+        "title": "Lebih Ringan",
+        "desc": "Beban bangunan lebih ringan hingga 70% dengan luasan yang sama"
+      },
+      {
+        "title": "Tamah Lingkungan",
+        "desc": "Tidak mengandung logam berat berbahaya yang dapat mengganggu kesehatan"
+      },
+      {
+        "title": "Taham Gempa",
+        "desc": "Menjaga struktur bangunan pada saat terjadi guncangan hebar"
+      }
+    ]
+  },
+  "section3": {
+    "title": "Jumlah pcs/m3",
+    "length": "Panjang",
+    "width": "Lebar",
+    "height": "Tinggi",
+    "wide": "Luas Dinding",
+    "iso": "Bata ringan Blesscon telah diproduksi sesuai dengan standar ISO 9001:2015"
+  },
+  "section4": {
+    "title": "Spesifikasi Fisik",
+    "weight": "Berat normal",
+    "press": "Kuat tekan",
+    "conductivity": "Konduktifitas termis",
+    "insulation": "Insulasi bunyi",
+    "sni": "Tingkat ketahanan api memenuhi standart (TKA) -/240/240/240 sesuai dengan SNI 1739-2008"
+  }
+}
