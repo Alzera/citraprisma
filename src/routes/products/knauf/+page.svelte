@@ -7,9 +7,7 @@
   import Article from '$lib/components/Article.svelte';
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
 
-  const specTableNameClass = "px-3 py-1.5 bg-gray-100",
-        specTableValueClass = "px-3 py-1.5 bg-gray-50",
-        references = [
+  const references = [
           "https://www.knauf.co.id/company-profile",
           "https://en.wikipedia.org/wiki/Knauf",
         ]
@@ -25,40 +23,40 @@
       <h3 class="text-lg">{ $t(tp + 'section1.subsection1.subtitle') }</h3>
     </Column>
     <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'appearance') }</td>
-          <td class={specTableValueClass}>{ $t(tp + 'section1.subsection1.appearance') }</td>
+          <td>{ $t(tp + 'appearance') }</td>
+          <td>{ $t(tp + 'section1.subsection1.appearance') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'thickness') }</td>
-          <td class={specTableValueClass}>9mm { $t(tp + 'and') } 12mm</td>
+          <td>{ $t(tp + 'thickness') }</td>
+          <td>9mm { $t(tp + 'and') } 12mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
-          <td class={specTableValueClass}>
+          <td>{ $t(tp + 'weight') }</td>
+          <td>
             9mm : nominal 6,3 kg/m<br>
             12mm : nominal 8,4 kg/m
           </td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'width') }</td>
-          <td class={specTableValueClass}>1200mm { $t(tp + 'and') } 1220mm</td>
+          <td>{ $t(tp + 'width') }</td>
+          <td>1200mm { $t(tp + 'and') } 1220mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'edge') }</td>
-          <td class={specTableValueClass}>{ $t(tp + 'section1.subsection1.edge') }</td>
+          <td>{ $t(tp + 'edge') }</td>
+          <td>{ $t(tp + 'section1.subsection1.edge') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'length') }</td>
-          <td class={specTableValueClass}>2400mm { $t(tp + 'and') } 2440mm</td>
+          <td>{ $t(tp + 'length') }</td>
+          <td>2400mm { $t(tp + 'and') } 2440mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'standards') }</td>
-          <td class={specTableValueClass}>ASTM C1396</td>
+          <td>{ $t(tp + 'standards') }</td>
+          <td>ASTM C1396</td>
         </tr>
       </table>
     </Column>
@@ -73,7 +71,7 @@
       <h3 class="text-lg">{ $t(tp + 'section1.subsection2.subtitle') }</h3>
     </Column>
     <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'feature') }</td>
         </tr>
@@ -90,36 +88,36 @@
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'appearance') }</td>
-          <td class={specTableValueClass}>{ $t(tp + 'section1.subsection2.appearance') }</td>
+          <td>{ $t(tp + 'appearance') }</td>
+          <td>{ $t(tp + 'section1.subsection2.appearance') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'thickness') }</td>
-          <td class={specTableValueClass}>9mm, 12mm { $t(tp + 'and') } 15mm</td>
+          <td>{ $t(tp + 'thickness') }</td>
+          <td>9mm, 12mm { $t(tp + 'and') } 15mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
-          <td class={specTableValueClass}>
+          <td>{ $t(tp + 'weight') }</td>
+          <td>
             9mm : nominal 6,3 kg/m<br>
             12mm : nominal 8,4 kg/m<br>
             15mm : nominal 10,9 kg/m
           </td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'width') }</td>
-          <td class={specTableValueClass}>1200mm { $t(tp + 'and') } 1220mm</td>
+          <td>{ $t(tp + 'width') }</td>
+          <td>1200mm { $t(tp + 'and') } 1220mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'edge') }</td>
-          <td class={specTableValueClass}>Tapered Edge</td>
+          <td>{ $t(tp + 'edge') }</td>
+          <td>Tapered Edge</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'length') }</td>
-          <td class={specTableValueClass}>2400mm { $t(tp + 'and') } 2440mm</td>
+          <td>{ $t(tp + 'length') }</td>
+          <td>2400mm { $t(tp + 'and') } 2440mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'standards') }</td>
-          <td class={specTableValueClass}>ASTM C1396</td>
+          <td>{ $t(tp + 'standards') }</td>
+          <td>ASTM C1396</td>
         </tr>
       </table>
     </Column>
@@ -134,7 +132,7 @@
       <h3 class="text-lg">{ $t(tp + 'section1.subsection3.subtitle') }</h3>
     </Column>
     <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'feature') }</td>
         </tr>
@@ -151,35 +149,35 @@
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'appearance') }</td>
-          <td class={specTableValueClass}>{ $t(tp + 'section1.subsection3.appearance') }</td>
+          <td>{ $t(tp + 'appearance') }</td>
+          <td>{ $t(tp + 'section1.subsection3.appearance') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'thickness') }</td>
-          <td class={specTableValueClass}>12mm { $t(tp + 'and') } 15mm</td>
+          <td>{ $t(tp + 'thickness') }</td>
+          <td>12mm { $t(tp + 'and') } 15mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
-          <td class={specTableValueClass}>
+          <td>{ $t(tp + 'weight') }</td>
+          <td>
             12mm : nominal 11,3 kg/m<sup>3</sup><br>
             15mm : nominal 14,12 kg/m<sup>3</sup>
           </td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'width') }</td>
-          <td class={specTableValueClass}>1200mm { $t(tp + 'and') } 1220mm</td>
+          <td>{ $t(tp + 'width') }</td>
+          <td>1200mm { $t(tp + 'and') } 1220mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'edge') }</td>
-          <td class={specTableValueClass}>Tapered Edge</td>
+          <td>{ $t(tp + 'edge') }</td>
+          <td>Tapered Edge</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'length') }</td>
-          <td class={specTableValueClass}>2400mm { $t(tp + 'and') } 2440mm</td>
+          <td>{ $t(tp + 'length') }</td>
+          <td>2400mm { $t(tp + 'and') } 2440mm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'standards') }</td>
-          <td class={specTableValueClass}>BS 5234 : Part 2 : 1992</td>
+          <td>{ $t(tp + 'standards') }</td>
+          <td>BS 5234 : Part 2 : 1992</td>
         </tr>
       </table>
     </Column>
@@ -194,7 +192,7 @@
       <h3 class="text-lg">{ $t(tp + 'section1.subsection4.subtitle') }</h3>
     </Column>
     <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'feature') }</td>
         </tr>
@@ -211,38 +209,38 @@
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'appearance') }</td>
-          <td class={specTableValueClass}>{ $t(tp + 'section1.subsection4.appearance') }</td>
+          <td>{ $t(tp + 'appearance') }</td>
+          <td>{ $t(tp + 'section1.subsection4.appearance') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'board_density') }</td>
-          <td class={specTableValueClass}>885 kg/m<sup>3</sup></td>
+          <td>{ $t(tp + 'board_density') }</td>
+          <td>885 kg/m<sup>3</sup></td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
-          <td class={specTableValueClass}>
+          <td>{ $t(tp + 'weight') }</td>
+          <td>
             12mm : nominal 11,3 kg/m<sup>3</sup><br>
             15mm : nominal 14,12 kg/m<sup>3</sup>
           </td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'edge') }</td>
-          <td class={specTableValueClass}>Tapered Edge</td>
+          <td>{ $t(tp + 'edge') }</td>
+          <td>Tapered Edge</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'dimension_metric') }</td>
-          <td class={specTableValueClass}>
+          <td>{ $t(tp + 'dimension_metric') }</td>
+          <td>
             12mm x 1200mm x 2400mm<br>
             15mm x 1200mm x 2400mm
           </td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'standards') }</td>
-          <td class={specTableValueClass}>ASTM C1396</td>
+          <td>{ $t(tp + 'standards') }</td>
+          <td>ASTM C1396</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}></td>
-          <td class={specTableValueClass}>
+          <td></td>
+          <td>
             K : 0,24 w/mk<br>
             R : 12mm = 0,05 m<sup>2</sup> k/w<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15mm = 0,06 m<sup>2</sup> k/w
@@ -261,7 +259,7 @@
       <h3 class="text-lg">{ $t(tp + 'section1.subsection5.subtitle') }</h3>
     </Column>
     <Column cols={ 12 } md={ 8 } class="order-3 md:order-2 text-base">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'feature') }</td>
         </tr>
@@ -278,34 +276,34 @@
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'appearance') }</td>
-          <td class={specTableValueClass}>{ $t(tp + 'section1.subsection5.appearance') }</td>
+          <td>{ $t(tp + 'appearance') }</td>
+          <td>{ $t(tp + 'section1.subsection5.appearance') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'board_density') }</td>
-          <td class={specTableValueClass}>885 kg/m<sup>3</sup></td>
+          <td>{ $t(tp + 'board_density') }</td>
+          <td>885 kg/m<sup>3</sup></td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
-          <td class={specTableValueClass}>
+          <td>{ $t(tp + 'weight') }</td>
+          <td>
             12.5mm : nominal 11,06 kg/m<sup>3</sup><br>
             15mm : nominal 13,17 kg/m<sup>3</sup>
           </td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'edge') }</td>
-          <td class={specTableValueClass}>Tapered Edge</td>
+          <td>{ $t(tp + 'edge') }</td>
+          <td>Tapered Edge</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'dimension_metric') }</td>
-          <td class={specTableValueClass}>
+          <td>{ $t(tp + 'dimension_metric') }</td>
+          <td>
             12mm x 1200mm x 2400mm<br>
             15mm x 1200mm x 2400mm
           </td>
         </tr>
         <tr>
-          <td class={specTableNameClass}></td>
-          <td class={specTableValueClass}>
+          <td></td>
+          <td>
             K : 0,24 w/mk<br>
             R : 12mm = 0,05 m<sup>2</sup> k/w<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15mm = 0,06 m<sup>2</sup> k/w
@@ -326,7 +324,7 @@
       <h3 class="text-lg">{ $t(tp + 'section2.subsection1.subtitle') }</h3>
     </Column>
     <Column cols={ 12 } class="text-base">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'feature') }</td>
         </tr>
@@ -343,20 +341,20 @@
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'dry_time') }</td>
-          <td class={specTableValueClass}>25 - 35 { $t(tp + 'minutes') }</td>
+          <td>{ $t(tp + 'dry_time') }</td>
+          <td>25 - 35 { $t(tp + 'minutes') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'compressive_durability') }</td>
-          <td class={specTableValueClass}>5 MPa</td>
+          <td>{ $t(tp + 'compressive_durability') }</td>
+          <td>5 MPa</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'ratio_water_plaster') }</td>
-          <td class={specTableValueClass}>0,65 air : 1 plaster</td>
+          <td>{ $t(tp + 'ratio_water_plaster') }</td>
+          <td>0,65 air : 1 plaster</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'lifetime') }</td>
-          <td class={specTableValueClass}>6 { $t(tp + 'months') }</td>
+          <td>{ $t(tp + 'lifetime') }</td>
+          <td>6 { $t(tp + 'months') }</td>
         </tr>
       </table>
     </Column>
@@ -368,7 +366,7 @@
       <h3 class="text-lg">{ $t(tp + 'section2.subsection2.subtitle') }</h3>
     </Column>
     <Column cols={ 12 } class="text-base">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'feature') }</td>
         </tr>
@@ -391,28 +389,28 @@
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'dry_time') }</td>
-          <td class={specTableValueClass}>10 - 20 { $t(tp + 'minutes') }</td>
+          <td>{ $t(tp + 'dry_time') }</td>
+          <td>10 - 20 { $t(tp + 'minutes') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'compressive_durability') }</td>
-          <td class={specTableValueClass}>16,55 MN/m<sup>2</sup></td>
+          <td>{ $t(tp + 'compressive_durability') }</td>
+          <td>16,55 MN/m<sup>2</sup></td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'ratio_water_plaster') }</td>
-          <td class={specTableValueClass}>0,65 air : 1 plaster</td>
+          <td>{ $t(tp + 'ratio_water_plaster') }</td>
+          <td>0,65 air : 1 plaster</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'lifetime') }</td>
-          <td class={specTableValueClass}>6 { $t(tp + 'months') }</td>
+          <td>{ $t(tp + 'lifetime') }</td>
+          <td>6 { $t(tp + 'months') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'wet_density') }</td>
-          <td class={specTableValueClass}>1,6 g/cm<sup>3</sup></td>
+          <td>{ $t(tp + 'wet_density') }</td>
+          <td>1,6 g/cm<sup>3</sup></td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'dry_density') }</td>
-          <td class={specTableValueClass}>1,16 g/cm<sup>3</sup></td>
+          <td>{ $t(tp + 'dry_density') }</td>
+          <td>1,16 g/cm<sup>3</sup></td>
         </tr>
       </table>
     </Column>

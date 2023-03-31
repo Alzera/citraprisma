@@ -21,3 +21,13 @@ p {
 .text-orange { color: var(--c-orange) }
 .bg-primary { background: var(--c-primary) }
 .bg-lightgray { background: #f7f7f7 !important }
+
+table.default-table {
+  line-height: 1.25rem;
+  width: 100%;
+  th, td {
+    padding: 0.375rem 0.75rem;
+    background-color: rgba(249,250,251,1);
+  }
+  th { background-color: rgba(243,244,246,1); }
+}

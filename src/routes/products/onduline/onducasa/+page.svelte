@@ -8,9 +8,6 @@
   import Column from "$lib/components/Column.svelte";
   import Article from '$lib/components/Article.svelte';
   import CloudinaryImage from '$lib/components/CloudinaryImage.svelte';
-
-  const specTableNameClass = "px-3 py-1.5 bg-gray-100",
-        specTableValueClass = "px-3 py-1.5 bg-gray-50"
 </script>
 
 <CloudinaryImage src="products/onduline/img19.jpg" alt="Banner" 
@@ -50,41 +47,41 @@
       <p class="text-xl mb-3">{ $t(tp + 'content') }</p>
     </Column>
     <Column cols={ 12 } md={ 6 } class="md:order-1">
-      <table class="w-full leading-5">
+      <table class="default-table">
         <tr>
           <td colspan="2" class="text-center px-3 py-2 bg-gray-200">{ $t(tp + 'specification') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'material') }</td>
-          <td class={specTableValueClass}>Selulosa bitumen</td>
+          <td>{ $t(tp + 'material') }</td>
+          <td>Selulosa bitumen</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'width') }</td>
-          <td class={specTableValueClass}>97 cm</td>
+          <td>{ $t(tp + 'width') }</td>
+          <td>97 cm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'length') }</td>
-          <td class={specTableValueClass}>57 cm</td>
+          <td>{ $t(tp + 'length') }</td>
+          <td>57 cm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'thickness') }</td>
-          <td class={specTableValueClass}>0,3 cm</td>
+          <td>{ $t(tp + 'thickness') }</td>
+          <td>0,3 cm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'wave_height') }</td>
-          <td class={specTableValueClass}>3,8 cm</td>
+          <td>{ $t(tp + 'wave_height') }</td>
+          <td>3,8 cm</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'large') }</td>
-          <td class={specTableValueClass}>0,39 m<sup>2</sup> / { $t(tp + 'sheet') }</td>
+          <td>{ $t(tp + 'large') }</td>
+          <td>0,39 m<sup>2</sup> / { $t(tp + 'sheet') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'weight') }</td>
-          <td class={specTableValueClass}>1,72 kg / { $t(tp + 'sheet') }</td>
+          <td>{ $t(tp + 'weight') }</td>
+          <td>1,72 kg / { $t(tp + 'sheet') }</td>
         </tr>
         <tr>
-          <td class={specTableNameClass}>{ $t(tp + 'items_per_pack') }</td>
-          <td class={specTableValueClass}>10 { $t(tp + 'sheet') }</td>
+          <td>{ $t(tp + 'items_per_pack') }</td>
+          <td>10 { $t(tp + 'sheet') }</td>
         </tr>
       </table>
     </Column>

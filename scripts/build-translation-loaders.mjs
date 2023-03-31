@@ -20,7 +20,7 @@ glob(`${folder}**/*.+(svelte)`).then((files) => {
     if(routes != '') routes = `routes: ['${routes}'], `
     for(const l of langs){
       const json = `${i}_${l}.json`
-      console.log(key, routes, json)
+      // console.log(key, routes, json)
       if(fs.existsSync(folder + json)){
         loaders += `{ locale: '${l}', key: '${key}', ${routes}loader: async () => (await import('../../routes/${json}')).default, }, \r\n`
       }

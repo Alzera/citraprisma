@@ -43,7 +43,7 @@
         message: message,
       }
     }, v.mailKey);
-    fetch('https://www.citraprisma.com/php/mail.php', {
+    fetch('https://www.citraprisma.co.id/php/mail.php', {
       method: 'POST',
       headers: {
         'Authorization': 'Bearer ' + token
@@ -92,14 +92,14 @@
       <table class="text-base">
         <tr>
           <td><i class="i-mdi-email" /></td>
-          <td><a class="contact-page-visible" href="mailto:sales@citraprisma.com" rel="noopener noreferrer external">sales@citraprisma.com</a></td>
+          <td><a class="contact-page-visible" href="mailto:sales@citraprisma.co.id" rel="noopener noreferrer external">sales@citraprisma.co.id</a></td>
         </tr>
       </table>
       <h5 class="text-lg">Recruitment email:</h5>
       <table class="text-base">
         <tr>
           <td><i class="i-mdi-email" /></td>
-          <td><a class="contact-page-visible" href="mailto:personalia@citraprisma.com" rel="noopener noreferrer external">personalia@citraprisma.com</a></td>
+          <td><a class="contact-page-visible" href="mailto:personalia@citraprisma.co.id" rel="noopener noreferrer external">personalia@citraprisma.co.id</a></td>
         </tr>
       </table>
     </Column>

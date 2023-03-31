@@ -1,6 +1,6 @@
 <?php
 
-header('Access-Control-Allow-Origin: https://www.citraprisma.com');
+header('Access-Control-Allow-Origin: https://www.citraprisma.co.id');
 // header('Access-Control-Allow-Origin: http://localhost:3000');
 // header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Methods: POST');
@@ -51,7 +51,7 @@ if ($token->nbf > $now->getTimestamp() || $token->exp < $now->getTimestamp()){
   pullOut("Something wrong, please contact administrator! Status: Token Invalid");
 }
 
-$to = "sales@citraprisma.com";
+$to = "sales@citraprisma.co.id";
 // $to = "alzeracita23@gmail.com";
 $from = $token->data->email;
 $name = $token->data->name;
@@ -61,7 +61,7 @@ $phone = $token->data->phone;
 $address = $token->data->address;
 $message = $token->data->message;
 
-$headers = "From: no-reply@citraprisma.com\r\n";
+$headers = "From: no-reply@citraprisma.co.id\r\n";
 $headers .= "Reply-To: ". $from . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";

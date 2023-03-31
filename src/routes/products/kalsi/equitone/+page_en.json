@@ -1,0 +1,186 @@
+{
+  "pages": {
+    "title": "Equitone"
+  },
+  "section1": {
+    "title": "Cement board with fiber raw materials",
+    "content1": "Fibre cement is a mineral composite material that has outstanding aesthetic and physical properties.",
+    "content2": "Our company has led the development and innovation of this architectural material for over a century under distinct brand names, such as \"Eternit\".",
+    "content3": "Currently EQUITONE façade material manufacturing has reached its highest development in Germany and Belgium.",
+    "subsections": [
+      {
+        "title": "Authenticity",
+        "content": "Cement, cellulose and mineral reinforced materials with a visible matrix. Nothing else, EQUITONE is a composite material that proudly displays its true personality."
+      },
+      {
+        "title": "Performance",
+        "content": "EQUITONE can be produced in very large sheets (up to 3m x 1.25m) which are very thin, but have excellent physical properties. EQUITONE is non-combustible (A2 Euroclass). EQUITONE has a service life of more than 50 years in the application of the most desirable exterior materials."
+      },
+      {
+        "title": "Durability",
+        "content1": "Facades built with EQUITONE are thin and light, resulting in minimum degradation of raw material quality.",
+        "content2": "EQUITONE's environmental footprint is stated in great detail in the environmental product declaration published on EQUITONE.com."
+      }
+    ]
+  },
+  "section2": {
+    "title": "Ventilated facade",
+    "content1": "Originating from Scandinavia several centuries ago, the technique of ventilated facades (rainscreen) is now very important in areas with harsh climates.",
+    "content2": "In a rainscreen system, the outer panels deflect rain, and solar heat away from the building. Ventilation spaces allow air to circulate freely behind the panels, so the inside of the building is ventilated and feels comfortable.",
+    "subsections": [
+      {
+        "title": "Multipurpose",
+        "content": "The construction principle of a ventilated facade combines the scalability (coverage) of curtain wall construction with the versatility and creative adaptability offered by traditional building engineering techniques."
+      },
+      {
+        "title": "Small but maximum",
+        "content": "Ventilated facade systems have minimum thickness and weight, but offer maximum views."
+      },
+      {
+        "title": "Health",
+        "content": "The construction principle of a ventilated facade avoids cold bridges, reducing condensation and mold growth."
+      }
+    ]
+  },
+  "section3": {
+    "title": "Design freedom",
+    "subsections": [
+      {
+        "title": "Shape",
+        "content": "EQUITONE facade materials can easily be transformed to many shapes and sizes."
+      },
+      {
+        "title": "Materials design",
+        "content": "Many architects and building designers also use EQUITONE materials in interior and building design"
+      }
+    ]
+  },
+  "section4": {
+    "title": "EQUITONE [natura]",
+    "subsections": [
+      {
+        "title": "Sophistication",
+        "content": "A naturally colored material with a clear yet subtle fiber cement matrix"
+      },
+      {
+        "title": "Soft touch",
+        "content": "Surface finish is matte but silky smooth."
+      },
+      {
+        "title": "Protection",
+        "content": "Transparent protective layer, optional EQUITONE [natura] \"PRO\" anti-graffiti protection"
+      }
+    ]
+  },
+  "section5": {
+    "title": "EQUITONE [tectiva]",
+    "subsections": [
+      {
+        "title": "Original",
+        "content": "Natural through-coloured material with a very expressive fiber cement structure."
+      },
+      {
+        "title": "Individuality",
+        "content": "The production process makes each panel unique in color, texture and surface"
+      },
+      {
+        "title": "Physical form",
+        "content": "The rough fiber cement surface is not smooth, but feels as comfortable as linen."
+      }
+    ]
+  },
+  "section6": {
+    "title": "EQUITONE [pictura]",
+    "subsections": [
+      {
+        "title": "Colour color",
+        "content": "EQUITONE [pictura] offers contemporary color coating options"
+      },
+      {
+        "title": "Surface color is not glossy",
+        "content": "Soft, non-glossy finish for a classy architectural look."
+      },
+      {
+        "title": "Anti-Graffiti",
+        "content": "EQUITONE [pictura] is EQUITONE \"PROP\" UV coated for lasting anti-graffiti protection."
+      }
+    ]
+  },
+  "section7": {
+    "title": "EQUITONE [minerals]",
+    "subsections": [
+      {
+        "title": "Uniqueness",
+        "content": "Fully colored fiber cement material with a wide selection of colors and textures."
+      },
+      {
+        "title": "Fibrous surface",
+        "content": "EQUITONE [mineralized] soft surface provides a smooth appearance."
+      },
+      {
+        "title": "Display",
+        "content": "With the strength and stability of the concrete and fiber matrix it provides an enchanting appearance in even the toughest conditions."
+      }
+    ]
+  },
+  "section8": {
+    "title": "Technical data",
+    "content1": "EQUITONE is committed to the sustainable manufacturing of high-performance facade solutions. Our product range is fabricated with quality management systems (ISO 9001) and environmental systems (ISO 14001).",
+    "characteristics": {
+      "title": "Properties",
+      "content": [
+        "Can achieve an A+ rating as described in the BRE Geen GUIDE.",
+        "Safe against fire (non-flammable and does not spread flames)",
+        "The age of the installation reaches at least 50 years.",
+        "Resistant to extreme weather conditions and temperatures.",
+        "Resistant to termites, insects, mold growth, fungus, etc.",
+        "Requires no treatment."
+      ]
+    },
+    "benchmarks": {
+      "title": "Test results",
+      "content": "The performance of all EQUITONE materials has been tested and proven.",
+      "and": "and",
+      "subtitle1": "Classify / Test on",
+      "density": "Density",
+      "bend_strength": "Bend strength",
+      "resistance": "Resistance classification",
+      "strength": "Strength classification",
+      "impermeability": "Material impermeability test",
+      "warm_water": "Warm water test",
+      "absorb": "Absorb dry test",
+      "freeze": "Freeze thaw test",
+      "lengthwise": "Lengthwise",
+      "transverse": "Transverse",
+      "subtitle2": "Reaction to fire",
+      "class": "{{placeholder}} Class",
+      "category": "{{placeholder}} Category",
+      "subtitle3": "Type of test or best estimate",
+      "hygric": "Hygric movement",
+      "porosity": "Porosity",
+      "thermal_expansion": "Coefficient of thermal expansion, a",
+      "thermal_conductivity": "Thermal conductivity"
+    }
+  },
+  "section9": {
+    "title": "Installation",
+    "subsections": [
+      {
+        "title": "Skeleton",
+        "content": "A lightweight aluminum or galvanized steel frame is attached to a load-bearing structure. The system is easy to install, strong and easily adjustable."
+      },
+      {
+        "title": "Fixed",
+        "content": "EQUITONE façade materials can be attached to the frame using rivets or screws. A solution using invisible fixing is available."
+      },
+      {
+        "title": "Accessories",
+        "content": "EQUITONE offers a wide range of accessories that enhance the facade system."
+      },
+      {
+        "title": "Technical support",
+        "content": "Our engineering department is dedicated to serving you. You can rely on their assistance to carry out your projects, from concept creation to technical realization."
+      }
+    ]
+  }
+}
