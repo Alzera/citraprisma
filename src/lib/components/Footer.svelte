@@ -49,11 +49,11 @@
         {/if}
         <h5 class="text-primary mt-2">Marketing email :</h5>
         <p class="flex flex-col">
-          <a href="mailto:sales@citraprisma.co.id" rel="noopener noreferrer external">sales@citraprisma.co.id</a>
+          <a href="mailto:sales@citraprisma.com" rel="noopener noreferrer external">sales@citraprisma.com</a>
         </p>
         <h5 class="text-primary mt-2">Recruitment email :</h5>
         <p class="flex flex-col">
-          <a href="mailto:personalia@citraprisma.co.id" rel="noopener noreferrer external">personalia@citraprisma.co.id</a>
+          <a href="mailto:personalia@citraprisma.com" rel="noopener noreferrer external">personalia@citraprisma.com</a>
         </p>
       </Column>
       <Column cols={ 12 } md={ 4 } class="footer-col">
