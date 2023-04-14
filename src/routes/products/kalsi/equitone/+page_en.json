@@ -1,5 +1,5 @@
 {
-  "pages": {
+  "page": {
     "title": "Equitone"
   },
   "section1": {
@@ -7,7 +7,7 @@
     "content1": "Fibre cement is a mineral composite material that has outstanding aesthetic and physical properties.",
     "content2": "Our company has led the development and innovation of this architectural material for over a century under distinct brand names, such as \"Eternit\".",
     "content3": "Currently EQUITONE façade material manufacturing has reached its highest development in Germany and Belgium.",
-    "subsections": [
+    "subsection": [
       {
         "title": "Authenticity",
         "content": "Cement, cellulose and mineral reinforced materials with a visible matrix. Nothing else, EQUITONE is a composite material that proudly displays its true personality."
@@ -27,7 +27,7 @@
     "title": "Ventilated facade",
     "content1": "Originating from Scandinavia several centuries ago, the technique of ventilated facades (rainscreen) is now very important in areas with harsh climates.",
     "content2": "In a rainscreen system, the outer panels deflect rain, and solar heat away from the building. Ventilation spaces allow air to circulate freely behind the panels, so the inside of the building is ventilated and feels comfortable.",
-    "subsections": [
+    "subsection": [
       {
         "title": "Multipurpose",
         "content": "The construction principle of a ventilated facade combines the scalability (coverage) of curtain wall construction with the versatility and creative adaptability offered by traditional building engineering techniques."
@@ -44,7 +44,7 @@
   },
   "section3": {
     "title": "Design freedom",
-    "subsections": [
+    "subsection": [
       {
         "title": "Shape",
         "content": "EQUITONE facade materials can easily be transformed to many shapes and sizes."
@@ -57,7 +57,7 @@
   },
   "section4": {
     "title": "EQUITONE [natura]",
-    "subsections": [
+    "subsection": [
       {
         "title": "Sophistication",
         "content": "A naturally colored material with a clear yet subtle fiber cement matrix"
@@ -74,7 +74,7 @@
   },
   "section5": {
     "title": "EQUITONE [tectiva]",
-    "subsections": [
+    "subsection": [
       {
         "title": "Original",
         "content": "Natural through-coloured material with a very expressive fiber cement structure."
@@ -91,7 +91,7 @@
   },
   "section6": {
     "title": "EQUITONE [pictura]",
-    "subsections": [
+    "subsection": [
       {
         "title": "Colour color",
         "content": "EQUITONE [pictura] offers contemporary color coating options"
@@ -108,7 +108,7 @@
   },
   "section7": {
     "title": "EQUITONE [minerals]",
-    "subsections": [
+    "subsection": [
       {
         "title": "Uniqueness",
         "content": "Fully colored fiber cement material with a wide selection of colors and textures."
@@ -137,7 +137,7 @@
         "Requires no treatment."
       ]
     },
-    "benchmarks": {
+    "benchmark": {
       "title": "Test results",
       "content": "The performance of all EQUITONE materials has been tested and proven.",
       "and": "and",
@@ -164,7 +164,7 @@
   },
   "section9": {
     "title": "Installation",
-    "subsections": [
+    "subsection": [
       {
         "title": "Skeleton",
         "content": "A lightweight aluminum or galvanized steel frame is attached to a load-bearing structure. The system is easy to install, strong and easily adjustable."

@@ -414,4 +414,10 @@
       <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
     </a>
   </p>
+  <br/>
+  <a href="/products/kalsi/equitone" class="block relative rounded-2xl border border-slate-300 overflow-hidden max-w-72">
+    <CloudinaryImage class="w-full h-64 object-cover" src="products/kalsi/equitone/img63.jpg" alt="banner equitone" widths="300px" lazy={ false } height={ 300 } crop="fill" />
+    <h1 class="text-4xl m-3" style="color:#e1464a">EQUITONE</h1>
+    <p class="m-3">Cement board with fiber raw materials</p>
+  </a>
 </Article>
