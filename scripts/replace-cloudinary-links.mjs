@@ -1,4 +1,4 @@
-import glob from 'glob'
+import { glob } from 'glob'
 import fs from 'fs'
 
 console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using replace-cloudinary-links")

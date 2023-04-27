@@ -1,5 +1,5 @@
 import fs from "fs";
-import glob from "glob";
+import { glob } from 'glob';
 import zlib from "zlib";
 
 console.log('\x1b[1m\x1b[36m%s\x1b[0m', "> Using compress")

@@ -2,7 +2,7 @@ import 'dotenv/config'
 
 import path from "path";
 import cloudinary from "cloudinary";
-import glob from "glob";
+import { glob } from 'glob';
 
 const assetsFolder = 'assets/images';
 
