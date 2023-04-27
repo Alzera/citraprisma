@@ -1,0 +1,64 @@
+{
+  "page": {
+    "title": "Adcos"
+  },
+  "features": "FITUR",
+  "application": "APLIKASI",
+  "properties": "PROPERTI",
+  "curing": "Curing type",
+  "neutralcuring": "Neutral curing",
+  "tack": "Tack free time (min)",
+  "fullcuring": "Full curing time (day)",
+  "gravity": "Specific Gravity",
+  "hardness": "Hardness (shore A)",
+  "tensile": "Tensile strength (kgf/cm2)",
+  "elongation": "Maximum elongation (%)",
+  "ozone": "Ozone- / UVRays-proofing",
+  "excellent": "Excellent",
+  "temperature": "Application temperature (°C)",
+  "section1": {
+    "title": "Adcos Project Weatherseal Sealant N",
+    "content": "Adcos Project Weatherseal Sealant N adalah salah satu komponen sealant silikon perawatan netral tujuan umum. Ini memiliki sifat tahan cuaca yang baik dan melekat pada sebagian besar substrat termasuk kayu, kaca, aluminium, UPVC, mortar, baja, dll.",
+    "features": [
+      "Sealant curing netral",
+      "Sealant satu komponen yang mudah digunakan",
+      "Aneka konstruksi kaca untuk jendela dan pintu",
+      "Tahan cuaca yang sangat baik",
+      "Menyembuhkan karet yang keras dan fleksibel",
+      "Non melorot",
+      "Tidak berbau",
+      "Warna : Hitam, putih, transparan",
+      "Kemasan : Kartrid 270ml"
+    ],
+    "application": [
+      "Kusen jendela (kaca, aluminium, baja, kayu, dll)",
+      "Kaca ke kaca",
+      "Kotak aluminium",
+      "UPVC",
+      "Mortir",
+      "Dll"
+    ]
+  },
+  "section2": {
+    "title": "Adcos Project - NS",
+    "content": "Adcos Project - NS adalah sealant silikon perawatan netral satu komponen Non Pewarnaan premium dengan ketahanan yang sangat baik terhadap kondisi cuaca ekstrem di iklim tropis. Ini juga biasa digunakan sebagai sambungan ekspansi dalam konstruksi dan sambungan perimeter di gedung tinggi bangunan.",
+    "features": [
+      "Konsistensi pasta lunak sealant",
+      "Weatherability - tahan terhadap ozon, radiasi UV dan cuaca ekstrim",
+      "Warna : Hitam, Putih, Abu-abu",
+      "Kemasan : Sosis 600ml"
+    ],
+    "application": [
+      "Lapisan logam",
+      "Fasad batu alam",
+      "Panel papan semen",
+      "Sambungan beton",
+      "Panel komposit aluminium",
+      "Segel UPVC",
+      "Panel fasad kayu",
+      "Batu bata",
+      "Batu",
+      "Sendi aluminium"
+    ]
+  }
+}

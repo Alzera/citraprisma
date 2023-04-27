@@ -23,6 +23,7 @@
     { image: "logo_onduline.jpg", href: "/products/onduline", text: "ONDULINE\nLightweight roofing system" },
     { image: "logo_troldtekt.jpg", href: "/products/troldtekt", text: "TROLDTEKT\nAccoustic System" },
     { image: "logo_blesscon.jpg", href: "/products/blesscon", text: "BLESSCON\nLightweight brick friendly environment" },
+    { image: "logo_adcos.jpg", href: "/products/adcos", text: "ADCOS\nWeatherseal Silicone Sealant" },
   ]
 </script>
 

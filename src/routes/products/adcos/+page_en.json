@@ -1,0 +1,64 @@
+{
+  "page": {
+    "title": "Adcos"
+  },
+  "features": "FEATURES",
+  "application": "APPLICATION",
+  "properties": "PROPERTIES",
+  "curing": "Curing type",
+  "neutralcuring": "Neutral",
+  "tack": "Tack free time (min)",
+  "fullcuring": "Full curing time (day)",
+  "gravity": "Specific Gravity",
+  "hardness": "Hardness (shore A)",
+  "tensile": "Tensile strength (kgf/cm2)",
+  "elongation": "Maximum elongation (%)",
+  "ozone": "Ozone- / UVRays-proofing",
+  "excellent": "Excellent",
+  "temperature": "Application temperature (°C)",
+  "section1": {
+    "title": "Adcos Project Weatherseal Sealant N",
+    "content": "Adcos Project Weatherseal Sealant N is a one component general purpose neutral cure silicone sealant. It has good weatherability properties and adhere to most substrates including wood, glass, aluminium, UPVC, mortar, steel, etc.",
+    "features": [
+      "Neutral curing sealant",
+      "Easy to use one-component sealant",
+      "Various glass construction for windows and doors",
+      "Excellent weatherability",
+      "Cures to a tough, flexible rubber",
+      "Non sag",
+      "Non odour",
+      "Colors : Black, white, transparent",
+      "Packaging : Cartridge 270ml"
+    ],
+    "application": [
+      "Window frame (glass, aluminium, steel, wood, etc)",
+      "Glass to glass",
+      "Aluminium box",
+      "UPVC",
+      "Mortar",
+      "etc"
+    ]
+  },
+  "section2": {
+    "title": "Adcos Project - NS",
+    "content": "Adcos Project - NS is a premium Non Staining, one-component neutral cure silicone sealant with excellent resistance to extreme weather conditions in tropical climates. It is also commonly used as expansion joints in constructions and perimeter joints in high-rise buildings.",
+    "features": [
+      "Consistency of sealant soft paste",
+      "Weatherability - resistant to ozone, UV radiations and extreme weather",
+      "Colors : Black, white, grey",
+      "Packaging : Sausage 600ml"
+    ],
+    "application": [
+      "Metal claddings",
+      "Natural stone facades",
+      "Cement board panels",
+      "Concrete joints",
+      "Aluminium composite panel",
+      "UPVC sealings",
+      "Wood facade panels",
+      "Bricks",
+      "Masonry",
+      "Aluminium joints"
+    ]
+  }
+}
