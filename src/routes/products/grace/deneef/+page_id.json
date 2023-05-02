@@ -1,0 +1,36 @@
+{
+  "page": {
+    "title": "De Neef®",
+    "subtitle": "Aliran Air Tinggi / Penyegelan Kebocoran"
+  },
+  "benefits": "Manfaat",
+  "product1": {
+    "title": "HA Cut AF",
+    "content": "Resin Injeksi Poliuretan Sel Tertutup Kaku Satu Komponen",
+    "benefits": [
+      "Busa sel tertutup kaku yang tahan lama",
+      "Tekanan hidrostatis tinggi/laju aliran tinggi bocor",
+      "Reaksi cepat: waktu reaksi yang dapat disesuaikan dari 45 detik hingga 20 menit",
+      "Tersedia akselerator ekstra cepat dan super cepat",
+      "Hidrofobik: tidak ada pengenceran atau kehilangan",
+      "Viskositas rendah",
+      "Ekspansi hingga 30 V",
+      "Dapat digunakan dengan pengisi inert",
+      "Combi-Grout/ Combi-Block (hubungi perwakilan De Neef® Anda)"
+    ]
+  },
+  "product2": {
+    "title": "HA Cut CFL AF",
+    "content": "Resin Injeksi Poliuretana Sel Tertutup Semi-fleksibel Satu Komponen",
+    "benefits": [
+      "Busa sel tertutup semi-fleksibel yang tahan lama",
+      "Tekanan hidrostatis tinggi/laju aliran tinggi bocor",
+      "Reaksi cepat: waktu pengaturan yang dapat disesuaikan dari 45 detik hingga 20 menit",
+      "Tersedia akselerator ekstra cepat dan super cepat",
+      "Hidrofobik: tidak ada pengenceran atau kehilangan",
+      "Viskositas rendah",
+      "Ekspansi hingga 25 V",
+      "Dapat digunakan dengan pengisi inert"
+    ]
+  }
+}

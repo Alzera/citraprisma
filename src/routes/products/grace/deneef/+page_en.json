@@ -1,0 +1,36 @@
+{
+  "page": {
+    "title": "De Neef®",
+    "subtitle": "High Water Flows / Leak Sealing"
+  },
+  "benefits": "Benefits",
+  "product1": {
+    "title": "HA Cut AF",
+    "content": "One Component Rigid Closed Cell Polyurethane Injection Resin",
+    "benefits": [
+      "Durable rigid closed cell foam",
+      "High hydrostatic pressure/ high flow rate leaks",
+      "Fast reacting: adjustable reaction times from 45 seconds to 20 minutes",
+      "Extra fast and super extra fast accelerators available",
+      "Hydrophobic: no dilution or losses",
+      "Low viscosity",
+      "Up to 30 V expansion",
+      "Can be used with inert fillers",
+      "Combi-Grout/ Combi-Block (contact your De Neef® representative)"
+    ]
+  },
+  "product2": {
+    "title": "HA Cut CFL AF",
+    "content": "One Component Semi-flexible Closed Cell Polyurethane Injection Resin",
+    "benefits": [
+      "Durable semi-flexible closed cell foam",
+      "High hydrostatic pressure/ high flow rate leaks",
+      "Fast reacting: adjustable setting times from 45 seconds to 20 minutes",
+      "Extra fast and super extra fast accelerators available",
+      "Hydrophobic: no dilution or losses ",
+      "Low viscosity",
+      "Up to 25 V expansion",
+      "Can be used with inert fillers"
+    ]
+  }
+}

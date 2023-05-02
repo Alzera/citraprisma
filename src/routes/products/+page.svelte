@@ -12,7 +12,7 @@
     { image: "logo_yoshino.jpg", href: "/products/yoshino", text: "YOSHINO\nGypsumboard, compound" },
     { image: "logo_jayaboard.jpg", href: "#", text: "JAYABOARD\nGypsumboard, rangka, casting, compound" },
     { image: "logo_bostik.jpg", href: "/products/bostik", text: "BOSTIK\nWaterproofing, mortar, sealant" },
-    { image: "logo_grace.jpg", href: "#", text: "GRACE\nWaterproofing dan injeksi" },
+    { image: "logo_grace.jpg", href: "/products/grace", text: "GRACE\nWaterproofing dan injeksi" },
     { image: "logo_kcc.jpg", href: "#", text: "KCC\nCat, floor coating" },
     { image: "logo_rockwool.png", href: "/products/rockwool", text: "ROCKWOOL\nSave n' Silent™ Pro" },
     { image: "logo_conwood.jpg", href: "/products/conwood", text: "CONWOOD\nLisplang dan Dekoratif" },

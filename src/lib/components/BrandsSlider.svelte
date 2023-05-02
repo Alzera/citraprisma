@@ -9,7 +9,7 @@
     { image:"/products/logo_bostik.jpg", alt: "bostik", link: "/products/bostik" },
     { image:"/products/logo_simson.jpg", alt: "simson", link: "#" },
     { image:"/products/logo_shinetsu.jpg", alt: "shinetsu", link: "#" },
-    { image:"/products/logo_grace.jpg", alt: "grace", link: "#" },
+    { image:"/products/logo_grace.jpg", alt: "grace", link: "/products/grace" },
     { image:"/products/logo_star.jpg", alt: "star", link: "#" },
     { image:"/products/logo_hd.jpg", alt: "hd", link: "#" },
     { image:"/products/logo_kcc.jpg", alt: "kcc", link: "#" },
@@ -33,7 +33,7 @@
       <div class="element">
         {#each brands as i}
           <a href={ i.link }>
-            <CloudinaryImage widths="50vw md:150px" alt={ i.alt } src={ i.image } />
+            <CloudinaryImage class="md:w-40 object-contain" widths="50vw md:200px" alt={ i.alt } src={ i.image } />
           </a>
         {/each}
       </div>

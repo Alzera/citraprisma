@@ -43,7 +43,7 @@
         message: message,
       }
     }, v.mailKey);
-    fetch('https://www.citraprisma.co.id/php/mail.php', {
+    fetch('https://www.citraprisma.id/php/mail.php', {
       method: 'POST',
       headers: {
         'Authorization': 'Bearer ' + token

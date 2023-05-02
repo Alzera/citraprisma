@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Silcor"
+  },
+  "title": "Silcor®",
+  "subtitle": "Liquid Waterproofing",
+  "content": "Silcor liquid waterproofing is specially developed by GCP Applied Technologies, incorporating the latest technical advancements in polyurea and polyurethane to optimise product application and durability. It is a liquid system that cures rapidly to form a seamless, monolithic membrane fully bonded to the substrate. Based on advanced chemistry, Silcor is exceptionally durable with excellent wear and chemical resistance, offering your structure long lasting waterproofing protection.",
+  "benefits": {
+    "title": "Benefits",
+    "titles": [
+      "Seamless",
+      "Fast Cure",
+      "Robust",
+      "Productivity",
+      "Fully Bonded to Substrate",
+      "Environmentally Friendly",
+      "Elastomeric",
+      "Chemical Resistance",
+      "Durable"
+    ],
+    "contents": [
+      "Continuous waterproof barrier, delivering waterproofifing integrity",
+      "Short return to service time allows for completion ahead of construction schedule",
+      "Wide application temperature and humidity range",
+      "Can be spray applied or hand applied for maximum coverage per day",
+      "Eliminates water migration preventing water tracking",
+      "Low VOC grades available",
+      "Accommodates structural movements and bridges concrete shrinkage cracks",
+      "Excellent fuel and chemical resistance",
+      "Tough, with excellent wear and abrasion resistance"
+    ]
+  },
+  "applications": {
+    "title": "Applications",
+    "content": "Silcor is highly versatile and can be used for new and remedial waterproofing for a wide range of applications:",
+    "lists": [
+      "Tunnels/ below ground foundations",
+      "Podium decks",
+      "Plaza decks",
+      "Balconies and terraces",
+      "Wet rooms",
+      "Walkways and foot bridges",
+      "High foot traffic areas",
+      "Concrete roof decks ",
+      "Green/ planted roofs ",
+      "Water features/ planters",
+      "Service reservoir roofs ",
+      "Industrial tanking",
+      "Truck bed lining",
+      "Secondary containment"
+    ]
+  }
+}

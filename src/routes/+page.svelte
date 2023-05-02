@@ -188,9 +188,9 @@
       </h2>
       <Row class="projects">
         {#each projects as item}
-          <Column cols={ 12 } md={ 3 }>
+          <Column cols={ 12 } md={ 3 } class="h-40">
             <a href={item.link == '#' ? '#' : item.link}>
-              <CloudinaryImage src={ item.image } alt={ item.alt } widths="90vw md:200px" />
+              <CloudinaryImage class="object-cover" src={ item.image } alt={ item.alt } widths="90vw md:250px" />
               <span>{ item.text }</span>
             </a>
           </Column>

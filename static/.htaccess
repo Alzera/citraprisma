@@ -6,8 +6,8 @@ deny from all
 
 # Force www:
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^citraprisma.co.id [NC]
-RewriteRule ^(.*)$ https://www.citraprisma.co.id/$1 [L,R=301,NC] 
+RewriteCond %{HTTP_HOST} ^citraprisma.id [NC]
+RewriteRule ^(.*)$ https://www.citraprisma.id/$1 [L,R=301,NC] 
 
 #redirect http to https
 RewriteEngine On
