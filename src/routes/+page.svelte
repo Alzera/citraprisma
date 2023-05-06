@@ -188,9 +188,9 @@
       </h2>
       <Row class="projects">
         {#each projects as item}
-          <Column cols={ 12 } md={ 3 } class="h-40">
+          <Column cols={ 12 } md={ 3 }>
             <a href={item.link == '#' ? '#' : item.link}>
-              <CloudinaryImage class="object-cover" src={ item.image } alt={ item.alt } widths="90vw md:250px" />
+              <CloudinaryImage src={ item.image } alt={ item.alt } widths="90vw md:300px" />
               <span>{ item.text }</span>
             </a>
           </Column>
@@ -211,24 +211,6 @@
     }
     .child {
       background: #f7f7f7;
-    }
-  }
-  .projects {
-    > * { position: relative; }
-    img { 
-      width: 100%; 
-      height: 100%;
-    }
-    span {
-      display: block;
-      background: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      bottom: 0.25rem;
-      left: 0.25rem;
-      right: 0.25rem;
-      color: white;
-      font-size: 13px;
-      padding: 5px;
     }
   }
   .button-1 {
