@@ -16,7 +16,7 @@
     { image: "logo_kcc.jpg", href: "#", text: "KCC\nCat, floor coating" },
     { image: "logo_rockwool.png", href: "/products/rockwool", text: "ROCKWOOL\nSave n' Silent™ Pro" },
     { image: "logo_conwood.jpg", href: "/products/conwood", text: "CONWOOD\nLisplang dan Dekoratif" },
-    { image: "logo_pioneer.jpg", href: "#", text: "PIONEER\nEpoxy dan Adhesive" },
+    // { image: "logo_pioneer.jpg", href: "#", text: "PIONEER\nEpoxy dan Adhesive" },
     { image: "logo_wacker.jpg", href: "/products/wacker", text: "WACKER\nSilicone Sealants" },
     { image: "logo_royalboard.jpg", href: "/products/royalboard", text: "ROYALBOARD\nSilicate board for various applications" },
     { image: "logo_kalsi.jpg", href: "/products/kalsi", text: "KALSI\nAsbestos free board" },
