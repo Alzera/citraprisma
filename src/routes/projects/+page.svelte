@@ -34,13 +34,3 @@
     {/each}
   </Row>
 </Container>
-
-<style lang="scss">
-  a {
-    text-decoration: none;
-    h2 {
-      color: initial;
-      white-space: pre-wrap;
-    }
-  }
-</style>

@@ -64,14 +64,12 @@
     widths="512px md:1408px" 
     crop="fill" 
     lazy={ false }
-    preload={ true }
-    class="w-full object-cover" />
+    preload={ true } />
   {#each slideshows.slice(1) as slideshow, i}
     <CloudinaryImage src={slideshow} alt={'slide-' + i}
       widths="512px md:1408px" 
       crop="fill" 
-      lazy={ true }
-      class="w-full object-cover" />
+      lazy={ true } />
   {/each}
 </Container>
 
@@ -104,7 +102,7 @@
         <div class="tab-selectors border border-slate-300 rounded-md">
           {#each services as item, i}
             <div 
-              class={ `w-full p-3 text-left border-slate-300 ${ serviceTab == i ? 'selected' : '' } ${ i != services.length - 1 ? 'border-b' : '' }` }
+              class={ serviceTab == i ? 'selected' : null }
               on:click={ () => { serviceTab = i }}>
               { item }
             </div>
@@ -116,9 +114,9 @@
           {#if serviceTab == 0}
             {#each [5, 3, 2] as n, ni}
               {@const i = ni + 1}
-              <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.0.header${i}`) }</h3>
+              <h3>{ $t(`section.our_services.content.0.header${i}`) }</h3>
               <p>{ $t(`section.our_services.content.0.content${i}`) }</p>
-              <ol type="A" class="text-base mb-6">
+              <ol>
                 {#each Array(n) as _, li}
                   <li>{ $t(`section.our_services.content.0.list${i}.${li}`) }</li>
                 {/each}
@@ -128,9 +126,9 @@
           {:else if serviceTab == 1}
             {#each Array(4) as _, i}
               {@const n = i + 1}
-              <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.1.header${n}`) }</h3>
+              <h3>{ $t(`section.our_services.content.1.header${n}`) }</h3>
               {#if i == 0}
-                <ol type="A" class="text-base mb-6">
+                <ol>
                   {#each Array(2) as _, li}
                     <li>{ $t(`section.our_services.content.1.list1.${li}`) }</li>
                   {/each}
@@ -139,37 +137,37 @@
             {/each}
             <a class="button-1" href='/services/gypsum'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 2}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.2.header1`) }</h3>
+            <h3>{ $t(`section.our_services.content.2.header1`) }</h3>
             <p class="mb-6">{ $t(`section.our_services.content.2.content1`) }</p>
             <a class="button-1" href='/services/metal'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 3}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.3.header1`) }</h3>
+            <h3>{ $t(`section.our_services.content.3.header1`) }</h3>
             <p>{ $t(`section.our_services.content.3.content1`) }</p>
-            <ol type="A" class="text-base mb-6">
+            <ol>
               {#each Array(2) as _, li}
                 <li>{ $t(`section.our_services.content.3.list1.${li}`) }</li>
               {/each}
             </ol>
             <a class="button-1" href='/services/sealants'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 4}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.4.header1`) }</h3>
+            <h3>{ $t(`section.our_services.content.4.header1`) }</h3>
             <p>{ $t(`section.our_services.content.4.content1`) }</p>
-            <ol type="A" class="text-base mb-6">
+            <ol>
               {#each Array(2) as _, li}
                 <li>{ $t(`section.our_services.content.4.list1.${li}`) }</li>
               {/each}
             </ol>
-            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.4.header2`) }</h3>
+            <h3>{ $t(`section.our_services.content.4.header2`) }</h3>
             <a class="button-1" href='/services/epoxy'>{ $t('read_more') } &rarr;</a>
           {:else if serviceTab == 5}
-            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.5.header1`) }</h3>
+            <h3>{ $t(`section.our_services.content.5.header1`) }</h3>
             <p>{ $t(`section.our_services.content.5.content1`) }</p>
-            <ol type="A" class="text-base mb-6">
+            <ol>
               {#each Array(2) as _, li}
                 <li>{ $t(`section.our_services.content.5.list1.${li}`) }</li>
               {/each}
             </ol>
-            <h3 class="text-xl mb-2 text-primary">{ $t(`section.our_services.content.5.header2`) }</h3>
+            <h3>{ $t(`section.our_services.content.5.header2`) }</h3>
             <a class="button-1" href='/services/decorative'>{ $t('read_more') } &rarr;</a>
           {/if}
         </div>
@@ -202,11 +200,32 @@
 </Lazy>
 
 <style lang="scss" global>
+  h3 {
+    color: var(--c-primary);
+    font-size: 1.25rem !important;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem !important;
+  }
+  ol {
+    line-height: 1.75rem;
+    list-style-type: upper-alpha;
+    margin-bottom: 1.5rem !important;
+  }
   .home-service-block {
     .tab-selectors {
       .selected {
         background: var(--c-primary);
         color: white;
+      }
+      > div {
+        text-align: left;
+        padding: 0.75rem;
+        width: 100%;
+        border-bottom-width: 1px;
+        border-color: rgba(203,213,225,var(--un-border-opacity));
+      }
+      > div:last-child {
+        border: none;
       }
     }
     .child {
@@ -235,6 +254,10 @@
     display: none;
     position: absolute;
     top: 0;
+  }
+  #slideshow img {
+    width: 100%;
+    object-fit: cover;
   }
   #slideshow > picture.no-anim {
     animation-name: none !important;

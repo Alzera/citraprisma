@@ -21,6 +21,9 @@ img.bounded {
 
 .main-menu>div {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:not(:last-child):after {
     content: " ";
     background: #ffffffee;
@@ -44,6 +47,11 @@ img.bounded {
   background: var(--c-primary);
   padding: .3rem;
   z-index: 29;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   img {
     filter: invert(1);
   }

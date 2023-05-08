@@ -33,7 +33,7 @@
       <div class="element">
         {#each brands as i}
           <a href={ i.link }>
-            <CloudinaryImage class="md:w-40 object-contain" widths="50vw md:200px" alt={ i.alt } src={ i.image } />
+            <CloudinaryImage widths="50vw md:200px" alt={ i.alt } src={ i.image } />
           </a>
         {/each}
       </div>
@@ -54,6 +54,7 @@
       pointer-events: none;
       margin-right: 36px;
       height: 70px;
+      object-fit: contain;
     }
     .content { width: 100000px; }
     .element {
@@ -70,6 +71,7 @@
   @media (min-width: 768px){
     .brands img {
       height: unset;
+      width: 10rem;
     }
   }
   </style>

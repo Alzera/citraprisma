@@ -30,8 +30,6 @@
 
   export let url = "";
 
-  const menuStyle = 'flex flex-col justify-center items-center';
-
   let y = 0
   let drawer = false
   // let shopsub = false
@@ -65,80 +63,62 @@
     </Row>
   </Container>
   <nav>
-    <div class="h-12 bg-primary">
+    <div class="h-12 bg-primary text-white">
       <Container>
         {#if $mq.mobile}
           <Row class="md:hidden main-menu">
             <Column cols={ 4 }>
-              <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
-                <span class="text-white">{ $t('layout.menus.menu') }</span>
+              <div class="cursor-pointer" on:click={ () => { drawer = !drawer } }>
+                <span>{ $t('layout.menus.menu') }</span>
               </div>
             </Column>
             <Column cols={ 4 }>
-              <a href="/" class={ menuStyle }>
-                <span class="text-white">{ $t('layout.menus.home') }</span>
+              <a href="/">
+                <span>{ $t('layout.menus.home') }</span>
               </a>
             </Column>
             <Column cols={ 4 }>
-              <a href="/contact-us" class={ menuStyle }>
-                <span class="text-white">{ $t('layout.menus.contact_us') }</span>
+              <a href="/contact-us">
+                <span>{ $t('layout.menus.contact_us') }</span>
               </a>
             </Column>
           </Row>
         {:else}
-          <Row class="!hidden !md:flex main-menu overflow-visible">
+          <Row class="!hidden !md:flex main-menu text-lg overflow-visible">
             {#each menus as i}
-              <Column class="flex justify-center">
-                <a href={ i.link } class="menu text-lg">
-                  <span class="text-white">{ i.title }</span>
+              <Column>
+                <a href={ i.link } class="menu">
+                  <span>{ i.title }</span>
                 </a>
               </Column>
             {/each}
-            <Column class="flex justify-center overflow-visible">
-              <a href="/shop" rel="external" class="menu text-lg">
-                <span class="text-white">{ $t('layout.menus.shop') }</span>
+            <Column class="overflow-visible">
+              <a href="/shop" rel="external" class="menu">
+                <span>{ $t('layout.menus.shop') }</span>
               </a>
-              <!-- 
-                on:hover={ () => { shopsub = !shopsub } }
-              {#if shopsub}
-                <div class="bg-primary absolute top-10.3 left-0 px-4 min-w-50 shadow-2xl">
-                  <a href="/shop/my-account" rel="external" class="menu block text-base py-1">
-                    <span class="text-white">{ $t('layout.menus.shop.my_account') }</span>
-                  </a>
-                  <a href="/shop/products" rel="external" class="menu block text-base py-1">
-                    <span class="text-white">{ $t('layout.menus.shop.products') }</span>
-                  </a>
-                  <a href="/shop/categories" rel="external" class="menu block text-base py-1">
-                    <span class="text-white">{ $t('layout.menus.shop.categories') }</span>
-                  </a>
-                  <a href="/shop/brands" rel="external" class="menu block text-base py-1">
-                    <span class="text-white">{ $t('layout.menus.shop.brands') }</span>
-                  </a>
-                </div>
-              {/if} -->
             </Column>
           </Row>
         {/if}
       </Container>
     </div>
     {#if $mq.mobile}
-      <Row class="mobile-main-menu ease-in-out transition-all duration-300" style={ showBottomNav ? '' : 'transform:translateY(100%)' }>
+      <Row class="text-white mobile-main-menu ease-in-out transition-all duration-300" style={ showBottomNav ? '' : 'transform:translateY(100%)' }>
         <Column cols={ 4 }>
-          <div class={ `cursor-pointer ${menuStyle}` } on:click={ () => { drawer = !drawer } }>
+          <div class="cursor-pointer" on:click={ () => { drawer = !drawer } }>
             <CloudinaryImage widths="50px" src="hamburger.png" alt="hamburger" class="object-contain" style="height:26px" />
-            <span class="text-white">{ $t('layout.menus.menu') }</span>
+            <span>{ $t('layout.menus.menu') }</span>
         </div>
         </Column>
         <Column cols={ 4 }>
-          <a href="/" class={ menuStyle }>
+          <a href="/">
             <CloudinaryImage widths="50px" src="home.png" alt="home" class="object-contain" style="height:26px" />
-            <span class="text-white">{ $t('layout.menus.home') }</span>
+            <span>{ $t('layout.menus.home') }</span>
           </a>
         </Column>
         <Column cols={ 4 }>
-          <a href="/contact-us" class={ menuStyle }>
+          <a href="/contact-us">
             <CloudinaryImage widths="50px" src="customer_services.png" alt="customer_services" class="object-contain" style="height:35px;margin:-6px;" />
-            <span class="text-white">{ $t('layout.menus.contact_us') }</span>
+            <span>{ $t('layout.menus.contact_us') }</span>
           </a>
         </Column>
       </Row>
