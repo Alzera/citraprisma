@@ -9,7 +9,7 @@
 
 <Article title={ $t('projects.waterplace.page.title') } subtitle={ $t('projects.waterplace.subtitle') }>
   <div class="flex justify-center items-center">
-    <CloudinaryImage src="projects/waterplace/preview.png" alt={ `Water Place project preview` } widths="90vw md:430px" />
+    <CloudinaryImage src="projects/waterplace/preview.png" alt={ `Water Place project preview` } widths="90vw md:430px" preload={ true } />
   </div>
   <hr class="my-4" />
   <Row>

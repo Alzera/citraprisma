@@ -14,6 +14,7 @@
   widths="600px md:1024px" 
   crop="fill" 
   lazy={ false }
+  preload={ true }
   height={ 400 }
   style={ $mq.mobile ? 'height:250px' : 'height:400px' }
   class="w-vw-center object-cover h-52 md:h-88" />

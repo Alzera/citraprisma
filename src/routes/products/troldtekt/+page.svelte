@@ -54,6 +54,7 @@
   widths="512px md:1408px" 
   crop="fill" 
   lazy={ false }
+  preload={ true }
   class="w-vw-center object-cover md:h-128" />
 <Container class="p-6">
   <h2 class="text-4xl text-center mb-4">{ $t(tp + 'section1.title') }</h2>

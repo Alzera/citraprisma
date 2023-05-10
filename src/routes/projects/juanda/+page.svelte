@@ -9,7 +9,7 @@
 
 <Article title={ $t('projects.juanda.page.title') } subtitle={ $t('projects.juanda.subtitle') }>
   <div class="flex justify-center items-center">
-    <CloudinaryImage src="projects/juanda/1.png" alt={ `Juanda project preview` } widths="90vw md:430px" />
+    <CloudinaryImage src="projects/juanda/1.png" alt={ `Juanda project preview` } widths="90vw md:430px" preload={ true } />
   </div>
   <hr class="my-4" />
   <Row>

@@ -10,7 +10,7 @@
 <Article title={ $t('projects.satrio.page.title') } subtitle={ $t('projects.satrio.subtitle') }>
   <Row>
     <Column cols={ 12 } md={ 6 }>
-      <CloudinaryImage class="bounded" src="projects/satrio/satrio-1.jpg" alt="Satrio project image 1" widths="sm:90vw md:430px" />
+      <CloudinaryImage class="bounded" src="projects/satrio/satrio-1.jpg" alt="Satrio project image 1" widths="sm:90vw md:430px" preload={ true } />
       <p class="!text-center m-0">{ $t('before') }</p>
     </Column>
     <Column cols={ 12 } md={ 6 }>

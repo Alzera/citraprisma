@@ -9,7 +9,7 @@
 
 <Article title={ $t('projects.aston.page.title') } subtitle={ $t('projects.aston.subtitle') }>
   <div class="flex justify-center items-center">
-    <CloudinaryImage src="projects/aston/Aston_5.png" alt={ `Aston project preview` } widths="90vw md:430px" />
+    <CloudinaryImage src="projects/aston/Aston_5.png" alt={ `Aston project preview` } widths="90vw md:430px" preload={ true } />
   </div>
   <hr class="my-4" />
   <Row>

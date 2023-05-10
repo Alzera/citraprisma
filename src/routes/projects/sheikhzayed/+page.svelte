@@ -9,8 +9,11 @@
 
 <Article title={ $t('projects.sheikhzayed.page.title') } subtitle={ $t('projects.sheikhzayed.subtitle') }>
   <Row>
-    {#each Array(8) as _, index}
-      {@const i = index + 1}
+    <Column cols={ 12 } md={ 6 }>
+      <CloudinaryImage class="bounded" src="projects/sheikhzayed/1.jpeg" alt="Masjid Sheikh Zayed project image 1" widths="90vw md:430px" preload={ true } />
+    </Column>
+    {#each Array(7) as _, index}
+      {@const i = index + 2}
       <Column cols={ 12 } md={ 6 }>
         <CloudinaryImage class="bounded" src={ `projects/sheikhzayed/${i}.jpeg` } alt={ `Masjid Sheikh Zayed project image ${i}` } widths="90vw md:430px" />
       </Column>

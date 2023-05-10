@@ -10,7 +10,7 @@
 <Article title={ $t('projects.vihara.page.title') } subtitle={ $t('projects.vihara.subtitle') }>
   <Row>
     <Column cols={ 12 } md={ 6 }>
-      <CloudinaryImage src="projects/vihara/Referensi_Project_Vihara_2.jpg" alt="Vihara project image 1" widths="sm:90vw md:430px" />
+      <CloudinaryImage src="projects/vihara/Referensi_Project_Vihara_2.jpg" alt="Vihara project image 1" widths="sm:90vw md:430px" preload={ true } />
       <p class="!text-center m-0">{ $t('before') }</p>
     </Column>
     <Column cols={ 12 } md={ 6 }>
