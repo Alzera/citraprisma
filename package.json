@@ -15,7 +15,8 @@
 		"sync-cloudinary": "node scripts/sync-cloudinary.mjs",
 		"build-translation": "node scripts/build-translation-loaders.mjs",
 		"bundle-analyze": "npx vite-bundle-visualizer",
-		"update-packages": "ncu -u"
+		"update-packages": "ncu -u",
+		"unlighthouse": "npx unlighthouse --site https://www.citraprisma.id"
 	},
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.50",
