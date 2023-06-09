@@ -10,7 +10,7 @@
   const links = [
     { image: "logo_knauf.jpg", href: "/products/knauf", text: "KNAUF\nGypsumboard, rangka, casting, compound" },
     { image: "logo_yoshino.jpg", href: "/products/yoshino", text: "YOSHINO\nGypsumboard, compound" },
-    { image: "logo_jayaboard.jpg", href: "#", text: "JAYABOARD\nGypsumboard, rangka, casting, compound" },
+    { image: "logo_jayaboard.jpg", href: "/products/jayaboard", text: "JAYABOARD\nGypsumboard, rangka, casting, compound" },
     { image: "logo_bostik.jpg", href: "/products/bostik", text: "BOSTIK\nWaterproofing, mortar, sealant" },
     { image: "logo_grace.jpg", href: "/products/grace", text: "GRACE\nWaterproofing dan injeksi" },
     { image: "logo_kcc.jpg", href: "#", text: "KCC\nCat, floor coating" },
@@ -35,7 +35,9 @@
     {#each links as item}
     <Column cols={ 12 } md={ 6 }>
       <a href={ item.href } class="flex items-center h-full">
-        <CloudinaryImage src={ `products/${item.image}` } alt={ item.image } widths="30vw md:100px" class="object-contain mr-3 px-2 py-1 border border-slate-100 h-12 w-24" />
+        <div class="h-12 mr-3 px-2 py-1" style="flex:0 0 6rem">
+          <CloudinaryImage src={ `products/${item.image}` } alt={ item.image } widths="30vw md:100px" class="object-contain border border-slate-100" />
+        </div>
         <h2 class="text-xl flex-auto my-1">{ item.text }</h2>
       </a>
     </Column>

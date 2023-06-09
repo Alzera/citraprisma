@@ -16,7 +16,7 @@
   })
 </script>
 
-<ol vocab="http://schema.org/" typeof="BreadcrumbList" class="breadcrumb-list text-base flex items-center">
+<ol vocab="http://schema.org/" typeof="BreadcrumbList" class="breadcrumb-list">
   {#each crumbs as crumb, i}
     <li property="itemListElement" typeof="ListItem">
       {#if i == crumbs.length - 1}
@@ -33,6 +33,10 @@
 
 <style lang="scss" global>
   .breadcrumb-list {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    display: flex;
+    align-items: center;
     list-style-type: none;
     padding: 0;
     li {

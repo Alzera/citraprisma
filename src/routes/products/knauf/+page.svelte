@@ -418,7 +418,7 @@
   <br />
   <br />
   <p>
-    <a href="/pdfs/Knauf.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+    <a href="/pdfs/Knauf.pdf" download target="_blank" rel="noopener noreferrer external">
       <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
     </a>
     <br />
@@ -427,7 +427,7 @@
   </p>
   <ul class="text-base">
     {#each references as item, i}
-      <li><a href={ item } target="_blank" rel="noopener noreferrer" class="visible">{ item }</a></li>
+      <li><a href={ item } target="_blank" rel="noopener noreferrer">{ item }</a></li>
     {/each}
   </ul>
 </Article>

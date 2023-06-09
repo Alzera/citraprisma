@@ -142,10 +142,10 @@
     </div>
   <br />
   <p>
-    <a href="/pdfs/BROSUR BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+    <a href="/pdfs/BROSUR BITULINE.pdf" download target="_blank" rel="noopener noreferrer external">
       <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
     </a><br/>
-    <a href="/pdfs/Panduan Pemasangan Bituline.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
+    <a href="/pdfs/Panduan Pemasangan Bituline.pdf" download target="_blank" rel="noopener noreferrer external">Download { $t(tp + "installation_instructions" )}</a>
   </p>
 </Article>
 <dialog on:click={handleBackdrop} class="p-0 aspect-video w-240 max-w-full" bind:this={ dialog }>

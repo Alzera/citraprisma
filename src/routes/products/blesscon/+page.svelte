@@ -131,7 +131,7 @@
   <br />
   <br />
   <p>
-    <a href="/pdfs/compro_square_SNI.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+    <a href="/pdfs/compro_square_SNI.pdf" download target="_blank" rel="noopener noreferrer external">
       <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
     </a>
   </p>

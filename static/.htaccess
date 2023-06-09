@@ -41,6 +41,7 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
     AddType application/manifest+json webmanifest
     AddType text/javascript js mjs
     AddType application/x-font-woff2 .woff2
+    AddType application/pdf .pdf
 </IfModule>
 
 # BEGIN Expire headers  

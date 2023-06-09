@@ -35,7 +35,7 @@
   <br />
   <br />
   <p>
-    <a href="/pdfs/GCP Betec Brochure_2016.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+    <a href="/pdfs/GCP Betec Brochure_2016.pdf" download target="_blank" rel="noopener noreferrer external">
       <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
     </a>
   </p>

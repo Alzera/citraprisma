@@ -105,10 +105,10 @@
   <br />
   <br />
   <p>
-    <a href="/pdfs/tds/onduline/TDS BITULINE.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download TDS</a><br/>
-    <a href="/pdfs/brosur onducasa - rev.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">
+    <a href="/pdfs/tds/onduline/TDS BITULINE.pdf" download target="_blank" rel="noopener noreferrer external">Download TDS</a><br/>
+    <a href="/pdfs/brosur onducasa - rev.pdf" download target="_blank" rel="noopener noreferrer external">
       <CloudinaryImage src="icon_download_catalog.jpg" alt="Download Catalog" widths="200px" />
     </a><br/>
-    <a href="/pdfs/Panduan Pemasangan Onducasa.pdf" download target="_blank" rel="noopener noreferrer external" class="visible">Download { $t(tp + "installation_instructions" )}</a>
+    <a href="/pdfs/Panduan Pemasangan Onducasa.pdf" download target="_blank" rel="noopener noreferrer external">Download { $t(tp + "installation_instructions" )}</a>
   </p>
 </Article>

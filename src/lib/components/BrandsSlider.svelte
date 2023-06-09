@@ -5,7 +5,7 @@
   const brands = [
     { image:"/products/logo_yoshino.jpg", alt: "yoshino", link: "/products/yoshino" },
     { image:"/products/logo_knauf.jpg", alt: "knauf", link: "/products/knauf" },
-    { image:"/products/logo_jayaboard.jpg", alt: "jayaboard", link: "#" },
+    { image:"/products/logo_jayaboard.jpg", alt: "jayaboard", link: "/products/jayaboard" },
     { image:"/products/logo_bostik.jpg", alt: "bostik", link: "/products/bostik" },
     // { image:"/products/logo_simson.jpg", alt: "simson", link: "#" },
     // { image:"/products/logo_shinetsu.jpg", alt: "shinetsu", link: "#" },
