@@ -10,9 +10,9 @@
     // { image:"/products/logo_simson.jpg", alt: "simson", link: "#" },
     // { image:"/products/logo_shinetsu.jpg", alt: "shinetsu", link: "#" },
     { image:"/products/logo_grace.jpg", alt: "grace", link: "/products/grace" },
-    { image:"/products/logo_star.jpg", alt: "star", link: "#" },
+    // { image:"/products/logo_star.jpg", alt: "star", link: "#" },
     { image:"/products/logo_hd.jpg", alt: "hd", link: "#" },
-    { image:"/products/logo_kcc.jpg", alt: "kcc", link: "#" },
+    // { image:"/products/logo_kcc.jpg", alt: "kcc", link: "#" },
     { image:"/products/logo_conwood.jpg", alt: "conwood", link: "/products/conwood" },
     // { image:"/products/logo_pioneer.jpg", alt: "pioneer", link: "#" },
     { image:"/products/logo_wacker.jpg", alt: "wacker", link: "/products/wacker" },
@@ -22,7 +22,7 @@
     { image:"/products/logo_onduline.jpg", alt: "onduline", link: "/products/onduline" },
     { image:"/products/logo_royalboard.jpg", alt: "royalboard", link: "/products/royalboard" },
     { image:"/products/logo_troldtekt.jpg", alt: "troldtekt", link: "/products/troldtekt" },
-    { image:"/products/logo_adcos.jpg", alt: "adcos", link: "/products/troldtekt" },
+    { image:"/products/logo_adcos.jpg", alt: "adcos", link: "/products/adcos" },
   ]
 </script>
 

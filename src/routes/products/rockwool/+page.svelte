@@ -1,6 +1,7 @@
 <script lang="ts">
   import { t } from '$lib/translations';
   const tp = 'products.rockwool.'
+  import { mq } from '$lib/mediaquery';
 
   import Row from "$lib/components/Row.svelte";
   import Column from "$lib/components/Column.svelte";
@@ -28,6 +29,14 @@
   }
 </script>
 
+<CloudinaryImage src="products/rockwool/Banner.jpg" alt="Banner" 
+  widths="600px md:1024px" 
+  crop="fill" 
+  lazy={ false }
+  preload={ true }
+  height={ 400 }
+  style={ $mq.mobile ? 'height:250px' : 'height:400px' }
+  class="w-vw-center object-cover h-52 md:h-88" />
 <Article title={ $t(tp + 'page.title') }>
   <p class="mb-3">{ $t(tp + 'content.0') }</p>
   <p class="mb-3">{ $t(tp + 'content.1') }</p>

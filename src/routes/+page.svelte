@@ -31,6 +31,8 @@
     "slideshows/Banner_6.jpg",
     "slideshows/Banner_9.jpg",
     "slideshows/Banner_10.jpg",
+    "slideshows/Banner_11.jpg",
+    "slideshows/Banner_12.jpg",
   ]
   let serviceTab = 0
 
